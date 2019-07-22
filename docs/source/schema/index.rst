@@ -1,7 +1,7 @@
 Schema
 ======
 
-The eMERGE results FHIR schema in this section is based on the Diagnostic Report Resource profile and guidance from the
+The eMERGE results FHIR schema is based on the Diagnostic Report Resource profile and guidance from the
 [HL7 CG WG Implementation Guide on General Genomic Reporting](http://build.fhir.org/ig/HL7/genomics-reporting/general.html).
 
 This specification aims to harmonize and leverage the draft work of the HL7 CG WG to both validate and inform its development.
@@ -18,11 +18,18 @@ will ultimately be reconcilable as the standard matures.
 Each major component is described in detail in the corresponding sub-sections.
 
 .. toctree::
-   :hidden:
    :maxdepth: 1
 
    report
    patient
-   order
+   specimen
+   service_request
+   performer_and_results_interpreter
    diagnostic_gene_panel
+   overall_interpretation
+   gene_coverage
+   recommendation
    pgx_gene_panel
+   variant_and_genotype
+   inherited_disease_pathogenicity
+   drug_implication
