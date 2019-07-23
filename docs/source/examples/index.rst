@@ -11,8 +11,8 @@ are organized based on the hierarchy of the report message structure.
 
 Downloads for the full message are available at the report level sections.
 
-..toctree::
+.. toctree::
    :maxdepth: 1
 
    sc1_positive_diagnostic_and_pgx
-   sc2_positive_diagnostic_panel_only
+   sc2_positive_diagnostic

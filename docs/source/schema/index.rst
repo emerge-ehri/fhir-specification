@@ -9,7 +9,7 @@ In cases where there are gaps or requirements that are unclear or unmet, they ar
 custom extensions or profiles are developed to fill the missing needs with the expectation that these issues
 will ultimately be reconcilable as the standard matures.
 
-.. figure:: ../images/schema-overview.png
+.. figure:: ../_images/schema-overview.png
    :align: left
 
    **Figure: Schema Overview**

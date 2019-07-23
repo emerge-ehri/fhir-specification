@@ -15,7 +15,7 @@ general practice in clinical genetic test reporting.
    :caption: Contents:
 
    introduction
-   project_background
+   background
    fhir_overview
    schema/index
    messaging
