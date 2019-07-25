@@ -1,8 +1,4 @@
-Patient
-=======
-test
-
-.. csv-table:: test
+.. csv-table:: Table Title
    :file: test.csv
-   :widths: 15 40 20
+   :widths: 30, 70
    :header-rows: 1
