@@ -2,17 +2,47 @@ Examples
 ========
 
 From the inception, this specification was based on a process of analyzing several
-reports from each of the two sequencing centers (SCs). A couple of those reports
-were de-identified and modified to both protect PHI and demonstrate a broad
-set of data scenarios and complexities.
+reports from each of the two sequencing centers (SCs). One of those reports
+was de-identified and provided in the sectinos below. This example report
+was modified to both protect PHI and demonstrate a reasonably broad set of
+data scenarios.
 
-Below are some of those examples organized by report with sub-sections that
-are organized based on the hierarchy of the report message structure.
-
-Downloads for the full message are available at the report level sections.
 
 .. toctree::
    :maxdepth: 1
 
-   sc1_positive_diagnostic_and_pgx
-   sc2_positive_diagnostic
+   bundle
+   diagnostic_report
+   service_request
+   pgx_gene_panel
+
+
+
+.. patient
+.. performer
+.. results_interpreter
+.. overall_interpretation
+.. diagnostic_gene_panel
+
+
+
+
+.. Performer (Organization)
+..
+.. Results Interpreter (Results Sign Out)
+..
+.. Overall Interpretation
+..
+.. Diagnostic Gene Panel
+..     Clinically Significant Findings
+..     Incidental Findings
+..
+.. PGx Gene Panel
+..     PGx Diplotype Findings
+..         Metabolism Drug Implication
+..         Efficacy Drug Implication
+..         Transporter Drug Implication
+..
+.. Special Panels
+..    LDLR Scores
+..    ???

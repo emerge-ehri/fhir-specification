@@ -13,6 +13,7 @@ general practice in clinical genetic test reporting.
 .. toctree::
    :maxdepth: 3
    :caption: Contents:
+   :numbered:
 
    introduction
    background

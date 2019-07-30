@@ -15,8 +15,13 @@
 import os
 import re
 import subprocess
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
+#import sys
+#sys.path.insert(0, os.path.abspath('.'))
+import sphinx_rtd_theme
+from sphinx.highlighting import lexers
+from pygments.lexers.data import JsonLexer
+
+lexers['json'] = JsonLexer(startinline=False)
 
 def _get_git_tag():
     res = subprocess.run("git describe --tags --always".split(), capture_output=True)
@@ -46,7 +51,8 @@ version = _parse_release_as_version(release)
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.todo'
+    'sphinx.ext.todo',
+    'sphinxcontrib.excel_table'
 ]
 
 # Add any paths that contain templates here, relative to this directory.

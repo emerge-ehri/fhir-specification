@@ -1,2 +1,0 @@
-Inherited Disease Pathogenicity
-===============================

@@ -18,18 +18,18 @@ will ultimately be reconcilable as the standard matures.
 Each major component is described in detail in the corresponding sub-sections.
 
 .. toctree::
-   :maxdepth: 1
+   :caption: Schema Components
+   :maxdepth: 2
 
-   report
+   diagnostic_report
    patient
    specimen
-   service_request
+   service_request/index
    performer_and_results_interpreter
-   diagnostic_gene_panel
+   diagnostic_gene_panel/index
    overall_interpretation
    gene_coverage
    recommendation
-   pgx_gene_panel
+   references
    variant_and_genotype
-   inherited_disease_pathogenicity
-   drug_implication
+   pgx_gene_panel/index
