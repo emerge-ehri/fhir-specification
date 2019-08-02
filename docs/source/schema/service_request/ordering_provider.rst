@@ -10,7 +10,7 @@ TODO Describe use of PractitionerRole as ServiceRequest.requester
    :row_header: false
    :col_header: false
    :colwidths: [25, 25, 25, 70, 140, 50, 175, 175]
-   :selection: A2:H10
+   :selection: A1:H10
 
 
 Practitioner (Physician)
@@ -23,7 +23,7 @@ Practitioner (Physician)
    :row_header: false
    :col_header: false
    :colwidths: [25, 25, 25, 70, 140, 50, 175, 175]
-   :selection: A2:H10
+   :selection: A1:H10
 
 
 Organization (Healthcare Institution)
@@ -36,4 +36,4 @@ Organization (Healthcare Institution)
    :row_header: false
    :col_header: false
    :colwidths: [25, 25, 25, 70, 140, 50, 175, 175]
-   :selection: A24:H34
+   :selection: A22:H34

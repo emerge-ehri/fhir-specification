@@ -34,7 +34,7 @@ cases that share the same testing methodology for a given SC.
    :row_header: false
    :col_header: false
    :colwidths: [25, 25, 25, 70, 140, 50, 175, 175]
-   :selection: A2:H50
+   :selection: A1:H50
 
 .. toctree::
    :caption: Service Request Components

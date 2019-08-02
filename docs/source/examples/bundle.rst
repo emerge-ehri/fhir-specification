@@ -29,5 +29,5 @@ and use :download:`here <../_files/emerge-fhir-resources.xlsx/>`.
    :overflow: false
    :row_header: false
    :col_header: false
-   :colwidths: [30, 10, 10, 95, 140, 50, 175, 175]
-   :selection: A2:H59
+   :colwidths: [30, 20, 10, 80, 140, 50, 175, 175]
+   :selection: A1:H59

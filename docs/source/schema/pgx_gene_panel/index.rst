@@ -9,7 +9,7 @@ PGx Gene Panel
    :row_header: false
    :col_header: false
    :colwidths: [25, 25, 25, 70, 140, 50, 175, 175]
-   :selection: A2:H50
+   :selection: A48:H60
 
 .. toctree::
    :caption: PGx Gene Panel Components

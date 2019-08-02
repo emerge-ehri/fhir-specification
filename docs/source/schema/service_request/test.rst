@@ -8,4 +8,4 @@ Test Ordered & Performed
    :row_header: false
    :col_header: false
    :colwidths: [25, 25, 25, 70, 140, 50, 175, 175]
-   :selection: A2:H15
+   :selection: A1:H15
