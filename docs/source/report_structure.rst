@@ -28,17 +28,15 @@ FHIR provides a DiagnosticReport Resource which is the root resource for represe
 
 The following diagram illustrates the core Resource hierarchy starting with the DiagnosticReport at the far left and branching through the various sub-resources dedicated to sharing various portions of the lab results. There is a table below that describes each numbered resource to provide additional context.
 
+.. figure:: _images/schema-overview.png
+   :align: left
+
+**Figure 2:** eMERGE Report FHIR Resource Map
+
 .. .. imagesvg:: _images/schema-overview.svg
 ..    :tagtype: object
 ..    :width: 100%
 ..    :align: center
-
-.. figure:: _images/schema-overview.png
-   :alt:
-   :class: center
-   :figclass: align-center
-
-**Figure 2:** eMERGE Report FHIR Resource Map
 
 **Resource Mapping Table**
 
@@ -96,7 +94,7 @@ And here's the LMM example report layout and mapping...
 
 .. rst-class:: clearsidebyside
 
-**Figure 3:** HGSC Example Report layout and detailed mapping (click to enlarge)
+**Figure 4:** LMM Example Report layout and detailed mapping (click to enlarge)
 
 
 .. Some more text

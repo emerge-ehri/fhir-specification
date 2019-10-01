@@ -12,7 +12,7 @@ will ultimately be reconcilable as the standard matures.
 .. figure:: ../_images/schema-overview.png
    :align: left
 
-   **Figure 3: Schema Overview**
+   **Figure 5: Schema Overview**
    An illustration of the associations between the major schema components.
 
 Each major component is described in detail in the corresponding sub-sections.
