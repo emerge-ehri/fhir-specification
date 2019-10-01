@@ -16,8 +16,6 @@ general practice in clinical genetic test reporting.
    :numbered:
 
    introduction
-   background
-   fhir_overview
+   report_structure
    schema/index
-   messaging
    examples/index

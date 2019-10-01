@@ -1,2 +1,6 @@
+.. _patient:
+
 Patient
 =======
+
+TODO

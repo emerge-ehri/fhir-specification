@@ -1,3 +1,5 @@
+.. _diagnostic-report:
+
 Diagnostic Report
 =================
 
