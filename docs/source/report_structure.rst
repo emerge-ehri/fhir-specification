@@ -33,11 +33,6 @@ The following diagram illustrates the core Resource hierarchy starting with the 
 
 **Figure 2:** eMERGE Report FHIR Resource Map
 
-.. .. imagesvg:: _images/schema-overview.svg
-..    :tagtype: object
-..    :width: 100%
-..    :align: center
-
 **Resource Mapping Table**
 
 .. list-table::
@@ -95,24 +90,3 @@ And here's the LMM example report layout and mapping...
 .. rst-class:: clearsidebyside
 
 **Figure 4:** LMM Example Report layout and detailed mapping (click to enlarge)
-
-
-.. Some more text
-..
-.. .. imagesvg:: _images/emerge.svg
-..    :tagtype: object
-..    :width: 500px
-..
-.. And still more
-
-
-
-.. .. thumbnail:: _images/hgsc-report-plain.png
-..    :width: 200px
-..    :title: **Figure:** HGSC eMERGE Report
-..    :show_caption: true
-..
-.. .. thumbnail:: _images/lmm-report-plain.png
-..    :width: 200px
-..    :title: **Figure:** LMM eMERGE Report
-..    :show_caption: true
