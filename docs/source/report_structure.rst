@@ -45,10 +45,10 @@ The following diagram illustrates the core Resource hierarchy starting with the 
      - Resource (Section)
      - Description
    * - 1
-     - :ref:`3.1 Diagnostic Report <diagnostic-report>`
+     - :ref:`Diagnostic Report <diagnostic-report>`
      - The diagnostic report ...
    * - 2
-     - :ref:`3.2 Patient <patient>`
+     - :ref:`Patient <patient>`
      - The patient ...
    * - ?
      - ToDo
