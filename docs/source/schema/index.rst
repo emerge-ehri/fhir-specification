@@ -30,6 +30,5 @@ Each major component is described in detail in the corresponding sub-sections.
    overall_interpretation
    gene_coverage
    recommendation
-   references
    variant_and_genotype
    pgx_gene_panel/index

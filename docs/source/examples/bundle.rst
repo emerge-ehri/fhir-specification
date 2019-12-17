@@ -12,7 +12,7 @@ Download Example
 ----------------
 The manually curated example resources that comprise this report example are
 downloadable as a single Excel spreadsheet for further inspection
-and use :download:`here <../_files/emerge-fhir-resources.xlsx/>`.
+and use :download:`here <../_files/emerge-fhir-resources-examples.xlsx/>`.
 
 ..
 .. test item below (remove later)
@@ -24,10 +24,10 @@ and use :download:`here <../_files/emerge-fhir-resources.xlsx/>`.
 .. _bundle-example-1:
 
 .. excel-table::
-   :file: ../_files/emerge-fhir-resources.xlsx
-   :sheet: Bundles
+   :file: ../_files/emerge-fhir-resources-examples.xlsx
+   :sheet: Bundle
    :overflow: false
    :row_header: false
    :col_header: false
-   :colwidths: [30, 20, 10, 80, 140, 50, 175, 175]
-   :selection: A1:H59
+   :colwidths: [25, 25, 25, 70, 50, 140, 350]
+   :selection: A1:G218

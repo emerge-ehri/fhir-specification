@@ -28,13 +28,13 @@ result but instead a definition of the test itself. It will be consistent across
 cases that share the same testing methodology for a given SC.
 
 .. excel-table::
-   :file: ../../_files/emerge-fhir-resources.xlsx
-   :sheet: ServiceRequests
+   :file: ../../_files/emerge-fhir-resources-definitions.xlsx
+   :sheet: ServiceRequest
    :overflow: false
    :row_header: false
    :col_header: false
-   :colwidths: [25, 25, 25, 70, 140, 50, 175, 175]
-   :selection: A1:H50
+   :colwidths: [25, 25, 25, 70, 50, 140, 350]
+   :selection: A1:G49
 
 .. toctree::
    :caption: Service Request Components
