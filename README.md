@@ -39,7 +39,7 @@ make html
 View the local documentation build
 
 ```
-open bulid/html/index.html
+open build/html/index.html
 ```
 
 ## Versioning
