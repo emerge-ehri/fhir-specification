@@ -17,5 +17,6 @@ general practice in clinical genetic test reporting.
    introduction
    report_structure
    schema/index
+   use_cases
    known_limitations
    examples/index
