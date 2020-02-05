@@ -21,39 +21,6 @@ Below are two example (deidentified) positive reports one from each of the two S
 
 This section introduces the process used to convert and map these two similar reports into a common HL7 FHIR structure.
 
-FHIR Report Resource Model
-!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-FHIR provides a DiagnosticReport Resource which is the root resource for representing the contents of returned lab results.
-
-The following diagram illustrates the core Resource hierarchy starting with the DiagnosticReport at the far left and branching through the various sub-resources dedicated to sharing various portions of the lab results. There is a table below that describes each numbered resource to provide additional context.
-
-.. figure:: _images/schema-overview.png
-   :align: left
-
-**Figure 2:** eMERGE Report FHIR Resource Map
-
-**Resource Mapping Table**
-
-.. list-table::
-   :class: my-wrap
-   :header-rows: 1
-   :align: left
-   :widths: auto
-
-   * - No.
-     - Resource (Section)
-     - Description
-   * - 1
-     - :ref:`Diagnostic Report <diagnostic-report>`
-     - The diagnostic report ...
-   * - 2
-     - :ref:`Patient <patient>`
-     - The patient ...
-   * - ?
-     - ToDo
-     - The ...
-
 
 Mapping Report to Resources
 !!!!!!!!!!!!!!!!!!!!!!!!!!!

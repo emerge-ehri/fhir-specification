@@ -24,7 +24,9 @@ from pygments.lexers.data import JsonLexer
 lexers['json'] = JsonLexer(startinline=False)
 
 def _get_git_tag():
-    res = subprocess.run("git describe --tags --always".split(), capture_output=True)
+    # To also capture stderr...
+    res = subprocess.run("git describe --tags --always".split(), stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    #res = subprocess.run("git describe --tags --always".split(), capture_output=True)
     tag = res.stdout.decode().strip()
     return tag
 
@@ -37,13 +39,17 @@ def _parse_release_as_version(rls):
 # -- Project information -----------------------------------------------------
 
 project = u'emerge-fhir-spec'
-copyright = u'2019, eMERGE Network'
+copyright = u'2020, eMERGE Network'
 author = u'Committers'
 master_doc = 'index'
 # N.B. RTD ignores these values. :-/
 release = _get_git_tag()
 version = _parse_release_as_version(release)
 
+# -- Schema doc paths --------------------------------------------------------
+
+rst_epilog_fn = os.path.join(os.path.dirname(__file__), 'rst_epilog')
+rst_epilog = open(rst_epilog_fn).read().format(release=release)
 
 # -- General configuration ---------------------------------------------------
 

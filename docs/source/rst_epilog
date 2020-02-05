@@ -1,0 +1,12 @@
+.. _FHIR Business Identifiers: https://www.hl7.org/fhir/datatypes.html#identifier
+.. _FHIR Id: http://build.fhir.org/datatypes.html#id
+.. _HGVS: http://www.hgvs.org/
+.. _ga4gh: http://genomicsandhealth.org/
+.. _monomer: https://en.wikipedia.org/wiki/Monomer
+
+.. |emerge-spec| replace:: `eMERGE Results FHIR Specification <https://github.com/emerge-ehri/fhir-spec/>`__
+.. |emerge-network| replace:: `eMERGE network <https://emerge-network.org/>`__
+.. |ehri-workgroup| replace:: `EHR Integration Workgroup <https://emerge-network.org/workgroups/>`__
+.. |emerge-seq| replace:: `eMERGEseq Platform <https://emerge-network.org/the-emergeseq-platform/>`__
+.. |fhir-gr-ig| replace:: `FHIR Genomics Reporting Implementation Guide (IG) <http://build.fhir.org/ig/HL7/genomics-reporting/index.html>`__
+.. |hl7-cg-wg| replace:: `HL7 Clinical Genomics WG <http://www.hl7.org/Special/committees/clingenomics/>`__

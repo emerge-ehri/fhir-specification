@@ -9,5 +9,5 @@ Patient
    :overflow: false
    :row_header: false
    :col_header: false
-   :colwidths: [25, 25, 25, 70, 50, 140, 350]
+   :colwidths: [20, 20, 20, 70, 50, 130, 375]
    :selection: A1:G49
