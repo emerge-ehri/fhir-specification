@@ -4,17 +4,34 @@
 eMERGE Results FHIR Specification
 *********************************
 
+.. sidebar:: Contents
+
+    * :ref:`intro`
+    * :ref:`howtoread`
+    * :ref:`cgig`
+    * :ref:`emerge3`
+    * :ref:`emerge-pilot`
+    * :ref:`spec-aims`
+
+.. _intro:
+
 Introduction
 ============
 Simple description (what is this doc)
+
+
+
+.. _howtoread:
 
 How to read this Guide
 ======================
 This Guide is divided into several pages which are listed at the top of each page in the menu bar.
 
-* Home: ....
+* :ref:`Home<home>`: The home page provides the introduction and background for the eMERGE Results FHIR Specification.
 
-* Design: ...  (reports, mapping, fhir hierarchy)
+* Design: These pages provide insights into the design process used to generate the specification.
+
+    * Report Structure: , mapping, fhir hierarchy)
 
 * Artifacts: ... (catalogue of artifacts & detailed pages)
 
@@ -24,18 +41,19 @@ This Guide is divided into several pages which are listed at the top of each pag
 
 * Discussion: ... (identified issues and use cases)
 
-* Supplemental Material: ... (presentation, paper, github, etc...)
+* Supplemental Material: ... (presentation, paper, github, definitions spreadsheet, examples, etc...)
 
 .. Examples (example data, json, nice to have)
 
 .. _cgig:
 
-FHIR Genomics Reporting Implementation Guide
-============================================
+FHIR Genomics Reporting IG
+==========================
 This specification in built on top of the |fhir-gr-ig| which is under active
 development by the |hl7-cg-wg|. During the development of this specification the
 |fhir-gr-ig| progressed from Draft to Standard for Trial Use version 1.
 
+.. _emerge3:
 
 eMERGE Phase III Results
 ========================
@@ -49,17 +67,24 @@ During the fulfillment of the eMERGESeq Platform of phase III an XML schema was
 specified and all results were generated, delivered and stored using this format.
 This specification is an evolution of the phase III eMERGE XML structure Schema.
 
+.. _emerge-pilot:
+
+eMERGE Pilot Implementation
+===========================
 eMERGE is piloting and implementation of this specification
 in conjunction with its development and release which includes a subset of the
 eMERGEseq Platform's panel results returned from the SCs.
 
+.. _spec-aims:
+
+Specification Aim
+==================
 The aim of the eMERGE test results return specification and implementation is to
 inform the efforts of the HL7 CG workgroup so as to accelerate the process towards
 a normative standard for general practice in clinical genetic test reporting.
 
 .. toctree::
-   :maxdepth: 1
-   :caption: Contents:
+   :hidden:
 
    report_structure
    artifacts/index
