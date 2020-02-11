@@ -17,9 +17,8 @@ eMERGE Results FHIR Specification
 
 Introduction
 ============
-Simple description (what is this doc)
-
-
+This is the eMERGE Phase III specification detailing the design for generating structured genetic test
+lab results using HL7 FHIR Genomics Reporting Implementation Guidelines.
 
 .. _howtoread:
 
@@ -29,19 +28,23 @@ This Guide is divided into several pages which are listed at the top of each pag
 
 * :ref:`Home<home>`: The home page provides the introduction and background for the eMERGE Results FHIR Specification.
 
-* Design: These pages provide insights into the design process used to generate the specification.
+* :ref:`design`: These pages provide insights into the process used to generate the specification.
 
-    * Report Structure: , mapping, fhir hierarchy)
+    * :ref:`Example Reports<rept-examples>`: This section provides examples of the 2 different versions of lab reports used during eMERGE III.
 
-* Artifacts: ... (catalogue of artifacts & detailed pages)
+    * :ref:`Report Layout & Structure<rept-struct>`: This section describes how the 2 different report versions were generalized and mapped into common components.
+
+    * :ref:`FHIR Report Resources<fhir-rept-resources>`: This section introduces the FHIR Diagnostic Report and associated sub component resources relevant to the eMERGE report model.
+
+* :ref:`Artifacts<artifacts>`: ... (catalogue of artifacts & detailed pages)
 
      * Catalogue (classified as core, ig, custom)  (table of resources)
 
      * (Detailed Artifact Pages)
 
-* Discussion: ... (identified issues and use cases)
+* :ref:`Discussion<discussion>`: ... (identified issues and use cases)
 
-* Supplemental Material: ... (presentation, paper, github, definitions spreadsheet, examples, etc...)
+* :ref:`Supplemental Material<supp-materials>`: ... (presentation, paper, github, definitions spreadsheet, examples, etc...)
 
 .. Examples (example data, json, nice to have)
 
@@ -86,7 +89,7 @@ a normative standard for general practice in clinical genetic test reporting.
 .. toctree::
    :hidden:
 
-   report_structure
+   design
    artifacts/index
    discussion
    supplemental_materials

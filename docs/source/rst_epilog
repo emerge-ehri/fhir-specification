@@ -2,7 +2,31 @@
 .. _FHIR Id: http://build.fhir.org/datatypes.html#id
 .. _HGVS: http://www.hgvs.org/
 .. _ga4gh: http://genomicsandhealth.org/
-.. _monomer: https://en.wikipedia.org/wiki/Monomer
+
+.. |diagnosticreport-res| replace:: `DiagnosticReport <http://hl7.org/fhir/diagnosticreport.html>`__
+.. |observation-res| replace:: `Observation <http://hl7.org/fhir/observation.html>`__
+.. |patient-res| replace:: `Patient <http://hl7.org/fhir/patient.html>`__
+.. |specimen-res| replace:: `Specimen <http://hl7.org/fhir/specimen.html>`__
+.. |servicerequest-res| replace:: `ServiceRequest <http://hl7.org/fhir/servicerequest.html>`__
+.. |plandefinition-res| replace:: `PlanDefinition <http://hl7.org/fhir/plandefinition.html>`__
+.. |practitionerrole-res| replace:: `PractitionerRole <http://hl7.org/fhir/practitionerrole.html>`__
+.. |organization-res| replace:: `Organization <http://hl7.org/fhir/organization.html>`__
+.. |practitioner-res| replace:: `Practitioner <http://hl7.org/fhir/practitioner.html>`__
+.. |bundle-res| replace:: `Bundle <http://hl7.org/fhir/bundle.html>`__
+.. |task-res| replace:: `Task <http://hl7.org/fhir/task.html>`__
+
+.. |genomics-report-prof| replace:: `Genomics Report <http://build.fhir.org/ig/HL7/genomics-reporting/genomics-report.html>`__
+.. |specimen-prof| replace:: `Specimen Profile <http://build.fhir.org/ig/HL7/genomics-reporting/specimen.html>`__
+.. |recommended-followup-prof| replace:: `Recommended Followup <http://build.fhir.org/ig/HL7/genomics-reporting/task-rec-followup.html>`__
+.. |grouper-prof| replace:: `Grouper <http://build.fhir.org/ig/HL7/genomics-reporting/grouper.html>`__
+.. |overall-interp-prof| replace:: `Overall Interpretation <http://build.fhir.org/ig/HL7/genomics-reporting/overall-interpretation.html>`__
+.. |variant-prof| replace:: `Variant <http://build.fhir.org/ig/HL7/genomics-reporting/variant.html>`__
+.. |genotype-prof| replace:: `Genotype <http://build.fhir.org/ig/HL7/genomics-reporting/genotype.html>`__
+.. |inh-dis-path-prof| replace:: `Inherited Disease Pathogenicity <http://build.fhir.org/ig/HL7/genomics-reporting/inherited-disease-pathogenicity.html>`__
+.. |metab-impl-prof| replace:: `Med Metabolism Impl <http://build.fhir.org/ig/HL7/genomics-reporting/medication-metabolism.html>`__
+.. |transport-impl-prof| replace:: `Med Transporter Impl <http://build.fhir.org/ig/HL7/genomics-reporting/medication-transporter.html>`__
+.. |efficacy-impl-prof| replace:: `Med Efficacy Impl <http://build.fhir.org/ig/HL7/genomics-reporting/medication-efficacy.html>`__
+.. |related-artifact-ext| replace:: `Related Artifact Extension <http://build.fhir.org/ig/HL7/genomics-reporting/extension-RelatedArtifact.html>`__
 
 .. |emerge-spec| replace:: `eMERGE Results FHIR Specification <https://github.com/emerge-ehri/fhir-spec/>`__
 .. |emerge-network| replace:: `eMERGE network <https://emerge-network.org/>`__

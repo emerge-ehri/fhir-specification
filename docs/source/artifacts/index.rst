@@ -1,36 +1,28 @@
+.. _artifacts:
+
 Artifacts
 =========
 
-<rewrite based on selection of artifacts from CG IG perspective>
-The eMERGE results FHIR is based on the Diagnostic Report Resource profile and guidance from the
-[HL7 CG WG Implementation Guide on General Genomic Reporting](http://build.fhir.org/ig/HL7/genomics-reporting/general.html).
+FHIR provides a DiagnosticReport Resource which is the root resource for representing the contents of returned lab results.
 
-This specification aims to harmonize and leverage the draft work of the HL7 CG WG to both validate and inform its development.
-In cases where there are gaps or requirements that are unclear or unmet, they are raised with the HL7 CG WG and
-custom extensions or profiles are developed to fill the missing needs with the expectation that these issues
-will ultimately be reconcilable as the standard matures.
+The following diagram illustrates the core Resource hierarchy starting with the DiagnosticReport at the far left and
+branching through the various sub-resources dedicated to sharing various portions of the lab results. There is a table
+below that describes each numbered resource to provide additional context.
+
+.. todo:: <rewrite based on selection of artifacts from CG IG perspective>
 
 .. figure:: ../_images/schema-overview.png
    :align: left
 
-   **Figure 5: Schema Overview**
+   **Figure 4: Schema Overview**
    An illustration of the associations between the major schema components.
 
 Each major component is described in detail in the corresponding sub-sections.
 
-FHIR Report Resource Model
+Catalogue
 !!!!!!!!!!!!!!!!!!!!!!!!!!
 
-FHIR provides a DiagnosticReport Resource which is the root resource for representing the contents of returned lab results.
-
-The following diagram illustrates the core Resource hierarchy starting with the DiagnosticReport at the far left and branching through the various sub-resources dedicated to sharing various portions of the lab results. There is a table below that describes each numbered resource to provide additional context.
-
-.. figure:: ../_images/schema-overview.png
-   :align: left
-
-**Figure 2:** eMERGE Report FHIR Resource Map
-
-**Resource Mapping Table**
+**Artifact Catalogue**
 
 .. list-table::
    :class: my-wrap
@@ -53,8 +45,7 @@ The following diagram illustrates the core Resource hierarchy starting with the 
 
 
 .. toctree::
-   :caption: Schema Components
-   :maxdepth: 2
+   :hidden:
 
    diagnostic_report
    patient
