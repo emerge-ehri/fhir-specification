@@ -14,7 +14,6 @@ The eMERGEseq platform project only focuses on the delivery of final reports fro
 the lab to the provider. These unsolicited results are returned to the providers
 within this specified DiagnosticReport resource.
 
-E
 
 Content
 ^^^^^^^

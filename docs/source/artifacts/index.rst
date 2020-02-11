@@ -22,7 +22,7 @@ Each major component is described in detail in the corresponding sub-sections.
 Catalogue
 !!!!!!!!!!!!!!!!!!!!!!!!!!
 
-.. todo:: <add a description on how to read the detailed artficat pages and embedded tables.>
+.. todo:: <add a description on how to read the detailed artifact pages and embedded tables.>
 
 .. list-table::
    :class: my-wrap
@@ -50,11 +50,16 @@ Catalogue
    diagnostic_report
    patient
    specimen
-   service_request/index
+   service_request
+   test
+   ordering_provider
    performer_and_results_interpreter
-   diagnostic_gene_panel/index
+   diagnostic_gene_panel
    overall_interpretation
+   inherited_disease_pathogenicity
    gene_coverage
    recommendation
-   variant_and_genotype
-   pgx_gene_panel/index
+   variant
+   genotype
+   pgx_gene_panel
+   med_implication

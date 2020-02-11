@@ -2,22 +2,22 @@ Medication Implication
 ======================
 
 PGx Medication Metabolism
-@@@@@@@@@@@@@@@@@@@@@@@@@
+--------------------------
 
 .. excel-table::
-   :file: ../../_files/emerge-fhir-resources-definitions.xlsx
+   :file: ../_files/emerge-fhir-resources-definitions.xlsx
    :sheet: PgxMedMetabolism
    :overflow: false
    :row_header: false
    :col_header: false
-   :colwidths: [25, 25, 25, 70, 50, 140, 350]
+   :colwidths: [20, 20, 20, 70, 50, 130, 375]
    :selection: A1:G55
 
 PGx Medication Efficacy
-@@@@@@@@@@@@@@@@@@@@@@@
+-----------------------
 
 .. excel-table::
-   :file: ../../_files/emerge-fhir-resources-definitions.xlsx
+   :file: ../_files/emerge-fhir-resources-definitions.xlsx
    :sheet: PgxMedEfficacy
    :overflow: false
    :row_header: false
@@ -26,10 +26,10 @@ PGx Medication Efficacy
    :selection: A1:G50
 
 PGx Medication Transporter
-@@@@@@@@@@@@@@@@@@@@@@@@@@
+----------------------------
 
 .. excel-table::
-   :file: ../../_files/emerge-fhir-resources-definitions.xlsx
+   :file: ../_files/emerge-fhir-resources-definitions.xlsx
    :sheet: PgxMedTransporter
    :overflow: false
    :row_header: false

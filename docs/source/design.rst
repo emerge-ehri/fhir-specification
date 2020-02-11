@@ -1,0 +1,231 @@
+.. _design:
+
+Design
+=======
+
+.. sidebar:: Contents
+
+    * :ref:`rept-examples`
+    * :ref:`rept-struct`
+    * :ref:`fhir-rept-resources`
+
+The eMERGE III electronic return of structured results project is motivated by several key design principles:
+
+1. **All content in narrative report is structurally represented.**
+   All lab produced content from the narrative reports should be captured in structured forms so that it is possible to reconstruct the it.
+2. **Codify concepts when reasonable.**
+   Drugs, diseases, genes, etc... should be codified based on FHIR and IG guidance. eMERGE concepts that extend beyond the FHIR and IG guidance should be codified if possible and within reason.
+3. **Computationally Reliable representation of results**
+    .. todo:: <add a general statement about aiming to achieve computationally useful representations, when possible>
+4. **Reflect the composite nature of results**
+   Structure & codify both diagnostic primary/secondary disease pathogenicity interpretations and pharmacogenomic genotype finding medication implications.
+5. **Representation of assay and case level gene coverage.**
+   Use text based assay definition, gene coverage and methodology description per lab. Include computational gene coverage report artifact if available.
+6. **Attempt to enable Clinical Decision Support**
+   Support for computationally reliable sharing of short sequence variation, genotypes, diplotypes, large deletion/insertion/duplication (deferred CNVs).
+
+
+.. _rept-examples:
+
+Example Reports
+-----------------
+
+The eMERGE reporting process is supported by two separate clinical workflows at the
+corresponding sequencing centers (SCs); The HGSC Lab at Baylor College of Medicine and
+The LMM Lab at Partners Healthcare (in conjunction with Broad Institute).
+
+Below are two example (deidentified) positive reports one from each of the two SCs.
+
+.. figure:: _images/hgsc-report-plain.png
+   :alt: HGSC eMERGE Report
+   :height:  600 px
+   :class: sidebyside
+
+.. figure:: _images/lmm-report-plain.png
+   :alt: LMM eMERGE Report
+   :height:  600 px
+   :class: sidebyside
+
+.. rst-class:: clearsidebyside
+
+**Figure 1:** HGSC & LMM eMERGE Report Examples (click to enlarge)
+
+This section introduces the process used to convert and map these two similar reports into a common HL7 FHIR structure.
+
+.. _rept-struct:
+
+Report Layout & Structure
+--------------------------
+
+The subsections below show figures containing a general report model alongside an
+example report with all of the detailed elements mapped using coloring and numbered call outs.
+Each subsection represents one of the two SC report designs shown in the preceding section.
+This structuring and mapping exercise was thoroughly reviewed and vetted by users at
+each of the two SCs.
+
+HGSC Report Structure
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. todo:: <add a brief description of the common vs different elements from that of LMM>
+
+The HGSC general report layout and detailed mapping to their example report...
+
+
+.. figure:: _images/hgsc-report-layout.png
+   :alt: HGSC eMERGE Report Layout
+   :class: sidebyside
+
+.. figure:: _images/hgsc-report-mapped.png
+   :alt: HGSC eMERGE Example Report Detailed Mapping
+   :height:  600 px
+   :class: sidebyside
+
+.. rst-class:: clearsidebyside
+
+**Figure 2:** HGSC general report layout and detailed mapping (click to enlarge)
+
+
+LMM Report Structure
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. todo:: <add a brief description of the common vs different elements from that of HGSC>
+
+The LMM general report layout and detailed mapping to their example report...
+
+.. figure:: _images/lmm-report-layout.png
+   :alt: LMM eMERGE Report Layout
+   :class: sidebyside
+
+.. figure:: _images/lmm-report-mapped.png
+   :alt: LMM eMERGE Example Report Detailed Mapping
+   :height:  600 px
+   :class: sidebyside
+
+.. rst-class:: clearsidebyside
+
+**Figure 3:** LMM general report layout and detailed mapping (click to enlarge)
+
+.. _fhir-rept-resources:
+
+FHIR Report Resources
+---------------------
+
+.. todo:: Describe the resources within FHIR that are pertinent to the report
+   concepts parsed out of the examples above. This section is meant to be a super
+   high listing and alignment to the set of unique sections in the general layouts above.
+
+.. list-table::
+   :class: my-wrap
+   :header-rows: 1
+   :align: left
+   :widths: auto
+
+   * - No.
+     - Element
+     - FHIR Resource
+     - IG Profile/Extension
+     - Sub Elements
+   * - 1
+     - Report
+     - |diagnosticreport-res|
+     - |genomics-report-prof|
+     - "Summary Interpretation", "Comments,Notes"
+   * - 2
+     - Patient
+     - |patient-res|
+     - none
+     -
+   * - 3
+     - Sample/Specimen
+     - |specimen-res|
+     - |specimen-prof|
+     -
+   * - 4,5
+     - Request / Order
+     - |servicerequest-res|
+     - not used
+     - "Ordering Provider" (|practitionerrole-res|)
+   * - 6
+     - Test Performed
+     - |plandefinition-res|
+     - none
+     - "Test Performed Name", "Test Background"
+   * - 7
+     - Performing Lab
+     - |organization-res|
+     - none
+     -
+   * - 8
+     - Results Interpreter
+     - |practitionerrole-res|
+     - none
+     -
+   * - 9
+     - Diagnostic Gene Panel Results Group
+     - |observation-res|
+     - |grouper-prof|
+     - "Summary Interpretation"
+   * - 10
+     - Identified Variant Genotype
+     - |observation-res|
+     - |variant-prof|
+     -
+   * - 11
+     - Clinical Interpretation
+     - |observation-res|
+     - |inh-dis-path-prof|
+     -
+   * - 12
+     - Overall Interpretation
+     - |observation-res|
+     - |overall-interp-prof|
+     -
+   * - 13
+     - Gene Coverage
+     - |observation-res|
+     - |related-artifact-ext|
+     -
+   * - 14
+     - Recommendations (Proposed Tasks)
+     - |task-res|
+     - |recommended-followup-prof|
+     -
+   * - 15
+     - Report References
+     - |plandefinition-res|, |observation-res|
+     - |related-artifact-ext|
+     -
+   * - 16
+     - PGx Gene Panel Results Group
+     - |observation-res|
+     - |grouper-prof|
+     -
+   * - 17
+     - Medication Implication
+     - |observation-res|
+     - |metab-impl-prof|, |transport-impl-prof|, |efficacy-impl-prof|
+     -
+   * - 18
+     - Identified Variant Genotype/Diplotype
+     - |observation-res|
+     - |genotype-prof|
+     -
+
+
+FHIR Mapping
+----------------
+
+.. todo:: <discuss the process for mapping CG IG profiles and FHIR resources to elements.>
+          <and mention the decision to follow the Genomics Reporting IG vs starting from scratch>
+
+
+Genomics Reporting Guidance from IG
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The eMERGE results FHIR is based on the Diagnostic Report Resource profile and guidance from the |fhir-gr-ig|.
+
+This specification aims to harmonize and leverage the draft work of the HL7 CG WG to both validate and inform its development.
+In cases where there are gaps or requirements that are unclear or unmet, they are raised with the HL7 CG WG and
+custom extensions or profiles are developed to fill the missing needs with the expectation that these issues
+will ultimately be reconcilable as the standard matures.
+
+.. Resources, Profiles, & Extensions

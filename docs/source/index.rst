@@ -42,7 +42,7 @@ This Guide is divided into several pages which are listed at the top of each pag
 
      * Catalogue (classified as core, ig, custom)  (table of resources)
 
-     * (Detailed Artifact Pages)
+     * Custom Extensions (3)
 
 * :ref:`Discussion<discussion>`: ... (identified issues and use cases)
 

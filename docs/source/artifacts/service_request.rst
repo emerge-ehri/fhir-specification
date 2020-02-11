@@ -28,17 +28,10 @@ result but instead a definition of the test itself. It will be consistent across
 cases that share the same testing methodology for a given SC.
 
 .. excel-table::
-   :file: ../../_files/emerge-fhir-resources-definitions.xlsx
+   :file: ../_files/emerge-fhir-resources-definitions.xlsx
    :sheet: ServiceRequest
    :overflow: false
    :row_header: false
    :col_header: false
    :colwidths: [20, 20, 20, 70, 50, 130, 375]
    :selection: A1:G49
-
-.. toctree::
-   :caption: Service Request Components
-   :maxdepth: 1
-
-   ordering_provider
-   test
