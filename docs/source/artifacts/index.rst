@@ -22,7 +22,7 @@ Each major component is described in detail in the corresponding sub-sections.
 Catalogue
 !!!!!!!!!!!!!!!!!!!!!!!!!!
 
-**Artifact Catalogue**
+.. todo:: <add a description on how to read the detailed artficat pages and embedded tables.>
 
 .. list-table::
    :class: my-wrap
@@ -40,7 +40,7 @@ Catalogue
      - :ref:`Patient <patient>`
      - The patient ...
    * - ?
-     - ToDo
+     - To Do
      - The ...
 
 

@@ -20,6 +20,8 @@ Introduction
 This is the eMERGE Phase III specification detailing the design for generating structured genetic test
 lab results using HL7 FHIR Genomics Reporting Implementation Guidelines.
 
+Below you can find background information on :ref:`emerge3`, :ref:`emerge-pilot`, and :ref:`spec-aims`.
+
 .. _howtoread:
 
 How to read this Guide
