@@ -4,4 +4,4 @@ Supplemental Materials
 ======================
 
 
-.. todo:: <reference to other materials here, presentations, publications, external resource github links, docs, xml>
+<reference to other materials here, presentations, publications, external resource github links, docs, xml>

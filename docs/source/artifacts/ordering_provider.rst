@@ -1,7 +1,7 @@
 Ordering Provider
 =================
 
-.. todo:: Describe use of PractitionerRole as ServiceRequest.requester (ordering physician) and interpreter (geneticist). This is an association of the individual provider and the healthcare institution under which they perform their respective responsibilities.
+TODO Describe use of PractitionerRole as ServiceRequest.requester (ordering physician) and interpreter (geneticist). This is an association of the individual provider and the healthcare institution under which they perform their respective responsibilities.
 
 .. excel-table::
    :file: ../_files/emerge-fhir-resources-definitions.xlsx

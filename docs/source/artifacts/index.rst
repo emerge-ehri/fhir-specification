@@ -9,7 +9,7 @@ The following diagram illustrates the core Resource hierarchy starting with the 
 branching through the various sub-resources dedicated to sharing various portions of the lab results. There is a table
 below that describes each numbered resource to provide additional context.
 
-.. todo:: <rewrite based on selection of artifacts from CG IG perspective>
+<rewrite based on selection of artifacts from CG IG perspective>
 
 .. figure:: ../_images/schema-overview.png
    :align: left
@@ -17,36 +17,14 @@ below that describes each numbered resource to provide additional context.
    **Figure 4: Schema Overview**
    An illustration of the associations between the major schema components.
 
-Each major component is described in detail in the corresponding sub-sections.
-
-Catalogue
-!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-.. todo:: <add a description on how to read the detailed artifact pages and embedded tables.>
-
-.. list-table::
-   :class: my-wrap
-   :header-rows: 1
-   :align: left
-   :widths: auto
-
-   * - No.
-     - Resource (Section)
-     - Description
-   * - 1
-     - :ref:`Diagnostic Report <diagnostic-report>`
-     - The diagnostic report ...
-   * - 2
-     - :ref:`Patient <patient>`
-     - The patient ...
-   * - ?
-     - To Do
-     - The ...
-
+The next section offers a top-level catalogue of all the resources, profiles, extensions
+implemented in this specification.
+The subsequence pages describe each component in detail.
 
 .. toctree::
    :hidden:
 
+   catalogue
    diagnostic_report
    patient
    specimen

@@ -5,21 +5,21 @@ Discussion
 
 Identified Issues with IG/FHIR
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-.. todo:: create a high level description of the contents and sub sections for each limitation addressed during the creation of this specification.
+TODO create a high level description of the contents and sub sections for each limitation addressed during the creation of this specification.
 
 Open Issues
 """"""""""""
-.. todo:: add open issues still being resolved
+TODO add open issues still being resolved
 
 
 Resolved Items
 """"""""""""""
-.. todo:: add resolved issues and their resolution
+TODO add resolved issues and their resolution
 
 
 Test Result Use Cases
 ^^^^^^^^^^^^^^^^^^^^^^
-.. todo:: Consider adding this to the discussion spec at a high level. No need for a detailed writeups.
+TODO Consider adding this to the discussion spec at a high level. No need for a detailed writeups.
 
 Below are the various use cases that this eMERGE specification supports.
 
