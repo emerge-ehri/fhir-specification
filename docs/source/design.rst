@@ -16,7 +16,7 @@ The eMERGE III electronic return of structured results project is motivated by s
 2. **Codify concepts when reasonable.**
    Drugs, diseases, genes, etc... should be codified based on FHIR and IG guidance. eMERGE concepts that extend beyond the FHIR and IG guidance should be codified if possible and within reason.
 3. **Computationally Reliable representation of results**
-    .. todo:: <add a general statement about aiming to achieve computationally useful representations, when possible>
+   TODO <add a general statement about aiming to achieve computationally useful representations, when possible>
 4. **Reflect the composite nature of results**
    Structure & codify both diagnostic primary/secondary disease pathogenicity interpretations and pharmacogenomic genotype finding medication implications.
 5. **Representation of assay and case level gene coverage.**
@@ -66,7 +66,7 @@ each of the two SCs.
 HGSC Report Structure
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: <add a brief description of the common vs different elements from that of LMM>
+TODO <add a brief description of the common vs different elements from that of LMM>
 
 The HGSC general report layout and detailed mapping to their example report...
 
@@ -88,7 +88,7 @@ The HGSC general report layout and detailed mapping to their example report...
 LMM Report Structure
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: <add a brief description of the common vs different elements from that of HGSC>
+TODO <add a brief description of the common vs different elements from that of HGSC>
 
 The LMM general report layout and detailed mapping to their example report...
 
@@ -110,7 +110,7 @@ The LMM general report layout and detailed mapping to their example report...
 FHIR Report Resources
 ---------------------
 
-.. todo:: Describe the resources within FHIR that are pertinent to the report
+TODO Describe the resources within FHIR that are pertinent to the report
    concepts parsed out of the examples above. This section is meant to be a super
    high listing and alignment to the set of unique sections in the general layouts above.
 
@@ -215,7 +215,7 @@ FHIR Report Resources
 FHIR Mapping
 ----------------
 
-.. todo:: <discuss the process for mapping CG IG profiles and FHIR resources to elements.>
+TODO <discuss the process for mapping CG IG profiles and FHIR resources to elements.>
           <and mention the decision to follow the Genomics Reporting IG vs starting from scratch>
 
 
