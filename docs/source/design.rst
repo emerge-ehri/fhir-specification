@@ -3,6 +3,9 @@
 Design
 =======
 
+.. Warning::
+    This document is a work in progress and is not ready for production use.
+
 .. sidebar:: Contents
 
     * :ref:`rept-examples`
@@ -221,7 +224,7 @@ TODO <discuss the process for mapping CG IG profiles and FHIR resources to eleme
 
 Genomics Reporting Guidance from IG
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-The eMERGE results FHIR is based on the Diagnostic Report Resource profile and guidance from the |fhir-gr-ig|.
+The eMERGE results FHIR is based on the Genomics Reporting profile and guidance from the |fhir-gr-ig|.
 
 This specification aims to harmonize and leverage the draft work of the HL7 CG WG to both validate and inform its development.
 In cases where there are gaps or requirements that are unclear or unmet, they are raised with the HL7 CG WG and

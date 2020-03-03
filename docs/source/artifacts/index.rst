@@ -3,6 +3,9 @@
 Artifacts
 =========
 
+.. Warning::
+    This document is a work in progress and is not ready for production use.
+
 FHIR provides a DiagnosticReport Resource which is the root resource for representing the contents of returned lab results.
 
 The following diagram illustrates the core Resource hierarchy starting with the DiagnosticReport at the far left and

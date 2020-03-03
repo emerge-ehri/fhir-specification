@@ -3,6 +3,9 @@
 Discussion
 ==========
 
+.. Warning::
+    This document is a work in progress and is not ready for production use.
+
 Identified Issues with IG/FHIR
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 TODO create a high level description of the contents and sub sections for each limitation addressed during the creation of this specification.
