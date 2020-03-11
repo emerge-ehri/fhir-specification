@@ -110,12 +110,37 @@ The LMM general report layout and detailed mapping to their example report...
 
 .. _fhir-rept-resources:
 
-FHIR Report Resources
----------------------
+FHIR Report Schema & Resources
+------------------------------
 
-TODO Describe the resources within FHIR that are pertinent to the report
-   concepts parsed out of the examples above. This section is meant to be a super
-   high listing and alignment to the set of unique sections in the general layouts above.
+
+.. figure:: _images/schema-overview.png
+   :align: left
+
+   **Figure 4: FHIR Diagnostic Report Schema Alignment**
+   An illustration of the associations between the major report components and FHIR Diagnostic Report Schema.
+
+FHIR Mapping
+----------------
+
+TODO <discuss the process for mapping CG IG profiles and FHIR resources to elements.>
+          <and mention the decision to follow the Genomics Reporting IG vs starting from scratch>
+
+
+Genomics Reporting Guidance from IG
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The eMERGE results FHIR is based on the Genomics Reporting profile and guidance from the |fhir-gr-ig|.
+
+This specification aims to harmonize and leverage the draft work of the HL7 CG WG to both validate and inform its development.
+In cases where there are gaps or requirements that are unclear or unmet, they are raised with the HL7 CG WG and
+custom extensions or profiles are developed to fill the missing needs with the expectation that these issues
+will ultimately be reconcilable as the standard matures.
+
+The table below lists the eMERGE report components and their preferred alignment
+based on the HL7 CG Genomics Reporting IG specification. For components that do not
+align cleanly alternative solutions are provided including but not limited to the
+introduction of custom extensions. The following section on Artifacts has a comprehensive
+catalogue of every resource, profile and extension used by this eMERGE specification.
 
 .. list-table::
    :class: my-wrap
@@ -213,22 +238,3 @@ TODO Describe the resources within FHIR that are pertinent to the report
      - |observation-res|
      - |genotype-prof|
      -
-
-
-FHIR Mapping
-----------------
-
-TODO <discuss the process for mapping CG IG profiles and FHIR resources to elements.>
-          <and mention the decision to follow the Genomics Reporting IG vs starting from scratch>
-
-
-Genomics Reporting Guidance from IG
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-The eMERGE results FHIR is based on the Genomics Reporting profile and guidance from the |fhir-gr-ig|.
-
-This specification aims to harmonize and leverage the draft work of the HL7 CG WG to both validate and inform its development.
-In cases where there are gaps or requirements that are unclear or unmet, they are raised with the HL7 CG WG and
-custom extensions or profiles are developed to fill the missing needs with the expectation that these issues
-will ultimately be reconcilable as the standard matures.
-
-.. Resources, Profiles, & Extensions

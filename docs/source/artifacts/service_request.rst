@@ -1,8 +1,18 @@
+.. _service_request:
+
 Service Request
 ===============
 
+.. sidebar:: Contents
+
+    Type: Profile
+    Source: |fhir-gr-ig-short|
+    Specification: |service-request-prof|
+
 The service request contains the information about the requested and performed services.
 
+Scope
+^^^^^
 The service request contains the vital elements of the *order* in addition to updates made
 by the performing organization (or fulfiller). It is common for the original order or
 requisition to be modified or updated by the fulfiller in coordination with ordering provider.
@@ -27,6 +37,11 @@ Since this information is not case specific it is not considered to be an observ
 result but instead a definition of the test itself. It will be consistent across all
 cases that share the same testing methodology for a given SC.
 
+Content
+^^^^^^^
+TODO content
+
+
 .. excel-table::
    :file: ../_files/emerge-fhir-resources-definitions.xlsx
    :sheet: ServiceRequest
@@ -34,4 +49,4 @@ cases that share the same testing methodology for a given SC.
    :row_header: false
    :col_header: false
    :colwidths: [20, 20, 20, 70, 50, 130, 375]
-   :selection: A1:G49
+   :selection: A1:G45

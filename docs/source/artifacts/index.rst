@@ -14,10 +14,10 @@ below that describes each numbered resource to provide additional context.
 
 <rewrite based on selection of artifacts from CG IG perspective>
 
-.. figure:: ../_images/schema-overview.png
+.. figure:: ../_images/artifact-overview.png
    :align: left
 
-   **Figure 4: Schema Overview**
+   **Figure 5: Artifact Catalogue Map**
    An illustration of the associations between the major schema components.
 
 The next section offers a top-level catalogue of all the resources, profiles, extensions
@@ -28,19 +28,20 @@ The subsequence pages describe each component in detail.
    :hidden:
 
    catalogue
-   diagnostic_report
+   genomics_report
    patient
    specimen
    service_request
-   test
-   ordering_provider
-   performer_and_results_interpreter
-   diagnostic_gene_panel
+   plan_definition
+   practitioner_role
+   practitioner
+   organization
+   recommended_followup
+   report_comment
    overall_interpretation
+   grouper_profile
    inherited_disease_pathogenicity
-   gene_coverage
-   recommendation
+   med_implication
    variant
    genotype
-   pgx_gene_panel
-   med_implication
+   extensions

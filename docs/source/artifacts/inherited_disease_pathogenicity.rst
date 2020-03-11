@@ -1,19 +1,29 @@
-.. _inh-dis-path:
+.. _inh_dis_path:
 
 Inherited Disease Pathogenicity
 ===============================
 
-.. sidebar:: Profile
+.. sidebar:: Contents
 
-   **Profile**: |inh-dis-path-prof|
-   **Resource**: |observation-res|
+    Type: Profile
+    Source: |fhir-gr-ig-short|
+    Specification: |inh-dis-path-prof|
 
+TODO description
+
+Scope
+^^^^^
+TODO scope
+
+Content
+^^^^^^^
+TODO content
 
 .. excel-table::
    :file: ../_files/emerge-fhir-resources-definitions.xlsx
-   :sheet: InhDisPath
+   :sheet: InheritedDiseasePathogenicity
    :overflow: false
    :row_header: false
    :col_header: false
-   :colwidths: [25, 25, 25, 70, 50, 140, 350]
+   :colwidths: [20, 20, 20, 70, 50, 130, 375]
    :selection: A1:G63

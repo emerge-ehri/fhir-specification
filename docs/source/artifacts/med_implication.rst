@@ -1,38 +1,32 @@
+.. _medication_implication:
+
 Medication Implication
 ======================
+.. sidebar:: Contents
 
-PGx Medication Metabolism
---------------------------
+    Type: Profile
+    Source: |fhir-gr-ig-short|
+    Specifications: |metab-impl-prof|
+    |efficacy-impl-prof|
+    |transport-impl-prof|
+
+TODO description
+
+Reference the three subtypes included here (metabolism, efficacy, transporter)
+
+Scope
+^^^^^
+TODO scope
+
+Content
+^^^^^^^
+TODO content
 
 .. excel-table::
    :file: ../_files/emerge-fhir-resources-definitions.xlsx
-   :sheet: PgxMedMetabolism
+   :sheet: MedicationImplication
    :overflow: false
    :row_header: false
    :col_header: false
    :colwidths: [20, 20, 20, 70, 50, 130, 375]
-   :selection: A1:G55
-
-PGx Medication Efficacy
------------------------
-
-.. excel-table::
-   :file: ../_files/emerge-fhir-resources-definitions.xlsx
-   :sheet: PgxMedEfficacy
-   :overflow: false
-   :row_header: false
-   :col_header: false
-   :colwidths: [25, 25, 25, 70, 50, 140, 350]
-   :selection: A1:G50
-
-PGx Medication Transporter
-----------------------------
-
-.. excel-table::
-   :file: ../_files/emerge-fhir-resources-definitions.xlsx
-   :sheet: PgxMedTransporter
-   :overflow: false
-   :row_header: false
-   :col_header: false
-   :colwidths: [25, 25, 25, 70, 50, 140, 350]
-   :selection: A1:G50
+   :selection: A1:G45
