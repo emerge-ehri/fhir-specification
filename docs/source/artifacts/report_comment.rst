@@ -3,11 +3,10 @@
 Report Comment
 ==============
 
-.. sidebar:: Contents
+.. sidebar:: Artifact
 
-    Type: Resource
-    Source: |fhir-gr-ig-short|
-    Specification: |observation-res|
+    * Type: Resource
+    * Spec: |observation-res|
 
 TODO note that this is a standard Observation resource with a specific LOINC code
 -- this could have been an emerge custom profile, but not necessary (i think)

@@ -3,11 +3,10 @@
 Inherited Disease Pathogenicity
 ===============================
 
-.. sidebar:: Contents
+.. sidebar:: Artifact
 
-    Type: Profile
-    Source: |fhir-gr-ig-short|
-    Specification: |inh-dis-path-prof|
+    * Type: Profile
+    * Spec: |inh-dis-path-prof|
 
 TODO description
 

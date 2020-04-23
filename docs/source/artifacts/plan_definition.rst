@@ -3,11 +3,10 @@
 (Assay) PlanDefinition
 ======================
 
-.. sidebar:: Contents
+.. sidebar:: Artifact
 
-    Type: Resource
-    Source: |fhir-spec|
-    Specification: |plandefinition-res|
+    * Type: Resource
+    * Spec: |plandefinition-res|
 
 TODO description
 

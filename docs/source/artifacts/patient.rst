@@ -3,11 +3,10 @@
 Patient
 =======
 
-.. sidebar:: Contents
+.. sidebar:: Artifact
 
-    Type: Resource
-    Source: |fhir-spec|
-    Specification: |patient-res|
+    * Type: Resource
+    * Spec: |patient-res|
 
 TODO description
 

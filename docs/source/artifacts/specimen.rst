@@ -3,11 +3,10 @@
 Specimen
 ========
 
-.. sidebar:: Contents
+.. sidebar:: Artifact
 
-    Type: Profile
-    Source: |fhir-gr-ig-short|
-    Specification: |specimen-prof|
+    * Type: Profile
+    * Spec: |specimen-prof|
 
 TODO description
 

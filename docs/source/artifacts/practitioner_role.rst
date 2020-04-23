@@ -3,11 +3,10 @@
 PractitionerRole
 =================
 
-.. sidebar:: Contents
+.. sidebar:: Artifact
 
     Type: Resource
-    Source: |fhir-gr-ig-short|
-    Specification: |practitionerrole-res|
+    Spec: |practitionerrole-res|
 
 TODO Describe use of PractitionerRole as ServiceRequest.requester (ordering physician) and interpreter (geneticist). This is an association of the individual provider and the healthcare institution under which they perform their respective responsibilities.
 

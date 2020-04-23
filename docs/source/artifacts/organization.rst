@@ -3,11 +3,10 @@
 Organization
 =============
 
-.. sidebar:: Contents
+.. sidebar:: Artifact
 
-    Type: Resource
-    Source: |fhir-gr-ig-short|
-    Specification: |organization-res|
+    * Type: Resource
+    * Spec: |organization-res|
 
 TODO description
 

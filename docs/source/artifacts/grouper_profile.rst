@@ -1,11 +1,10 @@
 Grouper Profile(s)
 ==================
 
-.. sidebar:: Contents
+.. sidebar:: Artifact
 
-    Type: Profile
-    Source: |fhir-gr-ig-short|
-    Specification: |grouper-prof|
+    * Type: Profile
+    * Spec: |grouper-prof|
 
 TODO description
 

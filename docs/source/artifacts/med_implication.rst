@@ -2,13 +2,13 @@
 
 Medication Implication
 ======================
-.. sidebar:: Contents
+.. sidebar:: Artifact
 
-    Type: Profile
-    Source: |fhir-gr-ig-short|
-    Specifications: |metab-impl-prof|
-    |efficacy-impl-prof|
-    |transport-impl-prof|
+    * Type: Profile
+    * Spec:
+        * |metab-impl-prof|
+        * |efficacy-impl-prof|
+        * |transport-impl-prof|
 
 TODO description
 

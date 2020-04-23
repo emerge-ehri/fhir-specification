@@ -3,11 +3,10 @@
 Genotype
 ==================
 
-.. sidebar:: Contents
+.. sidebar:: Artifact
 
-    Type: Profile
-    Source: |fhir-gr-ig-short|
-    Specification: |genotype-prof|
+    * Type: Profile
+    * Spec: |genotype-prof|
 
 TODO description
 

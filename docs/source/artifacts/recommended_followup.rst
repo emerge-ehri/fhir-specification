@@ -3,11 +3,10 @@
 Recommended Followup
 ====================
 
-.. sidebar:: Contents
+.. sidebar:: Artifact
 
-    Type: Profile
-    Source: |fhir-gr-ig-short|
-    Specification: |recommended-followup-prof|
+    * Type: Profile
+    * Spec: |recommended-followup-prof|
 
 TODO description
 

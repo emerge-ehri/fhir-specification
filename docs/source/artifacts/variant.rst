@@ -3,11 +3,10 @@
 Variant
 =========
 
-.. sidebar:: Contents
+.. sidebar:: Artifact
 
-    Type: Profile
-    Source: |fhir-gr-ig-short|
-    Specification: |variant-prof|
+    * Type: Profile
+    * Spec: |variant-prof|
 
 TODO description
 

@@ -3,11 +3,10 @@
 Overall Interpretation
 ======================
 
-.. sidebar:: Contents
+.. sidebar:: Artifact
 
-    Type: Profile
-    Source: |fhir-gr-ig-short|
-    Specification: |overall-interp-prof|
+    * Type: Profile
+    * Spec: |overall-interp-prof|
 
 TODO description
 

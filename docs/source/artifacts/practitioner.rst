@@ -3,13 +3,12 @@
 Practitioner
 ============
 
-.. sidebar:: Contents
+.. sidebar:: Artifact
 
-    Type: Resource
-    Source: |fhir-gr-ig-short|
-    Specification: |practitioner-res|
+    * Type: Resource
+    * Spec: |practitioner-res|
 
-TODO reference practitionerRole and Orgnization and discussion on the three types of roles (performer, requester, interpreter).
+TODO reference practitionerRole and Organization and discussion on the three types of roles (performer, requester, interpreter).
 
 Scope
 ^^^^^

@@ -3,11 +3,10 @@
 Service Request
 ===============
 
-.. sidebar:: Contents
+.. sidebar:: Artifact
 
-    Type: Profile
-    Source: |fhir-gr-ig-short|
-    Specification: |service-request-prof|
+    * Type: Profile
+    * Spec: |service-request-prof|
 
 The service request contains the information about the requested and performed services.
 

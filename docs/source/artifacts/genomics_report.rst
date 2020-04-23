@@ -2,12 +2,7 @@
 
 Genomics Report
 ===============
-
-.. sidebar:: Contents
-
-    Type: Profile
-    Source: |fhir-gr-ig-short|
-    Specification: |genomics-report-prof|
+*profile* `based on <http://build.fhir.org/ig/HL7/genomics-reporting/genomics-report.html>`__
 
 The final findings and interpretation of the eMERGEseq Platform genetic test performed
 on patients and specimens derived from these. The report includes textual and
@@ -32,9 +27,12 @@ This structure is derived from the CG Genomics Reporting IG artifact `Genomics R
    :overflow: false
    :row_header: false
    :col_header: false
-   :colwidths: [20, 20, 20, 70, 50, 130, 375]
+   :colwidths: [20, 20, 20, 80, 45, 125, 375]
    :selection: A1:G59
 
 References
 ^^^^^^^^^^
-links to
+
+Profiles
+Extensions
+Test Disclaimer
