@@ -19,12 +19,19 @@ Category: Major
 Description: The eMERGE report includes both gene panel and PGx results in one report. Though still bundled together, we plan to separate the gene panel and PGx results. The result will be a composite report that includes separate interpretations and results for the gene panel and PGx respectively.
 Resolution: Use the Grouper Profile to group all related gene panel & PGx result resources, respectively. This will enable consuming EHR systems to utilize the panel & PGx results as disparate components.
 
-#2 Inclusion of Test Info, Methodology, References
-Links: Jira(https://jira.hl7.org/browse/FHIR-19827?filter=-2)  Zulip (https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Report.20Sections)
-Group: Clinical Genomics Workgroup
-Category: Major
-Description: Lab developed tests (LDTs) are standard practice in clinical genetic testing. As such it is useful and needed (for eMERGE) to share the assay title, code, description, methodology and references (citations) that appear in the report.
-Resolution: The recommendation to use the PlanDefinition resource to represent the eMERGE test info and associated elements was satisfactory for the eMERGE use case. More investigation for broader application across the domain could be useful.
+**#2 Inclusion of Test Information, Methodology and References**
+
+**HL7 Workgroup:** Clinical Genomics 
+
+**Category:** Major 
+
+**Description:** Lab developed tests (LDTs) are standard practice in clinical genetic testing. As such it is useful and needed (for eMERGE) to share the assay title, code, description, methodology and references (citations) that appear in the report. Resolution: The recommendation to use the PlanDefinition resource to represent the eMERGE test info and associated elements was satisfactory for the eMERGE use case. More investigation for broader application across the domain could be useful.
+
+**Extended Documentation:**
+
+`Jira ticket filed <https://jira.hl7.org/browse/FHIR-19827?filter=-2>`_
+
+`Discussion on Zulip with Clinical Genomics WG  <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Report.20Sections>`_
 
 #3 Inclusion of Report Comments
 Links: Jira(https://jira.hl7.org/browse/FHIR-22830?filter=-2)  Zulip (https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Report.20Comments)
