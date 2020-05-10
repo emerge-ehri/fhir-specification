@@ -10,7 +10,7 @@ This section includes a review of the issues that required resolution as well as
 These issues and topics range in effort and complexity which are qualified as major or minor.
 
 Issues & Resolutions
-During the course of implementing the eMERGE Results using the |fhir-gr-ig-short| a number of issues were uncovered, discussed and resolved. The noteworthy issues are summarized below along with their outcome.
+During the course of implementing the eMERGE Results using the |fhir-gr-ig-short| a number of issues were uncovered, discussed and resolved. Noteworthy issues are summarized below along with their outcome. Also included is extended documentation related to the collaboration and tracking of these items with the associated HL7 FHIR Working Groups.
 
 #1 Group composite sections and associated results in one report
 Links: Jira(https://jira.hl7.org/browse/FHIR-19828?filter=-2)  Zulip (https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/FHIR.20representation.20of.20a.20genetics.20test.20with.20multiple.20test.2E.2E.2E)
