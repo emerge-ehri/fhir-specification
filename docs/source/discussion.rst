@@ -27,11 +27,14 @@ Resolution: Use the Grouper Profile to group all related gene panel & PGx result
 
 **Description:** Lab developed tests (LDTs) are standard practice in clinical genetic testing. As such it is useful and needed (for eMERGE) to share the assay title, code, description, methodology and references (citations) that appear in the report. Resolution: The recommendation to use the PlanDefinition resource to represent the eMERGE test info and associated elements was satisfactory for the eMERGE use case. More investigation for broader application across the domain could be useful.
 
+**Resolution:** The recommendation to use the PlanDefinition(https://www.hl7.org/fhir/plandefinition.html) resource to represent the eMERGE test info and associated elements was satisfactory for the eMERGE use case. More investigation for broader application across the domain could be useful.
+
 **Extended Documentation:**
 
 `Jira ticket filed <https://jira.hl7.org/browse/FHIR-19827?filter=-2>`_
 
 `Discussion on Zulip with Clinical Genomics WG  <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Report.20Sections>`_
+
 
 #3 Inclusion of Report Comments
 Links: Jira(https://jira.hl7.org/browse/FHIR-22830?filter=-2)  Zulip (https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Report.20Comments)
