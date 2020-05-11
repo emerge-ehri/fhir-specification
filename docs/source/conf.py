@@ -58,7 +58,7 @@ rst_epilog = open(rst_epilog_fn).read().format(release=release)
 # ones.
 extensions = [
     'sphinx.ext.todo',
-    'sphinxcontrib.excel_table',
+    'sphinxcontrib.excel_table_plus',
     'sphinxcontrib.imagesvg',
     'sphinxcontrib.images'
 ]

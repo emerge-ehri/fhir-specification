@@ -27,11 +27,12 @@ TODO content
 
 .. excel-table::
    :file: ../_files/emerge-fhir-resources-definitions.xlsx
+   :transforms: ../_files/transformation-mappings.json
    :sheet: GrouperDx
    :overflow: false
    :row_header: false
    :col_header: false
-   :colwidths: [20, 20, 20, 70, 50, 130, 375]
+   :colwidths: [20, 20, 20, 100, 45, 125, 355]
    :selection: A1:G29
 
 .. _grouper_pgx:
@@ -51,9 +52,10 @@ TODO content
 
 .. excel-table::
    :file: ../_files/emerge-fhir-resources-definitions.xlsx
+   :transforms: ../_files/transformation-mappings.json
    :sheet: GrouperPgx
    :overflow: false
    :row_header: false
    :col_header: false
-   :colwidths: [20, 20, 20, 70, 50, 130, 375]
+   :colwidths: [20, 20, 20, 100, 45, 125, 355]
    :selection: A1:G28

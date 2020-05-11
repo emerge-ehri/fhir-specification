@@ -23,11 +23,12 @@ This structure is derived from the CG Genomics Reporting IG artifact `Genomics R
 
 .. excel-table::
    :file: ../_files/emerge-fhir-resources-definitions.xlsx
+   :transforms: ../_files/transformation-mappings.json
    :sheet: GenomicsReport
    :overflow: false
    :row_header: false
    :col_header: false
-   :colwidths: [20, 20, 20, 80, 45, 125, 375]
+   :colwidths: [20, 20, 20, 100, 45, 125, 355]
    :selection: A1:G59
 
 References

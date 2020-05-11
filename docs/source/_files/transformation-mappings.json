@@ -1,0 +1,55 @@
+{
+    "transforms" : [{
+            "type" : "substitution",
+            "rows" : "1",
+            "matcher" : "^(?P<label>Name|Card.|Type|Description & Constraints)$",
+            "replacer" : "<b>\\1</b>"
+        },{
+            "type" : "substitution",
+            "cols" : "7",
+            "matcher" : "(?P<label>Required|Ext#\\d): ",
+            "replacer" : "<b>\\1:</b> "
+        },{
+            "type" : "substitution",
+            "cols" : "7",
+            "matcher" : "(?P<label>Fixed|Binding): (?P<text>[^\\(]*)(?P<extratext>(\\n\\(.*)*)$",
+            "replacer" : "<b>\\1:</b> <i>\\2</i>\\3"
+        },{
+            "type" : "decoder",
+            "cols" : "6",
+            "matcher"  : "(?P<label>canonical|Reference|Extension) \\(\\W*(?P<linkname>\\b[\\w ]+\\b)\\W*\\)",
+            "replacer" : "{group.label} (<a href=\\'{decoder.href}\\'>{group.linkname}</a>)",
+            "group_decoders" : [
+                { "group":"linkname",
+                  "decoders" : {
+                        "Recommended Action" : {"href":"./extension.html#recommended-action"},
+                        "Related Artifact" : {"href":"./extension.html#related-artifact"},
+                        "Test Disclaimer" : {"href":"./extension.html#test-disclaimer"},
+                        "birthsex" : {"href":"./extension.html#birth-sex"},
+                        "ethnicity" : {"href":"./extension.html#ethnicity"},
+                        "race" : {"href":"./extension.html#race"},
+                        "age" : {"href":"./extension.html#age"},
+                        "Summary Interpretation Text" : {"href":"./extension.html#summary-interpretation-text"},
+                        "Recommended Followup" : {"href":"./recommended_followup.html"},
+                        "Service Request" : {"href":"./service_request.html"},
+                        "Patient" : {"href":"./patient.html"},
+                        "Observation" : {"href":"./observation.html"},
+                        "Specimen" : {"href":"./specimen.html"},
+                        "Organization" : {"href":"./organization.html"},
+                        "Practitioner Role" : {"href":"./practitioner_role.html"},
+                        "Practitioner" : {"href":"./practitioner.html"},
+                        "Overall Interpretation" : {"href":"./overall_interpretation.html"},
+                        "Diagnostic Gene Panel Grouper" : {"href":"./grouper_profile.html#diagnostic-gene-panel-grouper"},
+                        "Pgx Gene Panel Grouper" : {"href":"./grouper_profile.html#pgx-gene-panel-grouper"},
+                        "Medication Metabolism" : {"href":"./medication_implication.html"},
+                        "Medication Efficacy" : {"href":"./medication_implication.html"},
+                        "Medication Transporter" : {"href":"./medication_implication.html"},
+                        "Genotype" : {"href":"./genotype.html"},
+                        "Variant" : {"href":"./variant.html"},
+                        "Report Comment" : {"href":"./report_comment.html"}
+                    }
+                }
+            ]
+        }
+    ]
+}

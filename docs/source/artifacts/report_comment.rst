@@ -21,6 +21,7 @@ TODO content
 
 .. excel-table::
    :file: ../_files/emerge-fhir-resources-definitions.xlsx
+   :transforms: ../_files/transformation-mappings.json
    :sheet: ReportComment
    :overflow: false
    :row_header: false
