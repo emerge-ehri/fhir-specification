@@ -23,10 +23,10 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 **Resolution:** Use the `Grouper <http://hl7.org/fhir/uv/genomics-reporting/grouper.html>`_ Profile to group all related gene panel & PGx result resources, respectively. This will enable consuming EHR systems to utilize the panel & PGx results as disparate components.
 
 **Extended Documentation:**
-`Jira ticket filed <https://jira.hl7.org/browse/FHIR-19828?filter=-2>`_
+`Jira ticket  <https://jira.hl7.org/browse/FHIR-19828?filter=-2>`_
 `Discussion on Zulip with Clinical Genomics WG  <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/FHIR.20representation.20of.20a.20genetics.20test.20with.20multiple.20test.2E.2E.2E>`_
 
-
+-----
 
 **#2 Inclusion of Test Information, Methodology and References**
 
@@ -40,7 +40,7 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 
 **Extended Documentation:**
 
-`Jira ticket filed <https://jira.hl7.org/browse/FHIR-19827?filter=-2>`_
+`Jira ticket <https://jira.hl7.org/browse/FHIR-19827?filter=-2>`_
 
 `Discussion on Zulip with Clinical Genomics WG  <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Report.20Sections>`_
 
