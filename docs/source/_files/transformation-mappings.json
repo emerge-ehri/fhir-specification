@@ -41,12 +41,13 @@
                         "Overall Interpretation" : {"href":"./overall_interpretation.html"},
                         "Diagnostic Gene Panel Grouper" : {"href":"./grouper_profile.html#diagnostic-gene-panel-grouper"},
                         "Pgx Gene Panel Grouper" : {"href":"./grouper_profile.html#pgx-gene-panel-grouper"},
-                        "Medication Metabolism" : {"href":"./medication_implication.html"},
-                        "Medication Efficacy" : {"href":"./medication_implication.html"},
-                        "Medication Transporter" : {"href":"./medication_implication.html"},
+                        "Medication Metabolism" : {"href":"./medication_implication.html#medication-metabolism"},
+                        "Medication Efficacy" : {"href":"./medication_implication.html#medication-efficacy"},
+                        "Medication Transporter" : {"href":"./medication_implication.html#medication-transporter"},
                         "Genotype" : {"href":"./genotype.html"},
                         "Variant" : {"href":"./variant.html"},
-                        "Report Comment" : {"href":"./report_comment.html"}
+                        "Report Comment" : {"href":"./report_comment.html"},
+                        "Plan Definition" : {"href":"./plan_definition.html"}
                     }
                 }
             ]
