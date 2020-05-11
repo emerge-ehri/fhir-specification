@@ -12,12 +12,24 @@ These issues and topics range in effort and complexity which are qualified as ma
 Issues & Resolutions
 During the course of implementing the eMERGE Results using the |fhir-gr-ig-short| a number of issues were uncovered, discussed and resolved. Noteworthy issues are summarized below along with their outcome. Also included is extended documentation related to the collaboration and tracking of these items with the associated HL7 FHIR Working Groups.
 
-#1 Group composite sections and associated results in one report
-Links: Jira(https://jira.hl7.org/browse/FHIR-19828?filter=-2)  Zulip (https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/FHIR.20representation.20of.20a.20genetics.20test.20with.20multiple.20test.2E.2E.2E)
-Group: Clinical Genomics Workgroup
-Category: Major
-Description: The eMERGE report includes both gene panel and PGx results in one report. Though still bundled together, we plan to separate the gene panel and PGx results. The result will be a composite report that includes separate interpretations and results for the gene panel and PGx respectively.
-Resolution: Use the Grouper Profile to group all related gene panel & PGx result resources, respectively. This will enable consuming EHR systems to utilize the panel & PGx results as disparate components.
+**#1 Group multiple sections and associated results in one composite report**
+
+**HL7 Workgroup:** Clinical Genomics 
+
+**Category:** Major 
+
+**Description:** The eMERGE clinical genetic report includes both gene panel and PGx results in one report. Though still bundled together, we planned to separate the gene panel and PGx results; the result will be a composite report that includes separate interpretations and results for the gene panel and PGx respectively.  This approach of organizing multiple results in the same report, in addition to allowing diagnostic labs to bundle multiple result panels together will also enable consuming EHR systems to efficiently retrieve the results required for computation, storage or CDS.
+
+**Resolution:** Use the `Grouper <http://hl7.org/fhir/uv/genomics-reporting/grouper.html>`_
+ Profile to group all related gene panel & PGx result resources, respectively. This will enable consuming EHR systems to utilize the panel & PGx results as disparate components.
+
+**Extended Documentation:**
+
+`Jira ticket filed <https://jira.hl7.org/browse/FHIR-19828?filter=-2>`_
+
+`Discussion on Zulip with Clinical Genomics WG  <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/FHIR.20representation.20of.20a.20genetics.20test.20with.20multiple.20test.2E.2E.2E>`_
+
+
 
 **#2 Inclusion of Test Information, Methodology and References**
 
