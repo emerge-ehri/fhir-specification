@@ -22,9 +22,7 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 
 **Resolution:** Use the `Grouper <http://hl7.org/fhir/uv/genomics-reporting/grouper.html>`_ Profile to group all related gene panel & PGx result resources, respectively. This will enable consuming EHR systems to utilize the panel & PGx results as disparate components.
 
-**Extended Documentation:**
-`Jira ticket  <https://jira.hl7.org/browse/FHIR-19828?filter=-2>`_
-`Discussion on Zulip with Clinical Genomics WG  <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/FHIR.20representation.20of.20a.20genetics.20test.20with.20multiple.20test.2E.2E.2E>`_
+**Extended Documentation:** `Jira ticket  <https://jira.hl7.org/browse/FHIR-19828?filter=-2>`_ | `Discussion on Zulip with Clinical Genomics WG  <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/FHIR.20representation.20of.20a.20genetics.20test.20with.20multiple.20test.2E.2E.2E>`_
 
 -----
 
@@ -38,13 +36,9 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 
 **Resolution:** The recommendation to use the PlanDefinition(https://www.hl7.org/fhir/plandefinition.html) resource to represent the eMERGE test info and associated elements was satisfactory for the eMERGE use case. More investigation for broader application across the domain could be useful.
 
-**Extended Documentation:**
+**Extended Documentation:** `Jira ticket <https://jira.hl7.org/browse/FHIR-19827?filter=-2>`_ | `Discussion on Zulip with Clinical Genomics WG  <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Report.20Sections>`_
 
-`Jira ticket <https://jira.hl7.org/browse/FHIR-19827?filter=-2>`_
-
-`Discussion on Zulip with Clinical Genomics WG  <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Report.20Sections>`_
-
-
+-----
 #3 Inclusion of Report Comments
 Links: Jira(https://jira.hl7.org/browse/FHIR-22830?filter=-2)  Zulip (https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Report.20Comments)
 Group: Clinical Genomics Workgroup
