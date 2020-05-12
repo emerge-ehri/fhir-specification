@@ -28,7 +28,7 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 
 **#2 Inclusion of Test Information, Methodology and References**
 
-**HL7 Workgroup:** Clinical Genomics 
+**HL7 Workgroup:** Orders and Observation
 
 **Category:** Major 
 
@@ -46,7 +46,7 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 
 **Category:** Major 
 
-**Description:** eMERGE and other clinical genetic test results have a comments or additional notes section with case specific information. These comments are not really recommendations, conclusions or observations. They are additional information that the reporting lab wants to provide the ordering physician and patient related to the overall outcomes or to a grouped set of results.
+**Description:** eMERGE and other clinical genetic test results have a comments or additional notes section with case specific information (see Example). These comments are not really recommendations, conclusions or observations. They are additional information that the reporting lab wants to provide the ordering physician and patient related to the overall outcomes or to a grouped set of results.
 Example: Analysis of exonic deletions and duplications is pending and were not assessed at this time. The report will be updated if pathogenic or likely pathogenic deletions or duplications are detected in this patient's sample.
 
 **Resolution:** As these comments are about the report itself and not a particular Observation, based on recommendations by the Orders and Observations WG, the resolution was to use an Observation result associated to the DiagnosticReport to include the comments. This Observation is assigned the LOINC “Report Comment” 86467-8 code and with the comments being mapped to the value field. Though sufficing for the short term, a more robust long term approach might be to evaluate the addition of a comments element to the Diagnostic Report Resource. 
@@ -55,15 +55,23 @@ Example: Analysis of exonic deletions and duplications is pending and were not a
 | `Discussion on Zulip with Clinical Genomics WG  <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Report.20Comments>`_ | `Discussion on Zulip with Orders and Observation WG <https://chat.fhir.org/#narrow/stream/179256-Orders-and.20Observation.20WG/topic/Notes.20on.20Observations.20and.20DR/near/173777260>`_
 
 -----
+**#4 Inclusion of Recommendations**
 
-#4 Inclusion of Recommendations
-Links: Jira(https://jira.hl7.org/browse/FHIR-22830?filter=-2)  Zulip (https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Report.20Comments)
-Group: Clinical Genomics Workgroup
-Category: Major
-Description: eMERGE reports include a proposed recommendation section.  We want to represent this to enable actionability for the consuming EHR system but also ensure that this is a requested proposed recommendation and not a resulting order.
-Resolution: Use the RecommendedTask extension in DiagnosticReportt to reference a Task. The Task resource itself, with a status of requested and intent of proposal, fulfilled our requirements.
+**HL7 Workgroup:** Orders and Observation 
 
-#5. Nested & Indirect Result Referencing - hasMembers & derivedFrom?
+**Category:** Major 
+
+**Description:** eMERGE reports include a proposed recommendation section (see Example).  We need to represent this accurately not only to enable actionability for the consuming EHR system but also to ensure that this is a requested proposed recommendation and not a resulting order.
+Example: It is recommended that correlation of these findings with the clinical phenotype be performed. Genetic counseling for the patient and at-risk family members is recommended.
+
+**Resolution:** Use the RecommendedTask extension in DiagnosticReportt to reference a Task. The Task resource itself, with a status of requested and intent of proposal, fulfills eMERGE requirements for including proposed recommendations.
+
+**Extended Documentation:** `Jira ticket <https://jira.hl7.org/browse/FHIR-22830?filter=-2>`_
+| `Discussion on Zulip with Clinical Genomics WG  <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Report.20Comments>`_ 
+ 
+-----
+
+#5. Nested & Indirect Result Referencing - hasMembers & derivedFrom? - **What is this one, I don't recall?**
 Links: Zulip (https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Indirect.20Results)
 Group: Clinical Genomics Workgroup
 Category: Major
