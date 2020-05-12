@@ -6,7 +6,7 @@ Discussion
 .. Warning::
     This document is a work in progress and is not ready for production use.
 
-This section includes a review of the issues that required resolution as well as topics and questions raised and discussed during the development and implementation of this specification.
+This section includes a review of the issues that required resolution as well as topics and questions raised and discussed during the development and implementation of this specification. The specification was created using STU1 of the Genomics Reporting IG and the section below pertains to the work done by the BCM and Broad Institute team towards the creation of the eMERGE FHIR Specification using STU1 of Genomics Reporting IG during the year 2019. It should be noted that with the Clinical Genomics WG continuing to work on the draft of the STU2 version of the IG, there might be changes and variations between the STU1 version discussed here to the draft version currently being developed by the Clinical Genomics WG.
 These issues and topics range in effort and complexity which are qualified as major or minor.
 
 Issues & Resolutions
