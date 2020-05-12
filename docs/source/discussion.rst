@@ -55,6 +55,7 @@ Example: Analysis of exonic deletions and duplications is pending and were not a
 | `Discussion on Zulip with Clinical Genomics WG  <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Report.20Comments>`_ | `Discussion on Zulip with Orders and Observation WG <https://chat.fhir.org/#narrow/stream/179256-Orders-and.20Observation.20WG/topic/Notes.20on.20Observations.20and.20DR/near/173777260>`_
 
 -----
+
 **#4 Inclusion of Recommendations**
 
 **HL7 Workgroup:** Orders and Observation 
