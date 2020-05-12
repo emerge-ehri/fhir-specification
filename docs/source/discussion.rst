@@ -39,13 +39,22 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 **Extended Documentation:** `Jira ticket <https://jira.hl7.org/browse/FHIR-19827?filter=-2>`_ | `Discussion on Zulip with Clinical Genomics WG  <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Report.20Sections>`_
 
 -----
-#3 Inclusion of Report Comments
-Links: Jira(https://jira.hl7.org/browse/FHIR-22830?filter=-2)  Zulip (https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Report.20Comments)
-Group: Clinical Genomics Workgroup
-Category: Major
-Description: eMERGE and other clinical genetic test results have a comments or additional notes section with case specific information. These comments are not really recommendations, conclusions or observations. They are additional information that the reporting lab wants to provide the ordering physician and patient related to the overall outcomes or to some grouped set of results.
-Example: Example: Analysis of exonic deletions and duplications is pending and were not assessed at this time. The report will be updated if pathogenic or likely pathogenic deletions or duplications are detected in this patient's sample.
-Resolution: Use an Observation result associated to the DiagnosticReport to house comments. This Observation is assigned the LOINC “Report Comment” code and the comments is mapped to the value field.
+
+**#3 Inclusion of Report Comments**
+
+**HL7 Workgroup:** Orders and Observation 
+
+**Category:** Major 
+
+**Description:** eMERGE and other clinical genetic test results have a comments or additional notes section with case specific information. These comments are not really recommendations, conclusions or observations. They are additional information that the reporting lab wants to provide the ordering physician and patient related to the overall outcomes or to a grouped set of results.
+Example: Analysis of exonic deletions and duplications is pending and were not assessed at this time. The report will be updated if pathogenic or likely pathogenic deletions or duplications are detected in this patient's sample.
+
+**Resolution:** As these comments are about the report itself and not a particular Observation, based on recommendations by the Orders and Observations WG, the resolution was to use an Observation result associated to the DiagnosticReport to include the comments. This Observation is assigned the LOINC “Report Comment” 86467-8 code and with the comments being mapped to the value field. Though sufficing for the short term, a more robust long term approach might be to evaluate the addition of a comments element to the Diagnostic Report Resource. 
+
+**Extended Documentation:** `Jira ticket <https://jira.hl7.org/browse/FHIR-22830?filter=-2>`_
+| `Discussion on Zulip with Clinical Genomics WG  <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Report.20Comments>`_ | `Discussion on Zulip with Orders and Observation WG <https://chat.fhir.org/#narrow/stream/179256-Orders-and.20Observation.20WG/topic/Notes.20on.20Observations.20and.20DR/near/173777260>`_
+
+-----
 
 #4 Inclusion of Recommendations
 Links: Jira(https://jira.hl7.org/browse/FHIR-22830?filter=-2)  Zulip (https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Report.20Comments)
