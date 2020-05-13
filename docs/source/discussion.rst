@@ -22,8 +22,6 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 | **Resolution:** Use the `Grouper <http://hl7.org/fhir/uv/genomics-reporting/grouper.html>`_ Profile to group all related gene panel & PGx result resources, respectively. This will enable consuming EHR systems to utilize the panel & PGx results as disparate components.
 | **Extended Documentation:** `Jira ticket  <https://jira.hl7.org/browse/FHIR-19828?filter=-2>`_ | `Discussion on Zulip with Clinical Genomics WG  <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/FHIR.20representation.20of.20a.20genetics.20test.20with.20multiple.20test.2E.2E.2E>`_
 
------
-
 #2 Inclusion of Test Information, Methodology and References
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -55,16 +53,13 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 | **Extended Documentation:** `Jira ticket <https://jira.hl7.org/browse/FHIR-22830?filter=-2>`_
 | `Discussion on Zulip with Clinical Genomics WG  <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Report.20Comments>`_
 
-
-#5. Nested & Indirect Result Referencing - hasMembers & derivedFrom?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-|  **What is this one, I don't recall?**
-| Links: Zulip (https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Indirect.20Results)
-| Group: Clinical Genomics Workgroup
-| Category: Major
-| Description: eMERGE reports include a proposed recommendation section.  We want to represent this to enable actionability for the consuming EHR system but also ensure that this is a requested proposed recommendation and not a resulting order.
-| Resolution: Use the RecommendedTask extension in DiagnosticReportt to reference a Task. The Task resource itself, with a status of requested and intent of proposal, fulfilled our requirements.
+#5 Nested & Indirect Result Referencing - hasMember & derivedFrom
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| **HL7 Workgroup:** Orders and Observation
+| **Category:** Major 
+| **Description:** The eMERGE Diagnostic Report utilizes the Grouper resource to aggregate primary Observations (results) which in turn references other Observation results using either hasMember or derivedFrom. Without the reference to all Observations (results) directly in the Diagnostic Report, two related concerns are - 1. Will consuming systems be impacted without a direct linkage of all results in the Diagnostic Report?; 2. Can the derivedFrom be used to reference a related value that is not directly a result for this Diagnostic Report?
+| **Resolution:** With the usage of the Grouper, hasMember and derivedFrom clearly documented, it was agreed that using nested Observation references streamlines the Diagnostic Report bundle. It was also agreed that derivedFrom could reference a related reference that is not a direct result for this Diagnostic Report.
+| **Extended Documentation:** `Discussion on Zulip with Clinical Genomics WG  <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Indirect.20Results>`_ 
 
 6. New Identifier Type Code(s)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
