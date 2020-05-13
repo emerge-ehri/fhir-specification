@@ -33,66 +33,88 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 | **Resolution:** The recommendation to use the PlanDefinition(https://www.hl7.org/fhir/plandefinition.html) resource to represent the eMERGE test info and associated elements was satisfactory for the eMERGE use case. More investigation for broader application across the domain could be useful.
 | **Extended Documentation:** `Jira ticket <https://jira.hl7.org/browse/FHIR-19827?filter=-2>`_ | `Discussion on Zulip with Clinical Genomics WG  <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Report.20Sections>`_
 
------
-
-**#3 Inclusion of Report Comments**
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#3 Inclusion of Report Comments
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 | **HL7 Workgroup:** Orders and Observation
 | **Category:** Major
 | **Description:** eMERGE and other clinical genetic test results have a comments or additional notes section with case specific information (see Example). These comments are not really recommendations, conclusions or observations. They are additional information that the reporting lab wants to provide the ordering physician and patient related to the overall outcomes or to a grouped set of results.
-Example: Analysis of exonic deletions and duplications is pending and were not assessed at this time. The report will be updated if pathogenic or likely pathogenic deletions or duplications are detected in this patient's sample.
+| Example: Analysis of exonic deletions and duplications is pending and were not assessed at this time. The report will be updated if pathogenic or likely pathogenic deletions or duplications are detected in this patient's sample.
 | **Resolution:** As these comments are about the report itself and not a particular Observation, based on recommendations by the Orders and Observations WG, the resolution was to use an Observation result associated to the DiagnosticReport to include the comments. This Observation is assigned the LOINC “Report Comment” 86467-8 code and with the comments being mapped to the value field. Though sufficing for the short term, a more robust long term approach might be to evaluate the addition of a comments element to the Diagnostic Report Resource.
 | **Extended Documentation:** `Jira ticket <https://jira.hl7.org/browse/FHIR-22830?filter=-2>`_
 | `Discussion on Zulip with Clinical Genomics WG  <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Report.20Comments>`_ | `Discussion on Zulip with Orders and Observation WG <https://chat.fhir.org/#narrow/stream/179256-Orders-and.20Observation.20WG/topic/Notes.20on.20Observations.20and.20DR/near/173777260>`_
 
------
+#4 Inclusion of Recommendations
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**#4 Inclusion of Recommendations**
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | **HL7 Workgroup:** Orders and Observation
 | **Category:** Major
 | **Description:** eMERGE reports include a proposed recommendation section (see Example).  We need to represent this accurately not only to enable actionability for the consuming EHR system but also to ensure that this is a requested proposed recommendation and not a resulting order.
-Example: It is recommended that correlation of these findings with the clinical phenotype be performed. Genetic counseling for the patient and at-risk family members is recommended.
+| Example: It is recommended that correlation of these findings with the clinical phenotype be performed. Genetic counseling for the patient and at-risk family members is recommended.
 | **Resolution:** Use the RecommendedTask extension in DiagnosticReportt to reference a Task. The Task resource itself, with a status of requested and intent of proposal, fulfills eMERGE requirements for including proposed recommendations.
 | **Extended Documentation:** `Jira ticket <https://jira.hl7.org/browse/FHIR-22830?filter=-2>`_
 | `Discussion on Zulip with Clinical Genomics WG  <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Report.20Comments>`_
 
------
 
 #5. Nested & Indirect Result Referencing - hasMembers & derivedFrom?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Links: Zulip (https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Indirect.20Results)
-Group: Clinical Genomics Workgroup
-Category: Major
-Description: eMERGE reports include a proposed recommendation section.  We want to represent this to enable actionability for the consuming EHR system but also ensure that this is a requested proposed recommendation and not a resulting order.
-Resolution: Use the RecommendedTask extension in DiagnosticReportt to reference a Task. The Task resource itself, with a status of requested and intent of proposal, fulfilled our requirements.
 
+|  **What is this one, I don't recall?**
+| Links: Zulip (https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Indirect.20Results)
+| Group: Clinical Genomics Workgroup
+| Category: Major
+| Description: eMERGE reports include a proposed recommendation section.  We want to represent this to enable actionability for the consuming EHR system but also ensure that this is a requested proposed recommendation and not a resulting order.
+| Resolution: Use the RecommendedTask extension in DiagnosticReportt to reference a Task. The Task resource itself, with a status of requested and intent of proposal, fulfilled our requirements.
 
 6. New Identifier Type Code(s)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 7. InhDisPath phenotype cardinality change
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 8. InhDisPath value (CC) made extensible
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 9. DR category cardinality changed to 0..*
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 10. RelatedArtifact extension in Observation Components - Assessed Meds Citations (CG)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 11. Distinction between Report Sign-Out/Off Date and Report Sent Date - (Sign Out = Issue) (OO)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 12. RecommendedAction Task reasonRef cardinality to 0..* (OO)
-Group: CG | us-core | O&O | ?
-Description
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+| Group: CG | us-core | O&O | ?
+| Description
 
 
 13. Add Age to US-Core Patient Profile (PatAdm)
-14. Clinical vs Research Flag (Core)
-15. Why is DR.code fixed to LOINC 81247-9? (CG)
-16. RecommendedAction profile "code" should be extensible (CG)
-17. Inclusion of disclaimers to Observation and DR  (minor)
-18. Representation of Validation/Confirmation Testing  (minor)
-19. Inclusion of Interpretation Summary Text to Observation & DR  (major)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+14. Clinical vs Research Flag (Core)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+15. Why is DR.code fixed to LOINC 81247-9? (CG)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+16. RecommendedAction profile "code" should be extensible (CG)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+17. Inclusion of disclaimers to Observation and DR  (minor)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+18. Representation of Validation/Confirmation Testing  (minor)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+19. Inclusion of Interpretation Summary Text to Observation & DR  (major)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 Topics & Questions
-""""""""""""""""""
+------------------
 Adoption and Direction *  (Mullai) - one pager
 
 The principal goal of the eMERGE network for this project was to explore the feasibility of using FHIR in general and the Genomics Reporting IG in particular for representing clinical genomic results and for EHR Integration with Clinical Decision Support. Part of this feasibility analysis was also to explore the potential of using FHIR as the interoperability standard for the upcoming eMERGE Phase IV. To this end, the Baylor College of Medicine and Broad Institute team were tasked with putting together direction and adoptions recommendations for the eMERGE Network to evaluate going forward.   As the roadmap and plans of the HL7 Clinical Genomics Workgroup  regarding  the Genomics Reporting IG would have somewhat of a direct bearing both on the goals of this project as well as a projected plan for future eMEREGE phases, the Baylor College of Medicine and Broad Institute team wanted to ensure that appropriate discussion with the Clinical Genomics Workgroup was used to inform their decisions and recommendations.
@@ -119,15 +141,24 @@ Additionally, the BCM/Broad team based on its work on creating the specification
 3. The current IG is broad and tries to cover multiple use cases and edge cases, targeting minimal viable products or headlining real-world usage scenarios might be helpful for widespread adoption;
 4. Considering the diversity and heterogeneity of the eMERGE Network, participation in STU2 themes and collaboration with HL7 Clinical Genomics Workgroup during the upcoming eMERGE Phase iV will help inform the roadmap of the specification going forward.
 
-
-
-
 Open Questions  (one page for each major topic)
+-----------------------------------------------
 
-    Management of Secondary Findings  (major)  - incidental findings v secondary findings  (clinically significant observations not directly resulting from primary indication)
-    Definitional Variant Data Types  (major)  - Larry
-    Representation of Gene Coverage  (major)  - Mullai
-    Need for computational representation of tests (major)
+Management of Secondary Findings  (major)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+- incidental findings v secondary findings  (clinically significant observations not directly resulting from primary indication)
+
+Definitional Variant Data Types  (major)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Larry
+
+Representation of Gene Coverage (major)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  - Mullai
+
+Need for computational representation of tests (major)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 

@@ -7,54 +7,74 @@ The eMERGE Results FHIR Reports use several FHIR extensions to supplement the re
 
 The list of extensions below are used throughout this specification are marked with their source or "emerge" if they were custom defined for this specification only. Additionally, each extension references the artifact that it is used by to provide context.
 
-.. list-table::
-   :class: my-wrap
-   :header-rows: 1
-   :align: left
-   :widths: auto
+.. _birth-sex:
 
-   * - No.
-     - Extension
-     - Source
-     - Used In...
-     - Description
-   * - X1
-     - BirthSex
-     - US-Core
-     - Patient
-     - The birth sex extension is used to provide a specific biological sex for the patient being tested.
-   * - X2
-     - Ethnicity
-     - US-Core
-     - Patient
-     - The ethnicity extension is used to provide a specific set of ethnicities for the patient being tested.
-   * - X3
-     - Race
-     - US-Core
-     - Patient
-     - The race extension is used to provide a specific set of races for the patient being tested.
-   * - X4
-     - Age
-     - eMERGE
-     - Patient
-     - The age extension is used to provide a specific age in years of the patient at the time of testing.
-   * - X5
-     - SummaryInterpretationText
-     - eMERGE
-     - DiagRept,Obs
-     - The summary interpretation text extension is used to provide short narrative summary interpretations at the report level and any observation level as needed.
-   * - X6
-     - Test Disclaimer
-     - eMERGE
-     - GenomicsReport
-     - The test disclaimer extension is used to return the performing lab's test disclaimer at the report level.
-   * - X7
-     - RelatedArtifact
-     - hl7-cg-wg
-     - GenomicsReport
-     - The related artifact extension is used to allow emerge to return the Gene Coverage file (BED format) as an attachment.
-   * - X8
-     - RecommendedAction
-     - eMERGE
-     - GenomicsReport
-     - The recommended action extension is used to return a top-level proposed recommendation from the lab to the ordering provider.
+X1. Birth Sex
+-------------
+| - Name: BirthSex
+| - Source: US-Core
+| - Used in...: Patient
+| - Description: The birth sex extension is used to provide a specific biological sex for the patient being tested.
+
+.. _ethnicity:
+
+X2. Ethnicity
+-------------
+| - Ethnicity
+| - US-Core
+| - Patient
+| - The ethnicity extension is used to provide a specific set of ethnicities for the patient being tested.
+
+.. _race:
+
+X3. Race
+--------
+| - Race
+| - US-Core
+| - Patient
+| - The race extension is used to provide a specific set of races for the patient being tested.
+
+.. _age:
+
+X4. Age
+-------
+| - Age
+| - eMERGE
+| - Patient
+| - The age extension is used to provide a specific age in years of the patient at the time of testing.
+
+.. _summary-interpretation-text:
+
+X5. Summary Interpretation Text
+-------------------------------
+| - SummaryInterpretationText
+| - eMERGE
+| - DiagRept,Obs
+| - The summary interpretation text extension is used to provide short narrative summary interpretations at the report level and any observation level as needed.
+
+.. _test-disclaimer:
+
+X6. Test Disclaimer
+-------------------
+| - TestDisclaimer
+| - eMERGE
+| - GenomicsReport
+| - The test disclaimer extension is used to return the performing lab's test disclaimer at the report level.
+
+.. _related-artifact:
+
+X7. Related Artifact
+--------------------
+| Name.......: RelatedArtifact
+| Source.....: |hl7-cg-wg|
+| - GenomicsReport
+| Description: The related artifact extension is used to allow emerge to return the Gene Coverage file (BED format) as an attachment.
+
+.. _recommended-action:
+
+X8. Recommended Action
+----------------------
+| - RecommendedAction
+| - eMERGE
+| - GenomicsReport
+| - The recommended action extension is used to return a top-level proposed recommendation from the lab to the ordering provider.

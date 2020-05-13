@@ -3,10 +3,10 @@
 Specimen
 ========
 
-.. sidebar:: Artifact
+.. sidebar:: Artifact Info
 
-    * Type: Profile
-    * Spec: |specimen-prof|
+   | *Type*: Profile
+   | *Source*: |specimen-prof|
 
 TODO description
 

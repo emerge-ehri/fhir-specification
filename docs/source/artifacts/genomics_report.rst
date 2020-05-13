@@ -2,7 +2,11 @@
 
 Genomics Report
 ===============
-*profile* `based on <http://build.fhir.org/ig/HL7/genomics-reporting/genomics-report.html>`__
+
+.. sidebar:: Artifact Info
+
+   | *Type..*: Profile
+   | *Source*: |genomics-report-prof|
 
 The final findings and interpretation of the eMERGEseq Platform genetic test performed
 on patients and specimens derived from these. The report includes textual and
@@ -12,10 +16,8 @@ and methodology and formatted representation of the final report.
 
 Scope
 ^^^^^
-The eMERGEseq platform project only focuses on the delivery of final reports from
-the lab to the provider. These unsolicited results are returned to the providers
-within this specified DiagnosticReport resource.
-
+The eMERGEseq platform project only focuses on the delivery of final reports from the lab to the provider.
+These unsolicited results are returned to the providers within this specified DiagnosticReport resource.
 
 Content
 ^^^^^^^
@@ -31,9 +33,5 @@ This structure is derived from the CG Genomics Reporting IG artifact `Genomics R
    :colwidths: [20, 20, 20, 100, 45, 125, 355]
    :selection: A1:G59
 
-References
-^^^^^^^^^^
-
-Profiles
-Extensions
-Test Disclaimer
+Notes
+^^^^^
