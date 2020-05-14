@@ -74,7 +74,7 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | **HL7 Workgroup:** Clinical Genomics
 | **Category:** Minor 
-| **Description/Resolution:** The cardinality of the associated-phenotype element in the `Inherited Disease Pathogenicity Profile<http://hl7.org/fhir/uv/genomics-reporting/inherited-disease-pathogenicity.html>`_ was updated from 0..1 to 0..* per eMERGE request to accommodate the inclusion of possibly multiple phenotypes associated with a pathogenic/Likely Pathogenic variant. 
+| **Description/Resolution:** The cardinality of the associated-phenotype element in the `Inherited Disease Pathogenicity Profile <http://hl7.org/fhir/uv/genomics-reporting/inherited-disease-pathogenicity.html>`_ was updated from 0..1 to 0..* per eMERGE request to accommodate the inclusion of possibly multiple phenotypes associated with a pathogenic/Likely Pathogenic variant. 
 | **Extended Documentation:** `Jira ticket  <https://jira.hl7.org/browse/FHIR-20552?filter=-2>`_ 
 
 
