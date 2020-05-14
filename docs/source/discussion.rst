@@ -61,7 +61,7 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 | **Resolution:** With the usage of the Grouper, hasMember and derivedFrom clearly documented, it was agreed that using nested Observation references streamlines the Diagnostic Report bundle. It was also agreed that derivedFrom could reference a related reference that is not a direct result for this Diagnostic Report.
 | **Extended Documentation:** `Discussion on Zulip with Clinical Genomics WG  <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Indirect.20Results>`_ 
 
-#6 Usage of the Patient internal identifier Type Code 
+#6 Usage of the Patient Internal Identifier Type Code 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | **HL7 Workgroup:** Modeling & Methodology
 | **Category:** Minor 
@@ -78,11 +78,22 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 | **Extended Documentation:** `Jira ticket  <https://jira.hl7.org/browse/FHIR-20552?filter=-2>`_ 
 
 
-8. InhDisPath value (CC) made extensible
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#8 InhDisPath value (CC) made extensible
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| **HL7 Workgroup:** Clinical Genomics
+| **Category:** Minor 
+| **Description/Resolution:** Updated ValueSet bindings to extensible for the valueCodeableConcept element in the InheritedDiseasePathogenicity profile to accommodate additional entries from the Clinvar Clinical Significance list. Furthermore, the Clinical Genomics WG also updated `other ValueSet bindings <https://docs.google.com/document/d/1E-nal_OPhJ8SSaIN_f9XqiLI5lyuGyhTIbUae8MWLMU/edit>`_ to be extensible.
 
-9. DR category cardinality changed to 0..*
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| **Extended Documentation:** `Jira ticket  <https://jira.hl7.org/browse/FHIR-20549?filter=-2>`_ 
+
+
+#9 Genomics Report category cardinality changed to 0..*
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| **HL7 Workgroup:** Clinical Genomics
+| **Category:** Minor 
+| **Description/Resolution:** The cardinality of the category element in the `Genomics Report Profile <http://hl7.org/fhir/uv/genomics-reporting/genomics-report.html>`_ was updated from 0..1 to 0..* per eMERGE request to accommodate the inclusion of multiple test categories (LAB, GE) if required.
+| **Extended Documentation:** `Jira ticket  <https://jira.hl7.org/browse/FHIR-20538?filter=-2>`_ 
+
 
 10. RelatedArtifact extension in Observation Components - Assessed Meds Citations (CG)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
