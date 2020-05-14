@@ -62,16 +62,21 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 | **Extended Documentation:** `Discussion on Zulip with Clinical Genomics WG  <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Indirect.20Results>`_ 
 
 #6 Usage of the Patient internal identifier Type Code 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | **HL7 Workgroup:** Modeling & Methodology
 | **Category:** Minor 
 | **Description/Resolution:** eMERGE uses an internal patient identifier to identify a patient. An internal patient identifier is not a defined available `identifier type <https://hl7.org/fhir/R4/valueset-identifier-type.html>`_ for the Patient resource. However Patient internal identifier (code: PI) is available in the `HL7 Version 2 Table 0203 <http://hl7.org/fhir/v2/0203/>`_ but usage of the code PI from Table 0203 resulted in a validation warning during implementation. Based on the response (posted below) to the Jira ticket posted for this issue, it was decided to use Table 0203 and the code PI for the Patient internal identifier.
-Jira ticket response: "The binding for this attribute is extensible so you are allowed to specify alternate codes if the value set does not cover your required concept. The warning that you are receiving is correct and can be ignored if you have specified a proper code for your purposes."
-|  **Extended Documentation:** `Jira ticket  <https://jira.hl7.org/browse/FHIR-24637?filter=-2>`_ 
+| Jira ticket response: "The binding for this attribute is extensible so you are allowed to specify alternate codes if the value set does not cover your required concept. The warning that you are receiving is correct and can be ignored if you have specified a proper code for your purposes."
+| **Extended Documentation:** `Jira ticket  <https://jira.hl7.org/browse/FHIR-24637?filter=-2>`_ 
 
 
-7. InhDisPath phenotype cardinality change
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#7 InhDisPath phenotype cardinality change
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| **HL7 Workgroup:** Clinical Genomics
+| **Category:** Minor 
+| **Description/Resolution:** The cardinality of the associated-phenotype element in the `Inherited Disease Pathogenicity Profile<http://hl7.org/fhir/uv/genomics-reporting/inherited-disease-pathogenicity.html>`_ was updated from 0..1 to 0..* per eMERGE request to accommodate the inclusion of possibly multiple phenotypes associated with a pathogenic/Likely Pathogenic variant. 
+| **Extended Documentation:** `Jira ticket  <https://jira.hl7.org/browse/FHIR-20552?filter=-2>`_ 
+
 
 8. InhDisPath value (CC) made extensible
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
