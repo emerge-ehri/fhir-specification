@@ -29,7 +29,7 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 | **Category:** Major
 | **Description:** Lab developed tests (LDTs) are standard practice in clinical genetic testing. As such it is useful and needed (for eMERGE) to share the assay title, code, description, methodology and references (citations) that appear in the report. Resolution: The recommendation to use the PlanDefinition resource to represent the eMERGE test info and associated elements was satisfactory for the eMERGE use case. More investigation for broader application across the domain could be useful.
 | **Resolution:** The recommendation to use the PlanDefinition(https://www.hl7.org/fhir/plandefinition.html) resource to represent the eMERGE test info and associated elements was satisfactory for the eMERGE use case. More investigation for broader application across the domain could be useful.
-| **Extended Documentation:** `Jira ticket <https://jira.hl7.org/browse/FHIR-19827?filter=-2>`_ | `Discussion on Zulip with Clinical Genomics WG  <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Report.20Sections>`_
+| **Extended Documentation:** `Jira ticket <https://jira.hl7.org/browse/FHIR-19827?filter=-2>`_ | `Zulip discussion <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Report.20Sections>`_
 
 #3 Inclusion of Report Comments
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -40,7 +40,7 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 | Example: Analysis of exonic deletions and duplications is pending and were not assessed at this time. The report will be updated if pathogenic or likely pathogenic deletions or duplications are detected in this patient's sample.
 | **Resolution:** As these comments are about the report itself and not a particular Observation, based on recommendations by the Orders and Observations WG, the resolution was to use an Observation result associated to the DiagnosticReport to include the comments. This Observation is assigned the LOINC “Report Comment” 86467-8 code and with the comments being mapped to the value field. Though sufficing for the short term, a more robust long term approach might be to evaluate the addition of a comments element to the Diagnostic Report Resource.
 | **Extended Documentation:** `Jira ticket <https://jira.hl7.org/browse/FHIR-22830?filter=-2>`_
-| `Discussion on Zulip with Clinical Genomics WG  <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Report.20Comments>`_ | `Discussion on Zulip with Orders and Observation WG <https://chat.fhir.org/#narrow/stream/179256-Orders-and.20Observation.20WG/topic/Notes.20on.20Observations.20and.20DR/near/173777260>`_
+| `Zulip discussion w/Clinical Genomics WG  <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Report.20Comments>`_ | `Zulip discussion w/Orders and Observation WG <https://chat.fhir.org/#narrow/stream/179256-Orders-and.20Observation.20WG/topic/Notes.20on.20Observations.20and.20DR/near/173777260>`_
 
 #4 Inclusion of Recommendations
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -51,7 +51,7 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 | Example: It is recommended that correlation of these findings with the clinical phenotype be performed. Genetic counseling for the patient and at-risk family members is recommended.
 | **Resolution:** Use the RecommendedTask extension in DiagnosticReportt to reference a Task. The Task resource itself, with a status of requested and intent of proposal, fulfills eMERGE requirements for including proposed recommendations.
 | **Extended Documentation:** `Jira ticket <https://jira.hl7.org/browse/FHIR-22830?filter=-2>`_
-| `Discussion on Zulip with Clinical Genomics WG  <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Report.20Comments>`_
+| `Zulip discussion <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Report.20Comments>`_
 
 #5 Nested & Indirect Result Referencing - hasMember & derivedFrom
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -59,7 +59,7 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 | **Category:** Major 
 | **Description:** The eMERGE Diagnostic Report utilizes the Grouper resource to aggregate primary Observations (results) which in turn references other Observation results using either hasMember or derivedFrom. Without the reference to all Observations (results) directly in the Diagnostic Report, two related concerns are - 1. Will consuming systems be impacted without a direct linkage of all results in the Diagnostic Report?; 2. Can the derivedFrom be used to reference a related value that is not directly a result for this Diagnostic Report?
 | **Resolution:** With the usage of the Grouper, hasMember and derivedFrom clearly documented, it was agreed that using nested Observation references streamlines the Diagnostic Report bundle. It was also agreed that derivedFrom could reference a related reference that is not a direct result for this Diagnostic Report.
-| **Extended Documentation:** `Discussion on Zulip with Clinical Genomics WG  <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Indirect.20Results>`_ 
+| **Extended Documentation:** `Zulip discussion <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Indirect.20Results>`_ 
 
 #6 Representation of Validation/Confirmation Testing
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
