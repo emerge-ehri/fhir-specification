@@ -95,8 +95,12 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 | **Extended Documentation:** `Jira ticket  <https://jira.hl7.org/browse/FHIR-20538?filter=-2>`_ 
 
 
-10. RelatedArtifact extension in Observation Components - Assessed Meds Citations (CG)
+#10 RelatedArtifact extension in Observation Components - Assessed Meds Citations (CG)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| **HL7 Workgroup:** Clinical Genomics
+| **Category:** Minor 
+| **Description/Resolution:** DISCUSS, IT DOES NOT LOOK LIKE THIS IS COMPLETED
+| **Extended Documentation:** `Zulip discussion  <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/relatedArtifact.20extension.20change.20request>
 
 11. Distinction between Report Sign-Out/Off Date and Report Sent Date - (Sign Out = Issue) (OO)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
