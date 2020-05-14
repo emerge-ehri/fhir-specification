@@ -61,7 +61,24 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 | **Resolution:** With the usage of the Grouper, hasMember and derivedFrom clearly documented, it was agreed that using nested Observation references streamlines the Diagnostic Report bundle. It was also agreed that derivedFrom could reference a related reference that is not a direct result for this Diagnostic Report.
 | **Extended Documentation:** `Discussion on Zulip with Clinical Genomics WG  <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Indirect.20Results>`_ 
 
-#6 Usage of the Patient Internal Identifier Type Code 
+#6 Representation of Validation/Confirmation Testing
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| **HL7 Workgroup:** Orders and Observations
+| **Category:** Major 
+| **Description:** The eMERGE report includes information about confirmatory testing  for both SNVs and CNVs. Though this request was deliberated and discussed by the  Clinical Genomics WG, a resolution was not reached at the time of the creation of the eMERGE FHIR Specification. As a temporary solution, confirmation information has been added to the note element of the InheritedDiseasePathogenicity resource for the eMERGE FHIR Specification.
+| **Resolution:** Pending
+| **Extended Documentation:** `Jira ticket <https://jira.hl7.org/browse/FHIR-19829?filter=-2>`_ | `Zulip discussion <https://chat.fhir.org/#narrow/stream/179197-genomics/topic/Sanger.20confirmation.2Ftesting>`_
+
+#7  Inclusion of Interpretation Summary Text to Observation & GenomicsReport
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| **HL7 Workgroup:** Clinical Genomics, Orders and Observations
+| **Category:** Major 
+| **Description:** Textual findings/interpretations are currently included in the eMERGE genetic report both at the report level and at the individual result (Observation) level. Without a  option to include this kind of interpretative or summary text in the GenomicsReport or an Observation currently, a `custom extension <https://simplifier.net/emergefhirextensionresources/interpretationsummarytext>`_ was created to house this information.
+| **Resolution:** Pending. Request in discussion by both Clinical Genomics and Orders and Observations WGs.
+| **Extended Documentation:** `Jira ticket <https://jira.hl7.org/browse/FHIR-20978?filter=-2>`_ | `Zulip discussion <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/search/summary>`_
+
+
+#8 Usage of the Patient Internal Identifier Type Code 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | **HL7 Workgroup:** Modeling & Methodology
 | **Category:** Minor 
@@ -70,7 +87,7 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 | **Extended Documentation:** `Jira ticket  <https://jira.hl7.org/browse/FHIR-24637?filter=-2>`_ 
 
 
-#7 InhDisPath phenotype cardinality change
+#9 InhDisPath phenotype cardinality change
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | **HL7 Workgroup:** Clinical Genomics
 | **Category:** Minor 
@@ -78,7 +95,7 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 | **Extended Documentation:** `Jira ticket  <https://jira.hl7.org/browse/FHIR-20552?filter=-2>`_ 
 
 
-#8 InhDisPath value (CC) made extensible
+#10 InhDisPath value (CC) made extensible
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | **HL7 Workgroup:** Clinical Genomics
 | **Category:** Minor 
@@ -87,7 +104,7 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 | **Extended Documentation:** `Jira ticket  <https://jira.hl7.org/browse/FHIR-20549?filter=-2>`_ 
 
 
-#9 Genomics Report category cardinality changed to 0..*
+#11 Genomics Report category cardinality changed to 0..*
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | **HL7 Workgroup:** Clinical Genomics
 | **Category:** Minor 
@@ -95,14 +112,14 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 | **Extended Documentation:** `Jira ticket  <https://jira.hl7.org/browse/FHIR-20538?filter=-2>`_ 
 
 
-#10 RelatedArtifact extension in Observation Components - Assessed Meds Citations (CG)
+#12 RelatedArtifact extension in Observation Components - Assessed Meds Citations (CG)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | **HL7 Workgroup:** Clinical Genomics
 | **Category:** Minor 
 | **Description/Resolution:** DISCUSS, IT DOES NOT LOOK LIKE THIS IS COMPLETED
 | **Extended Documentation:** `Zulip discussion  <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/relatedArtifact.20extension.20change.20request>
 
-#11  Distinction between Report Sign-Out/Off Date and Report Sent Date 
+#13  Distinction between Report Sign-Out/Off Date and Report Sent Date 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | **HL7 Workgroup:** Orders and Observations
 | **Category:** Minor 
@@ -110,7 +127,7 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 | **Extended Documentation:** `Zulip discussion  <https://chat.fhir.org/#narrow/stream/179256-Orders-and.20Observation.20WG/topic/date.20reported.20vs.20sign-off.20date>`_ 
 
 
-#12 RecommendedAction Task reasonRef cardinality to 0..*
+#14 RecommendedAction Task reasonRef cardinality to 0..*
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | **HL7 Workgroup:** FHIR Infrastructure
 | **Category:** Minor 
@@ -118,24 +135,24 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 | **Extended Documentation:** `Jira ticket <https://jira.hl7.org/browse/FHIR-25255?filter=-2>`_ | `Zulip discussion <https://chat.fhir.org/#narrow/stream/179197-genomics/topic/task.20recommendations>`_
 
 
-#13  Add Age to US-Core Patient Profile (PatAdm)
+#15  Add Age to US-Core Patient Profile (PatAdm)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | **HL7 Workgroup:** FHIR Mgmt
-| **Category:** Minor 
+| **Category:** Unknown 
 | **Description:** The Patient resource currently only includes Date of Birth but not Age. As DOB is considered PHI, for de-identifying purposes we collect Age instead of (or in addition to) DOB as part of a test order to comply with CLIA regulations. As the Jira ticket to the Patient Administration and FHIR Mgmt WGs on this standard extension request is still pending, we created a `custom Age extension <https://simplifier.net/eMERGEFHIRExtensionResources/PatientAge/~overview>`_ to handle this requirement.
 | **Resolution:** Pending. The Patient Administration Workgroup does not believe that a standard extension for Age for the Patient resource should be created.
 | **Extended Documentation:** `Jira ticket <https://jira.hl7.org/browse/FHIR-24652>`_ 
 
 
-#14  Clinical vs Research Flag (Core)
+#16  Clinical vs Research Flag (Core)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | **HL7 Workgroup:** Clinical Genomics
-| **Category:** Minor 
+| **Category:** Unknown 
 | **Description:** The BCM HGSC Clinical Lab produces both clinical and research genetic reports and we generally tag and label the reports as research or clinical. Typically, research reports are do not go through Sanger or similar confirmation process. It would be helpful to have a flag in the DiagnosticReport indicating if a report is clinical or research.
 | **Resolution:** Pending.  This is an optional feature request and does not impact the current design of the eMERGE FHIR Specification.
 | **Extended Documentation:** `Jira ticket <https://jira.hl7.org/browse/FHIR-22782?filter=-2>`_ 
 
-#15 Why is Genomics Report code element fixed to LOINC 81247-9?
+#17 Why is Genomics Report code element fixed to LOINC 81247-9?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | **HL7 Workgroup:** Clinical Genomics
 | **Category:** Unknown 
@@ -144,7 +161,7 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 Clinical Genomics WG feedback:Current guidance is to require this code be present on all genetic reports. Note that you can supply a more granular code in another system as an additional coding on the same CodeableConcept to cater to more specific use cases.
 | **Extended Documentation:** `Jira ticket <https://jira.hl7.org/browse/FHIR-19831?filter=-2>`_ 
 
-#16 RecommendedAction profile "code" should be extensible (CG)
+#18 RecommendedAction profile "code" should be extensible (CG)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | **HL7 Workgroup:** Clinical Genomics
 | **Category:** Unknown 
@@ -152,20 +169,14 @@ Clinical Genomics WG feedback:Current guidance is to require this code be presen
 | **Resolution:** Pending
 | **Extended Documentation:** `Jira ticket <https://jira.hl7.org/browse/FHIR-25187?filter=-2&jql=reporter%20%3D%20lbabb%20%20order%20by%20created%20DESC>`_ | `Zulip discussion <https://chat.fhir.org/#narrow/stream/179197-genomics/topic/task.20recommendation.20follow.20up>`_
 
-#17 Inclusion of disclaimers to Observation and GenomicsReport 
+#19 Inclusion of disclaimers to Observation and GenomicsReport 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | **HL7 Workgroup:** Orders and Observations
 | **Category:** Unknown 
-| **Description:** Test disclaimers are a standard inclusion in every eMERGE report.  The disclaimer is not case specific. Without a well defined option to include the disclaimer in the GenomicsReport or an Observation, a `custom extension <https://simplifier.net/emergefhirextensionresources/testdisclaimer>`_ was created to house the disclaimer and the disclaimer was added to the GenomicsReport Profile.
+| **Description:** Test disclaimers are a standard inclusion in every eMERGE report.  The disclaimer is not case specific. Without a  option to include the disclaimer in the GenomicsReport or an Observation currently, a `custom extension <https://simplifier.net/emergefhirextensionresources/testdisclaimer>`_ was created to house the disclaimer and the disclaimer was added to the GenomicsReport Profile.
 | **Resolution:** Pending
 | **Extended Documentation:** `Zulip discussion <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Report.20Comments>`_
 
-
-18. Representation of Validation/Confirmation Testing  (minor)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-19. Inclusion of Interpretation Summary Text to Observation & DR  (major)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 Topics & Questions
