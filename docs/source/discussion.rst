@@ -118,14 +118,31 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 | **Extended Documentation:** `Jira ticket <https://jira.hl7.org/browse/FHIR-25255?filter=-2>`_ | `Zulip discussion <https://chat.fhir.org/#narrow/stream/179197-genomics/topic/task.20recommendations>`_
 
 
-13. Add Age to US-Core Patient Profile (PatAdm)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#13  Add Age to US-Core Patient Profile (PatAdm)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| **HL7 Workgroup:** FHIR Mgmt
+| **Category:** Minor 
+| **Description:** The Patient resource currently only includes Date of Birth but not Age. As DOB is considered PHI, for de-identifying purposes we collect Age instead of (or in addition to) DOB as part of a test order to comply with CLIA regulations. As the Jira ticket to the Patient Administration and FHIR Mgmt WGs on this standard extension request is still pending, we created a `custom Age extension <https://simplifier.net/eMERGEFHIRExtensionResources/PatientAge/~overview>`_ to handle this requirement.
+| **Resolution:** Pending. The Patient Administration Workgroup does not believe that a standard extension for Age for the Patient resource should be created.
+| **Extended Documentation:** `Jira ticket <https://jira.hl7.org/browse/FHIR-24652>`_ 
 
-14. Clinical vs Research Flag (Core)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-15. Why is DR.code fixed to LOINC 81247-9? (CG)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#14  Clinical vs Research Flag (Core)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| **HL7 Workgroup:** Clinical Genomics
+| **Category:** Minor 
+| **Description:** The BCM HGSC Clinical Lab produces both clinical and research genetic reports and we generally tag and label the reports as research or clinical. Typically, research reports are do not go through Sanger or similar confirmation process. It would be helpful to have a flag in the DiagnosticReport indicating if a report is clinical or research.
+| **Resolution:** Pending. 
+| **Extended Documentation:** `Jira ticket <https://jira.hl7.org/browse/FHIR-22782?filter=-2>`_ 
+
+#15 Why is Genomics Report code element fixed to LOINC 81247-9?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| **HL7 Workgroup:** Clinical Genomics
+| **Category:** Unknown 
+| **Description:** What is the purpose of the LOINC code 81247-9 as a code value for the code field in the Genomics Report resource? How does this code distinguish between different genetics tests e.g. Whole Exome Sequencing, Whole Genome Sequencing, Exome Panels etc.?
+| **Resolution:** Pending. Clinical Genomics WG feedback:
+Current guidance is to require this code be present on all genetic reports. Note that you can supply a more granular code in another system as an additional coding on the same CodeableConcept to cater to more specific use cases.
+| **Extended Documentation:** `Jira ticket <https://jira.hl7.org/browse/FHIR-19831?filter=-2>`_ 
 
 16. RecommendedAction profile "code" should be extensible (CG)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
