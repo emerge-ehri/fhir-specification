@@ -25,7 +25,7 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 #2 Inclusion of Test Information, Methodology and References
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-| **HL7 Workgroup:** Orders and Observation
+| **HL7 Workgroup:** Orders and Observations
 | **Category:** Major
 | **Description:** Lab developed tests (LDTs) are standard practice in clinical genetic testing. As such it is useful and needed (for eMERGE) to share the assay title, code, description, methodology and references (citations) that appear in the report. Resolution: The recommendation to use the PlanDefinition resource to represent the eMERGE test info and associated elements was satisfactory for the eMERGE use case. More investigation for broader application across the domain could be useful.
 | **Resolution:** The recommendation to use the PlanDefinition(https://www.hl7.org/fhir/plandefinition.html) resource to represent the eMERGE test info and associated elements was satisfactory for the eMERGE use case. More investigation for broader application across the domain could be useful.
@@ -34,7 +34,7 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 #3 Inclusion of Report Comments
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-| **HL7 Workgroup:** Orders and Observation
+| **HL7 Workgroup:** Orders and Observations
 | **Category:** Major
 | **Description:** eMERGE and other clinical genetic test results have a comments or additional notes section with case specific information (see Example). These comments are not really recommendations, conclusions or observations. They are additional information that the reporting lab wants to provide the ordering physician and patient related to the overall outcomes or to a grouped set of results.
 | Example: Analysis of exonic deletions and duplications is pending and were not assessed at this time. The report will be updated if pathogenic or likely pathogenic deletions or duplications are detected in this patient's sample.
@@ -45,7 +45,7 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 #4 Inclusion of Recommendations
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-| **HL7 Workgroup:** Orders and Observation
+| **HL7 Workgroup:** Orders and Observations
 | **Category:** Major
 | **Description:** eMERGE reports include a proposed recommendation section (see Example).  We need to represent this accurately not only to enable actionability for the consuming EHR system but also to ensure that this is a requested proposed recommendation and not a resulting order.
 | Example: It is recommended that correlation of these findings with the clinical phenotype be performed. Genetic counseling for the patient and at-risk family members is recommended.
@@ -55,7 +55,7 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 
 #5 Nested & Indirect Result Referencing - hasMember & derivedFrom
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-| **HL7 Workgroup:** Orders and Observation
+| **HL7 Workgroup:** Orders and Observations
 | **Category:** Major 
 | **Description:** The eMERGE Diagnostic Report utilizes the Grouper resource to aggregate primary Observations (results) which in turn references other Observation results using either hasMember or derivedFrom. Without the reference to all Observations (results) directly in the Diagnostic Report, two related concerns are - 1. Will consuming systems be impacted without a direct linkage of all results in the Diagnostic Report?; 2. Can the derivedFrom be used to reference a related value that is not directly a result for this Diagnostic Report?
 | **Resolution:** With the usage of the Grouper, hasMember and derivedFrom clearly documented, it was agreed that using nested Observation references streamlines the Diagnostic Report bundle. It was also agreed that derivedFrom could reference a related reference that is not a direct result for this Diagnostic Report.
@@ -102,14 +102,20 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 | **Description/Resolution:** DISCUSS, IT DOES NOT LOOK LIKE THIS IS COMPLETED
 | **Extended Documentation:** `Zulip discussion  <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/relatedArtifact.20extension.20change.20request>
 
-11. Distinction between Report Sign-Out/Off Date and Report Sent Date - (Sign Out = Issue) (OO)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#11  Distinction between Report Sign-Out/Off Date and Report Sent Date 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| **HL7 Workgroup:** Orders and Observations
+| **Category:** Minor 
+| **Description/Resolution:** eMERGE tracks both the report sign-out date and report issued date. However, as the Diagnostic Report only records the report issued date, per OO recommendation, it was decided to include the report issued date in the Genomics Report Profile and to track the report sign-out date internally.
+| **Extended Documentation:** `Zulip discussion  <https://chat.fhir.org/#narrow/stream/179256-Orders-and.20Observation.20WG/topic/date.20reported.20vs.20sign-off.20date>`_ 
 
-12. RecommendedAction Task reasonRef cardinality to 0..* (OO)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-| Group: CG | us-core | O&O | ?
-| Description
+#12 RecommendedAction Task reasonRef cardinality to 0..*
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| **HL7 Workgroup:** FHIR Infrastructure
+| **Category:** Minor 
+| **Description/Resolution:** The cardinality for reasonCode and reasonReference elements in the `Task <https://www.hl7.org/fhir/task.html>`_ resource was updated 0..* per eMERGE request. This request is accommodate use cases where we might need to indicate that multiple Observations resulted in a particular Task Recommendation.
+| **Extended Documentation:** `Jira ticket <https://jira.hl7.org/browse/FHIR-25255?filter=-2>`_ | `Zulip discussion <https://chat.fhir.org/#narrow/stream/179197-genomics/topic/task.20recommendations>`_
 
 
 13. Add Age to US-Core Patient Profile (PatAdm)
