@@ -132,23 +132,34 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 | **HL7 Workgroup:** Clinical Genomics
 | **Category:** Minor 
 | **Description:** The BCM HGSC Clinical Lab produces both clinical and research genetic reports and we generally tag and label the reports as research or clinical. Typically, research reports are do not go through Sanger or similar confirmation process. It would be helpful to have a flag in the DiagnosticReport indicating if a report is clinical or research.
-| **Resolution:** Pending. 
+| **Resolution:** Pending.  This is an optional feature request and does not impact the current design of the eMERGE FHIR Specification.
 | **Extended Documentation:** `Jira ticket <https://jira.hl7.org/browse/FHIR-22782?filter=-2>`_ 
 
 #15 Why is Genomics Report code element fixed to LOINC 81247-9?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | **HL7 Workgroup:** Clinical Genomics
 | **Category:** Unknown 
-| **Description:** What is the purpose of the LOINC code 81247-9 as a code value for the code field in the Genomics Report resource? How does this code distinguish between different genetics tests e.g. Whole Exome Sequencing, Whole Genome Sequencing, Exome Panels etc.?
-| **Resolution:** Pending. Clinical Genomics WG feedback:
-Current guidance is to require this code be present on all genetic reports. Note that you can supply a more granular code in another system as an additional coding on the same CodeableConcept to cater to more specific use cases.
+| **Description:** What is the purpose of the LOINC code 81247-9 as a code value for the code field in the Genomics Report resource? How does this code distinguish between different genetics tests e.g. Whole Exome Sequencing, Whole Genome Sequencing, Exome Panels etc.? T
+| **Resolution:** Pending. This code is currently added to the eMERGE FHIR Specification to meet the requirement of the Genomics Reporting IG. 
+Clinical Genomics WG feedback:Current guidance is to require this code be present on all genetic reports. Note that you can supply a more granular code in another system as an additional coding on the same CodeableConcept to cater to more specific use cases.
 | **Extended Documentation:** `Jira ticket <https://jira.hl7.org/browse/FHIR-19831?filter=-2>`_ 
 
-16. RecommendedAction profile "code" should be extensible (CG)
+#16 RecommendedAction profile "code" should be extensible (CG)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| **HL7 Workgroup:** Clinical Genomics
+| **Category:** Unknown 
+| **Description:** The change request is to make the "code" binding extensible versus the current state of required. Currently, there are 3 codes available for recommendations and it seems highly unlikely these will be robust enough to serve the implementations yet to occur. This is an enhancement requirement for the future and does not impact the current eMERGE FHIR Specification implementation.
+| **Resolution:** Pending
+| **Extended Documentation:** `Jira ticket <https://jira.hl7.org/browse/FHIR-25187?filter=-2&jql=reporter%20%3D%20lbabb%20%20order%20by%20created%20DESC>`_ | `Zulip discussion <https://chat.fhir.org/#narrow/stream/179197-genomics/topic/task.20recommendation.20follow.20up>`_
 
-17. Inclusion of disclaimers to Observation and DR  (minor)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#17 Inclusion of disclaimers to Observation and GenomicsReport 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| **HL7 Workgroup:** Orders and Observations
+| **Category:** Unknown 
+| **Description:** Test disclaimers are a standard inclusion in every eMERGE report.  The disclaimer is not case specific. Without a well defined option to include the disclaimer in the GenomicsReport or an Observation, a `custom extension <https://simplifier.net/emergefhirextensionresources/testdisclaimer>`_ was created to house the disclaimer and the disclaimer was added to the GenomicsReport Profile.
+| **Resolution:** Pending
+| **Extended Documentation:** `Zulip discussion <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Report.20Comments>`_
+
 
 18. Representation of Validation/Confirmation Testing  (minor)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
