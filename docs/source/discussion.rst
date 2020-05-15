@@ -78,7 +78,41 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 | **Extended Documentation:** `Jira ticket <https://jira.hl7.org/browse/FHIR-20978?filter=-2>`_ | `Zulip discussion <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/search/summary>`_
 
 
-#8 Usage of the Patient Internal Identifier Type Code 
+#8  Inclusion of Gene/Region Coverage in the GenomicsReport
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| **HL7 Workgroup:** Clinical Genomics
+| **Category:** Major 
+| **Description:** For every test subject, information about coverage information on the regions studied as part of the eMERGE test panel is attached as part of the results. Generally information provided includes chromosome, gene, transcript, CDS, start position, end position and coverage. Though the Region Studied resource does seem like a possible candidate to represent this information, if we have to create a separate region studied resource for each of the regions that are in this test, that might run into 100s or 1000s of region studied resources and might not be a scalable solution. Ideally, it might be helpful to have a resource which we can use to include all the regions covered as part of the test.  In the interim, for the current version of the eMERGE specification, we are attaching the coverage file to the GenomicsReport as a RelatedArtifact
+| **Resolution:** Pending
+| **Extended Documentation:** `Related Jira ticket opened by Bob Dolin <https://jira.hl7.org/browse/FHIR-16258?jql=text%20~%20%22gene%20coverage%22>`_ | `Zulip discussion <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Guidance.20re.20region.20studied>`_
+
+
+#9  Management of Secondary Findings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| **HL7 Workgroup:** Clinical Genomics
+| **Category:** Major 
+| **Description:** - incidental findings v secondary findings  (clinically significant observations not directly resulting from primary indication) Larry To Do
+| **Resolution:** Pending
+| **Extended Documentation:**  `Zulip discussion <https://chat.fhir.org/#narrow/stream/179197-genomics/topic/Representation.20of.20secondary.20findings>`_
+
+
+#10  Creation of definitional  Variant Data Types
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| **HL7 Workgroup:** Clinical Genomics
+| **Category:** Major 
+| **Description:** The current flexibility in exchanging variant level information is certainly helpful in allowing implementers to begin the effort of getting structure genetic results in the EHR. However, implementers should be cautioned about the perils of using these forms of representation for clinical decision support (CDS). Clinical grade precision will require more rigor and guidance. Definitional data types and/or resources would help isolate the concern and advance progress towards that aim. Larry To Do
+| **Resolution:** Pending
+| **Extended Documentation:**  `Zulip discussion <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Variant.20Data.20Type.20Proposal>`_
+
+#11  Need for computational representation of tests
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| **HL7 Workgroup:** Clinical Genomics
+| **Category:** Major 
+| **Description:** Memory is failing me, what is this one about?>
+| **Resolution:** Pending
+| **Extended Documentation:**  Zulip discussion
+
+#12 Usage of the Patient Internal Identifier Type Code 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | **HL7 Workgroup:** Modeling & Methodology
 | **Category:** Minor 
@@ -87,7 +121,7 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 | **Extended Documentation:** `Jira ticket  <https://jira.hl7.org/browse/FHIR-24637?filter=-2>`_ 
 
 
-#9 InhDisPath phenotype cardinality change
+#13 InhDisPath phenotype cardinality change
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | **HL7 Workgroup:** Clinical Genomics
 | **Category:** Minor 
@@ -95,7 +129,7 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 | **Extended Documentation:** `Jira ticket  <https://jira.hl7.org/browse/FHIR-20552?filter=-2>`_ 
 
 
-#10 InhDisPath value (CC) made extensible
+#14 InhDisPath value (CC) made extensible
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | **HL7 Workgroup:** Clinical Genomics
 | **Category:** Minor 
@@ -104,7 +138,7 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 | **Extended Documentation:** `Jira ticket  <https://jira.hl7.org/browse/FHIR-20549?filter=-2>`_ 
 
 
-#11 Genomics Report category cardinality changed to 0..*
+#15 Genomics Report category cardinality changed to 0..*
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | **HL7 Workgroup:** Clinical Genomics
 | **Category:** Minor 
@@ -112,14 +146,14 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 | **Extended Documentation:** `Jira ticket  <https://jira.hl7.org/browse/FHIR-20538?filter=-2>`_ 
 
 
-#12 RelatedArtifact extension in Observation Components - Assessed Meds Citations (CG)
+#16 RelatedArtifact extension in Observation Components - Assessed Meds Citations (CG)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | **HL7 Workgroup:** Clinical Genomics
 | **Category:** Minor 
 | **Description/Resolution:** DISCUSS, IT DOES NOT LOOK LIKE THIS IS COMPLETED
 | **Extended Documentation:** `Zulip discussion  <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/relatedArtifact.20extension.20change.20request>
 
-#13  Distinction between Report Sign-Out/Off Date and Report Sent Date 
+#17  Distinction between Report Sign-Out/Off Date and Report Sent Date 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | **HL7 Workgroup:** Orders and Observations
 | **Category:** Minor 
@@ -127,7 +161,7 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 | **Extended Documentation:** `Zulip discussion  <https://chat.fhir.org/#narrow/stream/179256-Orders-and.20Observation.20WG/topic/date.20reported.20vs.20sign-off.20date>`_ 
 
 
-#14 RecommendedAction Task reasonRef cardinality to 0..*
+#18 RecommendedAction Task reasonRef cardinality to 0..*
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | **HL7 Workgroup:** FHIR Infrastructure
 | **Category:** Minor 
@@ -135,7 +169,7 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 | **Extended Documentation:** `Jira ticket <https://jira.hl7.org/browse/FHIR-25255?filter=-2>`_ | `Zulip discussion <https://chat.fhir.org/#narrow/stream/179197-genomics/topic/task.20recommendations>`_
 
 
-#15  Add Age to US-Core Patient Profile (PatAdm)
+#19  Add Age to US-Core Patient Profile (PatAdm)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | **HL7 Workgroup:** FHIR Mgmt
 | **Category:** Unknown 
@@ -144,7 +178,7 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 | **Extended Documentation:** `Jira ticket <https://jira.hl7.org/browse/FHIR-24652>`_ 
 
 
-#16  Clinical vs Research Flag (Core)
+#20  Clinical vs Research Flag (Core)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | **HL7 Workgroup:** Clinical Genomics
 | **Category:** Unknown 
@@ -152,7 +186,7 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 | **Resolution:** Pending.  This is an optional feature request and does not impact the current design of the eMERGE FHIR Specification.
 | **Extended Documentation:** `Jira ticket <https://jira.hl7.org/browse/FHIR-22782?filter=-2>`_ 
 
-#17 Why is Genomics Report code element fixed to LOINC 81247-9?
+#21 Why is Genomics Report code element fixed to LOINC 81247-9?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | **HL7 Workgroup:** Clinical Genomics
 | **Category:** Unknown 
@@ -161,7 +195,7 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 Clinical Genomics WG feedback:Current guidance is to require this code be present on all genetic reports. Note that you can supply a more granular code in another system as an additional coding on the same CodeableConcept to cater to more specific use cases.
 | **Extended Documentation:** `Jira ticket <https://jira.hl7.org/browse/FHIR-19831?filter=-2>`_ 
 
-#18 RecommendedAction profile "code" should be extensible (CG)
+#22 RecommendedAction profile "code" should be extensible (CG)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | **HL7 Workgroup:** Clinical Genomics
 | **Category:** Unknown 
@@ -169,7 +203,7 @@ Clinical Genomics WG feedback:Current guidance is to require this code be presen
 | **Resolution:** Pending
 | **Extended Documentation:** `Jira ticket <https://jira.hl7.org/browse/FHIR-25187?filter=-2&jql=reporter%20%3D%20lbabb%20%20order%20by%20created%20DESC>`_ | `Zulip discussion <https://chat.fhir.org/#narrow/stream/179197-genomics/topic/task.20recommendation.20follow.20up>`_
 
-#19 Inclusion of disclaimers to Observation and GenomicsReport 
+#23 Inclusion of disclaimers to Observation and GenomicsReport 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | **HL7 Workgroup:** Orders and Observations
 | **Category:** Unknown 
@@ -206,30 +240,6 @@ Additionally, the BCM/Broad team based on its work on creating the specification
 2. The STU1 of the IG needs more maturity for full scale production implementations particularly in areas such definitional vs observations resources,  management of secondary findings, interpretation summary text representation, knowledge bases of clearly findings/recommendations etc.;
 3. The current IG is broad and tries to cover multiple use cases and edge cases, targeting minimal viable products or headlining real-world usage scenarios might be helpful for widespread adoption;
 4. Considering the diversity and heterogeneity of the eMERGE Network, participation in STU2 themes and collaboration with HL7 Clinical Genomics Workgroup during the upcoming eMERGE Phase iV will help inform the roadmap of the specification going forward.
-
-Open Questions  (one page for each major topic)
------------------------------------------------
-
-Management of Secondary Findings  (major)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-- incidental findings v secondary findings  (clinically significant observations not directly resulting from primary indication)
-
-Definitional Variant Data Types  (major)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-- Larry
-
-Representation of Gene Coverage (major)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  - Mullai
-
-Need for computational representation of tests (major)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-
-
-
 
 
 
