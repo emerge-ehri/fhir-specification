@@ -3,6 +3,8 @@
 Patient
 =======
 
+(todo MM)
+
 .. sidebar:: Artifact
 
     * Type: Resource

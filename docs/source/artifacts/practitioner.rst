@@ -3,6 +3,8 @@
 Practitioner
 ============
 
+(todo MM)
+
 .. sidebar:: Artifact
 
     * Type: Resource

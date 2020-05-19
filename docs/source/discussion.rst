@@ -13,12 +13,14 @@ Issues & Resolutions
 --------------------
 During the course of implementing the eMERGE Results using the |fhir-gr-ig-short| a number of issues were uncovered, discussed and resolved. Noteworthy issues are summarized below along with their outcome. Also included is extended documentation related to the collaboration and tracking of these items with the associated HL7 FHIR Working Groups.
 
-#1 Group multiple sections and associated results in one composite report
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. _discussion-1:
 
+#1 Composite reporting
+^^^^^^^^^^^^^^^^^^^^^^
 **HL7 WG:** Clinical Genomics | **Category:** Major
 
-**Description:**
+**Description:** Group multiple sections and associated results in one composite report.
+
 The eMERGE clinical genetic report includes both gene panel and PGx results in one report. Though still bundled together, we planned to separate the gene panel and PGx results; the result will be a composite report that includes separate interpretations and results for the gene panel and PGx respectively.  This approach of organizing multiple results in the same report, in addition to allowing diagnostic labs to bundle multiple result panels together will also enable consuming EHR systems to efficiently retrieve the results required for computation, storage or CDS.
 
 **Resolution:**
@@ -26,46 +28,55 @@ Use the |grouper-prof| Profile to group all related gene panel & PGx result reso
 
 **Reference(s):** `Jira #19828  <https://jira.hl7.org/browse/FHIR-19828?filter=-2>`_ | `Zulip CG: FHIR representation of a genetics test with multiple test... <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/FHIR.20representation.20of.20a.20genetics.20test.20with.20multiple.20test.2E.2E.2E>`_
 
-#2 Inclusion of Test Information, Methodology and References
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. _discussion-2:
 
+#2 Test Information
+^^^^^^^^^^^^^^^^^^^
 **HL7 WG:** Orders and Observations | **Category:** Major
 
-**Description:**
-Lab developed tests (LDTs) are standard practice in clinical genetic testing. As such it is useful and needed (for eMERGE) to share the assay title, code, description, methodology and references (citations) that appear in the report. Resolution: The recommendation to use the PlanDefinition resource to represent the eMERGE test info and associated elements was satisfactory for the eMERGE use case. More investigation for broader application across the domain could be useful.
+**Description:** Inclusion of Test Information, Methodology and References
+
+Lab developed tests (LDTs) are standard practice in clinical genetic testing. As such it is useful and needed (for eMERGE) to share the assay title, code, description, methodology and references (citations) that appear in the report.
 
 **Resolution:**
 The recommendation to use the |plandefinition-res| resource to represent the eMERGE test info and associated elements was satisfactory for the eMERGE use case. More investigation for broader application across the domain could be useful.
 
 **Reference(s):** `Jira #19827 <https://jira.hl7.org/browse/FHIR-19827?filter=-2>`_ | `Zulip CG: Report sections <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Report.20Sections>`_
 
+.. _discussion-3:
+
 #3 Inclusion of Report Comments
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 **HL7 WG:** Orders and Observations | **Category:** Major
 
 **Description:**
 eMERGE and other clinical genetic test results have a comments or additional notes section with case specific information (see Example). These comments are not really recommendations, conclusions or observations. They are additional information that the reporting lab wants to provide the ordering physician and patient related to the overall outcomes or to a grouped set of results.
-| *Example:* Analysis of exonic deletions and duplications is pending and were not assessed at this time. The report will be updated if pathogenic or likely pathogenic deletions or duplications are detected in this patient's sample.
+
+*Example:*
+Analysis of exonic deletions and duplications is pending and were not assessed at this time. The report will be updated if pathogenic or likely pathogenic deletions or duplications are detected in this patient's sample.
 
 **Resolution:**
 As these comments are about the report itself and not a particular Observation, based on recommendations by the Orders and Observations WG, the resolution was to use an Observation result associated to the DiagnosticReport to include the comments. This Observation is assigned the LOINC “Report Comment” 86467-8 code and with the comments being mapped to the value field. Though sufficing for the short term, a more robust long term approach might be to evaluate the addition of a comments element to the Diagnostic Report Resource.
 
 **Reference(s):** `Jira #22830 <https://jira.hl7.org/browse/FHIR-22830?filter=-2>`_ | `Zulip CG: Report Comments  <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Report.20Comments>`_ | `Zulip OO: Notes on Observations <https://chat.fhir.org/#narrow/stream/179256-Orders-and.20Observation.20WG/topic/Notes.20on.20Observations.20and.20DR/near/173777260>`_
 
+.. _discussion-4:
+
 #4 Inclusion of Recommendations
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 **HL7 WG:** Orders and Observations | **Category:** Major
 
 **Description:**
 eMERGE reports include a proposed recommendation section (see Example).  We need to represent this accurately not only to enable actionability for the consuming EHR system but also to ensure that this is a requested proposed recommendation and not a resulting order.
-| *Example:* It is recommended that correlation of these findings with the clinical phenotype be performed. Genetic counseling for the patient and at-risk family members is recommended.
+
+*Example:* It is recommended that correlation of these findings with the clinical phenotype be performed. Genetic counseling for the patient and at-risk family members is recommended.
 
 **Resolution:**
 Use the RecommendedTask extension in DiagnosticReport to reference a Task. The Task resource itself, with a status of requested and intent of proposal, fulfills eMERGE requirements for including proposed recommendations.
 
 **Reference(s):** `Jira #22830 <https://jira.hl7.org/browse/FHIR-22830?filter=-2>`_ | `Zulip CG: Report Comments <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Report.20Comments>`_
+
+.. _discussion-5:
 
 #5 Nested & Indirect Result Referencing - hasMember & derivedFrom
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -82,6 +93,8 @@ With the usage of the Grouper, hasMember and derivedFrom clearly documented, it 
 
 **Reference(s):** `Zulip CG: Indirect Results <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Indirect.20Results>`_
 
+.. _discussion-6:
+
 #6 Representation of Validation/Confirmation Testing
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 **HL7 WG:** Orders and Observations | **Category:** Major
@@ -95,7 +108,6 @@ The eMERGE report includes information about confirmatory testing  for both SNVs
 
 #7  Inclusion of Interpretation Summary Text to Observation & GenomicsReport
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 **HL7 WG:** Clinical Genomics & Orders and Observations | **Category:** Major
 
 **Description:**
@@ -108,20 +120,18 @@ Pending. Request in discussion by both Clinical Genomics and Orders and Observat
 
 #8  Inclusion of Gene/Region Coverage in the GenomicsReport
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 **HL7 WG:** Clinical Genomics | **Category:** Major
 
 **Description:**
 For every test subject, information about coverage information on the regions studied as part of the eMERGE test panel is attached as part of the results. Generally information provided includes chromosome, gene, transcript, CDS, start position, end position and coverage. Though the Region Studied resource does seem like a possible candidate to represent this information, if we have to create a separate region studied resource for each of the regions that are in this test, that might run into 100s or 1000s of region studied resources and might not be a scalable solution. Ideally, it might be helpful to have a resource which we can use to include all the regions covered as part of the test.  In the interim, for the current version of the eMERGE specification, we are attaching the coverage file to the GenomicsReport as a RelatedArtifact
 
-**Resolution:** Pending
+**Resolution:**
+Pending
 
 **Reference(s):** `Jira (Bob Dolin) #16258 <https://jira.hl7.org/browse/FHIR-16258?jql=text%20~%20%22gene%20coverage%22>`_ | `Zulip CG: Guidance re region studied <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Guidance.20re.20region.20studied>`_
 
-
 #9  Management of Secondary Findings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 **HL7 WG:** Clinical Genomics | **Category:** Major
 
 **Description:**
@@ -134,13 +144,12 @@ Use the CG IGs |2nd-finding-ext| extension on the |inh-dis-path-prof| profile. T
 
 #10 Creation of definitional Variant Data Types
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 **HL7 WG:** Clinical Genomics | **Category:** Major
 
 **Description:**
-The current flexibility in exchanging variant level information is certainly helpful in allowing implementers to begin the effort of getting structure genetic results in the EHR. However, implementers should be cautioned about the perils of using these forms of representation for clinical decision support (CDS). Clinical grade precision will require more rigor and guidance. Definitional data types and/or resources would help isolate the concern and advance progress towards that aim.
+The current flexibility in exchanging variant level information may be helpful in allowing implemente. However, implementers should be cautioned about the perils of using these forms of representation for clinical decision support (CDS). Clinical grade precision will require more rigor and guidance. Definitional data types and/or resources would help isolate the concern and advance progress towards that aim.
 
-*Larry to do*
+For more information on Variant Representation see
 
 **Resolution:** Pending
 
@@ -151,9 +160,11 @@ The current flexibility in exchanging variant level information is certainly hel
 
 **HL7 WG:** Clinical Genomics | **Category:** Major
 
-**Description:** Memory is failing me, what is this one about?>
+**Description:**
+TODO Larry
 
-**Resolution:** Pending
+**Resolution:**
+Pending
 
 **Reference(s):**  Zulip discussion
 
@@ -312,7 +323,7 @@ The second category, about the interest and keenness of the EHR vendors and Diag
 - How  are  the major EHR vendors  and Diagnostic Labs positioned with respect to considering the use of FHIR and in particular the Genomics Reporting IG as an interoperable standard for clinical genomic reporting?
 - Are there any EHR vendors, Diagnostic Labs or Institutions working on or planning on adopt the Genomics Reporting IG STU1 for a pilot or for full scale production?
 
-Subsequent related discussions with the HL7 Clinical Genomics Workgroup helped the team identify a few production pilots, in addition to the eMERGE pilot,  that capitalized on the Genomics Reporting IG STU1 - 1. Creation of a HLA Reporting IG based on the Genomics Reporting IG STU led by Bob Milius at the NMDP; 2. A pilot project that utilizes the Genomics Reporting IG STU1 led by Kevin Power at Cerner, in collaboration with a Diagnostic Laboratory; 3. Represeentation of a VCF using FHIR led by Bob Dolin at Elimu Informatics; 4. An oncology FHIR implementation led by Patrick Werner at MOLIT Institur gGMbH.
+Subsequent related discussions with the HL7 Clinical Genomics Workgroup helped the team identify a few production pilots, in addition to the eMERGE pilot,  that capitalized on the Genomics Reporting IG STU1 - 1. Creation of a HLA Reporting IG based on the Genomics Reporting IG STU led by Bob Milius at the NMDP; 2. A pilot project that utilizes the Genomics Reporting IG STU1 led by Kevin Power at Cerner, in collaboration with a Diagnostic Laboratory; 3. Representation of a VCF using FHIR led by Bob Dolin at Elimu Informatics; 4. An oncology FHIR implementation led by Patrick Werner at MOLIT Institur gGMbH.
 
 On the subject of adoption readiness, the HL7 Clinical Genomics Workgroup recognizing the somewhat steep learning curve associated with using the Genomics Reporting IG, is currently eliciting input from Subject Matter Experts for STU2 themes, documented and discussed at https://chat.fhir.org/#narrow/stream/179197-genomics/topic/Themes.20for.20STU2
 
@@ -323,6 +334,30 @@ Additionally, the BCM/Broad team based on its work on creating the specification
 2. The STU1 of the IG needs more maturity for full scale production implementations particularly in areas such definitional vs observations resources,  management of secondary findings, interpretation summary text representation, knowledge bases of clearly findings/recommendations etc.;
 3. The current IG is broad and tries to cover multiple use cases and edge cases, targeting minimal viable products or headlining real-world usage scenarios might be helpful for widespread adoption;
 4. Considering the diversity and heterogeneity of the eMERGE Network, participation in STU2 themes and collaboration with HL7 Clinical Genomics Workgroup during the upcoming eMERGE Phase iV will help inform the roadmap of the specification going forward.
+
+Definitional v Observational Variant Representation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The eMERGE genetic test contains results that are based on variant calls made from observations on genomic DNA sequencing and genotyping assays for targeted regions of the genome. These variant calls are then assessed for to determine their clinical significance to both the primary indication for testing and the ACMG56 secondary findings. Additionally, the variant findings are assessed for a prescribed set of pharmacogenomic implications (i.e. metabolism, efficacy, etc..). The essential elements of the genetics results are the variants, genes, diseases, drugs, and phenotypes. There may be more as a broader range of results are added to genetic testing assessments. Of these essential elements variants are the most fundamental unit.
+
+Computationally precise and accurate representation of variants is paramount to enabling meaningful use of genetic test results. Storing, comparing, searching and associating data related to computationally represented variants reliably can only be done with standards that are verifiable and enforceable across healthcare systems.
+
+Current/historical practices for representing variation
+
+CG IG enables flexibility (not up to clinical grade)
+
+Collaborations with Experts to Define a Standard
+
+HL7 CG WG scope of responsibilities
+HL7 FHIR is an exchange standard for enabling the sharing of healthcare data. Currently, the burden of defining variant exchange standards has fallen on the shoulders of the HL7 Clinical Genomics (CG) workgroup. While this may seem logical it is not realistic as the HL7 CG WG is not a standards making group but instead a group that works to enlist the best practices of the CG domain to allow them to begin sharing structured genetic test results. The HL7 CG WG is not equipped with the resources and expertise to delve into the depths of the vast and rapidly changing world of variant representation.
+
+
+
+Potential Future Use Cases
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+* PRS results (discussed but not supported) - TODO
+
+* Research only reports (discussed but not supported) - TODO
+
 
 
 

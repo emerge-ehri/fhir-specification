@@ -2,6 +2,9 @@
 
 Medication Implication
 ======================
+
+(todo LB)
+
 .. sidebar:: Artifact
 
     * Type: Profile

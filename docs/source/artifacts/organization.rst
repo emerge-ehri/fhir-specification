@@ -3,6 +3,8 @@
 Organization
 =============
 
+(todo LB)
+
 .. sidebar:: Artifact
 
     * Type: Resource

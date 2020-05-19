@@ -3,6 +3,8 @@
 Extensions
 ==========
 
+(todo LB)
+
 The eMERGE Results FHIR Reports use several FHIR extensions to supplement the resources and profiles specified by the the |fhir-gr-ig-short|. When an extension was warranted the process was to find an available extension amongst those defined as part of the |fhir-gr-ig-short|, then to look at other registered extensions available in the FHIR specification and finally to define our own custom extensions. All custom extensions were discussed with the HL7 Clinical Genomics WG as proposed additions to the |fhir-gr-ig-short|.
 
 The list of extensions below are used throughout this specification are marked with their source or "emerge" if they were custom defined for this specification only. Additionally, each extension references the artifact that it is used by to provide context.
