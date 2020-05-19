@@ -16,6 +16,8 @@
 .. |task-res| replace:: `Task <http://hl7.org/fhir/task.html>`__
 .. |observation_res| replace:: `Observation <http://hl7.org/fhir/observation.html>`__
 
+.. |genomics-base-prof| replace:: `GenomicsBase <http://hl7.org/fhir/uv/genomics-reporting/genomics-base.html>`__
+.. |2nd-finding-ext| replace:: `SecondaryFinding <http://hl7.org/fhir/uv/genomics-reporting/genomics-base-definitions.html#Observation.extension:SecondaryFinding>`__
 .. |genomics-report-prof| replace:: `Genomics Report <http://hl7.org/fhir/uv/genomics-reporting/genomics-report.html>`__
 .. |specimen-prof| replace:: `Specimen Profile <http://hl7.org/fhir/uv/genomics-reporting/specimen.html>`__
 .. |service-request-prof| replace:: `Service Request Profile <http://hl7.org/fhir/uv/genomics-reporting/servicerequest.html>`__
