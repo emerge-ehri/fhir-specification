@@ -3,22 +3,26 @@
 PractitionerRole
 =================
 
-(todo MM)
+A specific set of Roles/Locations/specialties/services that a practitioner may perform at an organization for a period of time.
 
 .. sidebar:: Artifact
 
     Type: Resource
     Spec: |practitionerrole-res|
 
-TODO Describe use of PractitionerRole as ServiceRequest.requester (ordering physician) and interpreter (geneticist). This is an association of the individual provider and the healthcare institution under which they perform their respective responsibilities.
 
 Scope
 ^^^^^
-TODO scope
+PractitionerRole covers the recording of the location and types of services that Practitioners are able to provide for an organization.
+
+The role, specialty, location and healthcare service aspects of the PractitionerRole resource have been used in eMERGE to distinguish  between the role of the ordering provider placing the test order (requester) and the geneticist responsible for the report's interpretations and conclusions (resultsInterpreter) by creating a PractitionerRole resource for each role respectively. Additionally highlighted in this resource are the institutions i.e. Organization resource under which Practitioners assigned to this role perform their respective responsibilities. Also to be considered in this context and distinct from the resultsInterpreter is the performer i.e the Organization resource executing the test and delivering the results. While the resultsInterpreter is responsible for the conclusions in the report, the Performer is the Organization responsible for delivering on the desired diagnostic service i.e. the genetic test itself with the resultsInterpreter typically being a member of this Organization. See Practitioner and Organization artifacts for additional detail.
+
+The resultsInterpreter and performer are referenced in the GenomicsReport profile while the requestor and the performer are referenced in the ServiceRequest profile.
 
 Content
 ^^^^^^^
-TODO content
+
+eMERGE uses the |practitionerrole-res| resource here.
 
 .. excel-table::
    :file: ../_files/emerge-fhir-resources-definitions.xlsx

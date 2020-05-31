@@ -3,15 +3,13 @@
 Genomics Report
 ===============
 
-(todo MM)
+The final findings and interpretation of the eMERGEseq Platform genetic test performed
+on patients and specimens derived from these.
 
 .. sidebar:: Discussions
 
    :ref:`discussion-1`
 
-
-The final findings and interpretation of the eMERGEseq Platform genetic test performed
-on patients and specimens derived from these.
 
 Scope
 ^^^^^
@@ -24,6 +22,7 @@ and methodology and formatted representation of the final report.
 
 Content
 ^^^^^^^
+
 eMERGE uses the |genomics-report-prof| profile here which is derived from the |diagnosticreport-res| resource.
 
 .. excel-table::
