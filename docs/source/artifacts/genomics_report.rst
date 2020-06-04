@@ -4,7 +4,7 @@ Genomics Report
 ===============
 
 The final findings and interpretation of the eMERGEseq Platform genetic test performed
-on patients and specimens derived from these.
+on blood specimens derived from patients.
 
 .. sidebar:: Discussions
 
@@ -13,12 +13,7 @@ on patients and specimens derived from these.
 
 Scope
 ^^^^^
-The eMERGEseq platform project only focuses on the delivery of final reports from
-the lab to the provider. These unsolicited results are returned to the providers
-within this specified DiagnosticReport resource. The report includes textual and
-coded interpretations, variant findings and their diagnostic pathogenicity assessment,
-and pharmacogenomic implications, requesting and provider information, assay description
-and methodology and formatted representation of the final report.
+The eMERGE project includes sequencing, interpretation, generation and delivery of clinical genetic reports from  diagnostic labs (eMERGE Clinical Sequencing and Genotyping Facilities) to the ordering providers (eMERGE Study Sites). The GenomicsReport profile derived from the DiagnosticReport resource was adopted to represent the eMERGE report specification and includes textual and coded interpretations, variant findings and their diagnostic pathogenicity assessment, and pharmacogenomic implications, requesting and provider information, assay description and methodology as referenced resources and resulting observations attached to the GenomicsReport profile.
 
 Content
 ^^^^^^^
