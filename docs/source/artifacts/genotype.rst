@@ -8,7 +8,7 @@ TODO description
 
 .. sidebar:: Discussions
 
-   :ref:`issue-variant-types`
+   | :ref:`issue-variant-types`
 
 Scope
 ^^^^^

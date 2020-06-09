@@ -7,7 +7,7 @@ Observation resource that includes assertions made about the patient.
 
 .. sidebar:: Discussions
 
-   :ref:`issue-report-comments`
+   | :ref:`issue-report-comments`
 
 .. .. sidebar:: Artifact
 ..

@@ -8,7 +8,7 @@ TODO description
 
 .. sidebar:: Discussions
 
-   :ref:`issue-test-information`
+   | :ref:`issue-test-information`
 
 Scope
 ^^^^^

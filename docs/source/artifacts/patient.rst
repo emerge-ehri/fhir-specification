@@ -7,7 +7,7 @@ The patient resource contains demographic information for the individual receivi
 
 .. sidebar:: Discussions
 
-   :ref:`issue-patient-age`
+   | :ref:`issue-patient-age`
 
 Scope
 ^^^^^

@@ -9,9 +9,9 @@ TODO description
 
 .. sidebar:: Discussions
 
-   :ref:`issue-interp-summary-text`
-   :ref:`issue-secondary-findings`
-   :ref:`issue-interp-with-multiple-phenotypes`
+   | :ref:`issue-interp-summary-text`
+   | :ref:`issue-secondary-findings`
+   | :ref:`issue-interp-with-multiple-phenotypes`
 
 Scope
 ^^^^^

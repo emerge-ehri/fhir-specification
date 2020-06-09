@@ -9,8 +9,8 @@ Reference the three subtypes included here (metabolism, efficacy, transporter)
 
 .. sidebar:: Discussions
 
-   :ref:`issue-interp-summary-text`
-   :ref:`issue-citing-assesed-meds`
+   | :ref:`issue-interp-summary-text`
+   | :ref:`issue-citing-assesed-meds`
 
 
 Scope

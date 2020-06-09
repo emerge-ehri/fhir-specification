@@ -7,7 +7,7 @@ Provides a coarse overall interpretation of the genetic results reported.
 
 .. sidebar:: Discussions
 
-   :ref:`issue-interp-summary-text`
+   | :ref:`issue-interp-summary-text`
 
 Scope
 ^^^^^

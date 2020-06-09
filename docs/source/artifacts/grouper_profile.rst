@@ -5,8 +5,8 @@ Organizes information within a genetic report.
 
 .. sidebar:: Discussions
 
-   :ref:`issue-nested-results`
-   :ref:`issue-interp-summary-text`
+   | :ref:`issue-nested-results`
+   | :ref:`issue-interp-summary-text`
 
 Scope
 ^^^^^
