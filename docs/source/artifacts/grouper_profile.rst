@@ -3,10 +3,10 @@ Grouper Profile(s)
 
 Organizes information within a genetic report.
 
-.. sidebar:: Artifact
+.. sidebar:: Discussions
 
-    * Type: Profile
-    * Spec: |grouper-prof|
+   :ref:`issue-nested-results`
+   :ref:`issue-interp-summary-text`
 
 Scope
 ^^^^^
@@ -17,11 +17,13 @@ See Diagnostic Gene Panel and PGx Grouper profile artifacts for further detail o
 .. _grouper_dx:
 
 Diagnostic Gene Panel Grouper
+-----------------------------
 
-.. _grouper_pgx:
+TODO description
 
-PGx Gene Panel Grouper
-
+Scope
+^^^^^
+TODO description
 
 Content
 ^^^^^^^
@@ -50,7 +52,7 @@ TODO scope
 
 Content
 ^^^^^^^
-TODO content
+eMERGE uses the |grouper-prof| profile here which is derived from the |observation_res| resource.
 
 .. excel-table::
    :file: ../_files/emerge-fhir-resources-definitions.xlsx

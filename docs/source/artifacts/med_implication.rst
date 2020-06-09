@@ -4,18 +4,14 @@ Medication Implication
 ======================
 
 (todo LB)
-
-.. sidebar:: Artifact
-
-    * Type: Profile
-    * Spec:
-        * |metab-impl-prof|
-        * |efficacy-impl-prof|
-        * |transport-impl-prof|
-
 TODO description
-
 Reference the three subtypes included here (metabolism, efficacy, transporter)
+
+.. sidebar:: Discussions
+
+   :ref:`issue-interp-summary-text`
+   :ref:`issue-citing-assesed-meds`
+
 
 Scope
 ^^^^^
@@ -23,7 +19,12 @@ TODO scope
 
 Content
 ^^^^^^^
-TODO content
+eMERGE uses the following three profiles that all derive from the medication implication profile:
+        * |metab-impl-prof|
+        * |efficacy-impl-prof|
+        * |transport-impl-prof|
+
+These three profiles support the specific medication implications related to metabolism, efficacy and transport function, respectively. They all ultimately derive from the |observation-res| resource.
 
 .. excel-table::
    :file: ../_files/emerge-fhir-resources-definitions.xlsx

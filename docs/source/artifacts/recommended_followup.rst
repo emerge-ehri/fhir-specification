@@ -2,13 +2,14 @@
 
 Recommended Followup
 ====================
-
-.. sidebar:: Artifact
-
-    * Type: Profile
-    * Spec: |recommended-followup-prof|
-
 TODO description
+
+.. sidebar:: Discussions
+
+   :ref:`issue-recommendations`
+   :ref:`issue-recommendation-with-multi-reasons`
+   :ref:`issue-recommendation-codes`
+
 
 Scope
 ^^^^^
@@ -16,7 +17,8 @@ TODO scope
 
 Content
 ^^^^^^^
-TODO content
+eMERGE uses the |recommended-followup-prof| profile which is derived from the |task-res| resource.
+This profile is used in the |genomics-report-prof| RecommendedAction extension.
 
 .. excel-table::
    :file: ../_files/emerge-fhir-resources-definitions.xlsx

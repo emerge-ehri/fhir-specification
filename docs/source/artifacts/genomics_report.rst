@@ -8,8 +8,15 @@ on blood specimens derived from patients.
 
 .. sidebar:: Discussions
 
-   :ref:`discussion-1`
-
+   | :ref:`issue-composite-reporting`
+   | :ref:`issue-report-comments`
+   | :ref:`issue-recommendations`
+   | :ref:`issue-recommendation-codes`
+   | :ref:`issue-interp-summary-text`
+   | :ref:`issue-region-coverage`
+   | :ref:`issue-report-sign-out-v-sent-dates`
+   | :ref:`issue-fixed-report-code`
+   | :ref:`issue-disclaimers`
 
 Scope
 ^^^^^
@@ -18,7 +25,7 @@ The eMERGE project includes sequencing, interpretation, generation and delivery 
 Content
 ^^^^^^^
 
-eMERGE uses the |genomics-report-prof| profile here which is derived from the |diagnosticreport-res| resource.
+eMERGE uses the |genomics-report-prof| profile which is derived from the |diagnosticreport-res| resource.
 
 .. excel-table::
    :file: ../_files/emerge-fhir-resources-definitions.xlsx

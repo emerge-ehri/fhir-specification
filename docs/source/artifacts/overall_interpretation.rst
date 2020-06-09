@@ -5,10 +5,9 @@ Overall Interpretation
 
 Provides a coarse overall interpretation of the genetic results reported.
 
-.. sidebar:: Artifact
+.. sidebar:: Discussions
 
-    * Type: Profile
-    * Spec: |overall-interp-prof|
+   :ref:`issue-interp-summary-text`
 
 Scope
 ^^^^^

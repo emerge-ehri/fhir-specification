@@ -96,5 +96,6 @@ a normative standard for general practice in clinical genetic test reporting.
 
    design
    artifacts/index
+   issues_and_resolutions
    discussion
    supplemental_materials

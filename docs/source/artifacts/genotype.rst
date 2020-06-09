@@ -4,13 +4,11 @@ Genotype
 ==================
 
 (todo LB)
-
-.. sidebar:: Artifact
-
-    * Type: Profile
-    * Spec: |genotype-prof|
-
 TODO description
+
+.. sidebar:: Discussions
+
+   :ref:`issue-variant-types`
 
 Scope
 ^^^^^
@@ -18,7 +16,8 @@ TODO scope
 
 Content
 ^^^^^^^
-TODO content
+
+eMERGE uses the |genotype-prof| profile which is derived from other CG profiles and ultimately the |observation-res| resource.
 
 .. excel-table::
    :file: ../_files/emerge-fhir-resources-definitions.xlsx

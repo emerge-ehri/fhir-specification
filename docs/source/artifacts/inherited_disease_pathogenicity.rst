@@ -5,13 +5,13 @@ Inherited Disease Pathogenicity
 
 (todo MM)
 adding test content
-
-.. sidebar:: Artifact
-
-    * Type: Profile
-    * Spec: |inh-dis-path-prof|
-
 TODO description
+
+.. sidebar:: Discussions
+
+   :ref:`issue-interp-summary-text`
+   :ref:`issue-secondary-findings`
+   :ref:`issue-interp-with-multiple-phenotypes`
 
 Scope
 ^^^^^
@@ -19,7 +19,7 @@ TODO scope
 
 Content
 ^^^^^^^
-TODO content
+eMERGE uses the |inh-dis-path-prof| profile which is derived from other profiles and ultimately the |observation-res| resource.
 
 .. excel-table::
    :file: ../_files/emerge-fhir-resources-definitions.xlsx

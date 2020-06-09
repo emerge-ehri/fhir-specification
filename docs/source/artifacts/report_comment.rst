@@ -5,10 +5,14 @@ Report Comment
 
 Observation resource that includes assertions made about the patient.
 
-.. sidebar:: Artifact
+.. sidebar:: Discussions
 
-    * Type: Resource
-    * Spec: |observation-res|
+   :ref:`issue-report-comments`
+
+.. .. sidebar:: Artifact
+..
+..     * Type: Resource
+..     * Spec: |observation-res|
 
 
 Scope

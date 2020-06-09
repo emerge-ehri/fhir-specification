@@ -4,13 +4,11 @@
 ======================
 
 (todo LB)
-
-.. sidebar:: Artifact
-
-    * Type: Resource
-    * Spec: |plandefinition-res|
-
 TODO description
+
+.. sidebar:: Discussions
+
+   :ref:`issue-test-information`
 
 Scope
 ^^^^^
@@ -18,7 +16,8 @@ TODO scope
 
 Content
 ^^^^^^^
-TODO content
+
+eMERGE uses the |plandefinition-res| resource with the following constraints.
 
 .. excel-table::
    :file: ../_files/emerge-fhir-resources-definitions.xlsx
