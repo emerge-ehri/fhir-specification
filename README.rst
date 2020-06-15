@@ -66,8 +66,8 @@ We use `SemVer`_ for versioning. For the versions available, see the `tags on th
 Authors
 ---------
 
-* **Mullai Murugan** - *Initial work* - `BCM-HGSC <https://www.hgsc.bcm.edu/>`_
 * **Larry Babb** - *Initial work* - `Broad Institute <https://www.broadinstitute.org/>`_
+* **Mullai Murugan** - *Initial work* - `BCM-HGSC <https://www.hgsc.bcm.edu/>`_
 
 **TBD** See also the list of `contributors <https://github.com/emerge-ehri/fhir-specification/contributors>`_ who participated in this project.
 
