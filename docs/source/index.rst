@@ -47,7 +47,9 @@ This Guide is divided into several pages which are listed at the top of each pag
 
      * Custom Extensions (3)
 
-* :ref:`Discussion<discussion>`: ... (identified issues and use cases)
+* :ref:`Issues & Resolutions<issues-and-resolutions>`: This section contains a comprehensive listing of issues in mapping and structuring the eMERGE data to the |fhir-gr-ig-short| and their resolutions.
+
+* :ref:`Discussion<discussion>`: This section contains discussions on strategic concerns with adoption, concerns related to representing variation and potential future use cases.
 
 * :ref:`Supplemental Material<supp-materials>`: ... (presentation, paper, github, definitions spreadsheet, examples, etc...)
 

@@ -113,7 +113,6 @@ The LMM general report layout and detailed mapping to their example report...
 FHIR Report Schema & Resources
 ------------------------------
 
-
 .. figure:: _images/schema-overview.png
    :align: left
 
@@ -151,90 +150,107 @@ catalogue of every resource, profile and extension used by this eMERGE specifica
    * - No.
      - Element
      - FHIR Resource
-     - IG Profile/Extension
-     - Sub Elements
+     - IG Profile/Ext
+     - Related Properties
    * - 1
      - Report
      - |diagnosticreport-res|
      - |genomics-report-prof|
-     - "Summary Interpretation", "Comments,Notes"
+     - | Test Disclaimer,
+       | Gene Coverage
    * - 2
      - Patient
      - |patient-res|
      - none
      -
    * - 3
-     - Sample/Specimen
+     - Sample / Specimen
      - |specimen-res|
      - |specimen-prof|
      -
-   * - 4,5
-     - Request / Order
+   * - 4
+     - Request / Orderer
      - |servicerequest-res|
-     - not used
-     - "Ordering Provider" (|practitionerrole-res|)
-   * - 6
-     - Test Performed
+     - |service-request-prof|
+     -
+   * - 5
+     - Test Performed ...
      - |plandefinition-res|
      - none
-     - "Test Performed Name", "Test Background"
+     - | ...Name,
+       | ...Background,
+       | ...Methodology,
+       | ...References
+   * - 6
+     - | Ordering Provider,
+       | Results Interpreter
+     - |practitionerrole-res|
+     - none
+     -
    * - 7
      - Performing Lab
      - |organization-res|
      - none
      -
    * - 8
-     - Results Interpreter
-     - |practitionerrole-res|
-     - none
+     - Recommendations (Proposed)
+     - |task-res|
+     - |recommended-followup-prof|
      -
    * - 9
+     - Comments (Additional Notes)
+     - |observation_res|
+     - none
+     -
+   * - 10
+     - Overall Interpretation
+     - |observation-res|
+     - |overall-interp-prof|
+     - Summary Text
+   * - 11
      - Diagnostic Gene Panel Results Group
      - |observation-res|
      - |grouper-prof|
-     - "Summary Interpretation"
-   * - 10
-     - Identified Variant Genotype
-     - |observation-res|
-     - |variant-prof|
-     -
-   * - 11
+     - Summary Text
+   * - 12
      - Clinical Interpretation
      - |observation-res|
      - |inh-dis-path-prof|
      -
-   * - 12
-     - Overall Interpretation
-     - |observation-res|
-     - |overall-interp-prof|
-     -
    * - 13
-     - Gene Coverage
-     - |observation-res|
-     - |related-artifact-ext|
-     -
-   * - 14
-     - Recommendations (Proposed Tasks)
-     - |task-res|
-     - |recommended-followup-prof|
-     -
-   * - 15
-     - Report References
-     - |plandefinition-res|, |observation-res|
-     - |related-artifact-ext|
-     -
-   * - 16
      - PGx Gene Panel Results Group
      - |observation-res|
      - |grouper-prof|
      -
-   * - 17
+   * - 14
      - Medication Implication
      - |observation-res|
-     - |metab-impl-prof|, |transport-impl-prof|, |efficacy-impl-prof|
+     - | |metab-impl-prof-abbr|,
+       | |transport-impl-prof-abbr|,
+       | |efficacy-impl-prof-abbr|
      -
-   * - 18
-     - Identified Variant Genotype/Diplotype
+   * - 15
+     - Identified Variant Genotype
+     - |observation-res|
+     - |variant-prof|
+     -
+   * - 16
+     - Identified Variant Diplotype
      - |observation-res|
      - |genotype-prof|
+     -
+   * - X5
+     - Summary Text
+     - none
+     - custom
+     -
+   * - X6
+     - Test Disclaimer
+     - none
+     - custom
+     -
+   * - X7
+     - Gene Coverage
+     - none
+     - |related-artifact-ext|
      -

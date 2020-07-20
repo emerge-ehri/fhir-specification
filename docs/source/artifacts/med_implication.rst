@@ -19,7 +19,9 @@ TODO scope
 
 Content
 ^^^^^^^
+
 eMERGE uses the following three profiles that all derive from the medication implication profile:
+
         * |metab-impl-prof|
         * |efficacy-impl-prof|
         * |transport-impl-prof|
