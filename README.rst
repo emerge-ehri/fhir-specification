@@ -5,7 +5,16 @@ Welcome to the eMERGE FHIR Specification Project
 
 Purpose
 -------
-This is a ReadTheDocs project that is the source of the eMERGE FHIR specification.
+This is a ReadTheDocs project that is the source of the eMERGE FHIR specification. The eMERGE FHIR pilot project included the creation of the eMERGE FHIR specification and associated implementation use cases, listed below:
+
+* `Generation of FHIR reports using the eMERGE FHIR Specification <https://github.com/emerge-ehri/fhir-implementation>`_
+
+* `EHR Integration and Pharmacogenomics decision support <https://github.com/emerge-ehri/FHIRGenomicsImporter>`_
+
+* `EHR Integration and Clinical Phenotype association <https://github.com/emerge-ehri/FHIRGenomicsProxy>`_
+
+
+Sample FHIR reports created by implementation project are available in the Sample Reports folder.  
 
 Documentation for the Specification
 ------------------------------------
@@ -18,50 +27,10 @@ You will find complete documentation for the eMERGE FHIR Specification at `the e
 Development Setup
 ------------------
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See build the documentation locally. All changes committed to this project will automatically trigger the build of the readthedocs.io project that publishes the `the eMERGE Results FHIR Specification site`_.
+ `These instructions`_ will get you a copy of the project up and running on your local machine for development and testing purposes. See build the documentation locally. All changes committed to this project will automatically trigger the build of the readthedocs.io project that publishes the `the eMERGE Results FHIR Specification site`_.
 
-Prerequisites
-^^^^^^^^^^^^^
+.. _These instructions: https://github.com/emerge-ehri/fhir-specification/wiki/eMERGE-Specification-ReadTheDocs-Development-Setup/
 
-python 3.7.4
-
-.. code-block:: 
-
-   # Install Python3... after install
-   >pip --version
-   pip 19.1.1 from /usr/local/lib/python3.7/site-packages/pip (python 3.7)
-
-Installing
-^^^^^^^^^^^
-
-A step by step series of examples that tell you how to get the project building
-
-Install the sphinx project requirements
-
-.. code-block::
-
-   > cd docs
-   docs> pip install -r requirements.txt
-
-Build the documentation from the docs folder
-
-.. code-block::
-
-   docs> make html
-
-View the local documentation build
-
-.. code-block::
-
-   docs> open bulid/html/index.html
-
-Versioning
------------
-
-We use `SemVer`_ for versioning. For the versions available, see the `tags on this repository`_.
-
-.. _SemVer: http://semver.org/
-.. _tags on this repository: https://github.com/emerge-ehri/fhir-specification/tags
 
 Authors
 ---------
