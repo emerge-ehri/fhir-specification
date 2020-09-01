@@ -27,9 +27,7 @@ You will find complete documentation for the eMERGE FHIR Specification at `the e
 Development Setup
 ------------------
 
- `These instructions`_ will get you a copy of the project up and running on your local machine for development and testing purposes. See build the documentation locally. All changes committed to this project will automatically trigger the build of the readthedocs.io project that publishes the `the eMERGE Results FHIR Specification site`_.
-
-.. _These instructions: https://github.com/emerge-ehri/fhir-specification/wiki/eMERGE-Specification-ReadTheDocs-Development-Setup/
+`These instructions <https://github.com/emerge-ehri/fhir-specification/wiki/eMERGE-Specification-ReadTheDocs-Development-Setup/>`_ will get you a copy of the project up and running on your local machine for development and testing purposes. See build the documentation locally. All changes committed to this project will automatically trigger the build of the readthedocs.io project that publishes the `the eMERGE Results FHIR Specification site`_.
 
 
 Authors
