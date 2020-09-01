@@ -1,0 +1,2433 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4",
+      "resource": {
+        "resourceType": "Patient",
+        "language": "en-US",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">{\n  &quot;resourceType&quot;: &quot;Patient&quot;,\n  &quot;language&quot;: &quot;en-US&quot;,\n  &quot;extension&quot;: [\n    {\n      &quot;url&quot;: &quot;http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex&quot;,\n      &quot;valueCode&quot;: &quot;M&quot;\n    },\n    {\n      &quot;url&quot;: &quot;http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity&quot;,\n      &quot;extension&quot;: [\n        {\n          &quot;url&quot;: &quot;text&quot;,\n          &quot;valueString&quot;: &quot;Not Hispanic or Latino&quot;\n        }\n      ]\n    },\n    {\n      &quot;url&quot;: &quot;http://hl7.org/fhir/us/core/StructureDefinition/us-core-race&quot;,\n      &quot;extension&quot;: [\n        {\n          &quot;url&quot;: &quot;ombCategory&quot;,\n          &quot;valueCoding&quot;: {\n            &quot;system&quot;: &quot;urn:oid:2.16.840.1.113883.6.238&quot;,\n            &quot;code&quot;: &quot;2106-3&quot;,\n            &quot;display&quot;: &quot;White&quot;\n          }\n        },\n        {\n          &quot;url&quot;: &quot;text&quot;,\n          &quot;valueString&quot;: &quot;White&quot;\n        }\n      ]\n    }\n  ],\n  &quot;identifier&quot;: [\n    {\n      &quot;type&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v2-0203&quot;,\n            &quot;code&quot;: &quot;PI&quot;,\n            &quot;display&quot;: &quot;Patient internal identifier&quot;\n          }\n        ]\n      },\n      &quot;system&quot;: &quot;http://namingsystem.org/&quot;,\n      &quot;value&quot;: &quot;6b6de6bd-1290-4ba1-8c08-b0e9ba45b2be&quot;\n    }\n  ]\n}</div>"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+            "valueCode": "M"
+          },
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "Not Hispanic or Latino"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+            "extension": [
+              {
+                "url": "ombCategory",
+                "valueCoding": {
+                  "system": "urn:oid:2.16.840.1.113883.6.238",
+                  "code": "2106-3",
+                  "display": "White"
+                }
+              },
+              {
+                "url": "text",
+                "valueString": "White"
+              }
+            ]
+          }
+        ],
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "PI",
+                  "display": "Patient internal identifier"
+                }
+              ]
+            },
+            "system": "http://namingsystem.org/",
+            "value": "6b6de6bd-1290-4ba1-8c08-b0e9ba45b2be"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:84ff6b23-15cf-49da-b191-0ee502e638cc",
+      "resource": {
+        "resourceType": "Specimen",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/specimen"
+          ]
+        },
+        "language": "en-US",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">{\n  &quot;resourceType&quot;: &quot;Specimen&quot;,\n  &quot;meta&quot;: {\n    &quot;profile&quot;: [\n      &quot;http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/specimen&quot;\n    ]\n  },\n  &quot;language&quot;: &quot;en-US&quot;,\n  &quot;identifier&quot;: [\n    {\n      &quot;system&quot;: &quot;http://namingsystem.org/&quot;,\n      &quot;value&quot;: &quot;6b6de6bd-1290-4ba1-8c08-b0e9ba45b2be--specimen&quot;\n    }\n  ],\n  &quot;type&quot;: {\n    &quot;coding&quot;: [\n      {\n        &quot;system&quot;: &quot;http://snomed.info/sct&quot;,\n        &quot;code&quot;: &quot;258566005&quot;,\n        &quot;display&quot;: &quot;Deoxyribonucleic acid sample&quot;\n      }\n    ]\n  },\n  &quot;subject&quot;: {\n    &quot;reference&quot;: &quot;urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4&quot;\n  },\n  &quot;request&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:898c079c-b11d-4606-90aa-61865e49d5c3&quot;\n    }\n  ]\n}</div>"
+        },
+        "identifier": [
+          {
+            "system": "http://namingsystem.org/",
+            "value": "6b6de6bd-1290-4ba1-8c08-b0e9ba45b2be--specimen"
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "258566005",
+              "display": "Deoxyribonucleic acid sample"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4"
+        },
+        "request": [
+          {
+            "reference": "urn:uuid:898c079c-b11d-4606-90aa-61865e49d5c3"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Specimen"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:898c079c-b11d-4606-90aa-61865e49d5c3",
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/servicerequest"
+          ]
+        },
+        "language": "en-US",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">{\n  &quot;resourceType&quot;: &quot;ServiceRequest&quot;,\n  &quot;meta&quot;: {\n    &quot;profile&quot;: [\n      &quot;http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/servicerequest&quot;\n    ]\n  },\n  &quot;language&quot;: &quot;en-US&quot;,\n  &quot;identifier&quot;: [\n    {\n      &quot;system&quot;: &quot;http://namingsystem.org/&quot;,\n      &quot;value&quot;: &quot;6b6de6bd-1290-4ba1-8c08-b0e9ba45b2be--serviceRequest&quot;\n    }\n  ],\n  &quot;instantiatesCanonical&quot;: [\n    &quot;urn:uuid:3c8fad5c-c25f-4c0f-a19a-dd40a63afd6e&quot;\n  ],\n  &quot;status&quot;: &quot;completed&quot;,\n  &quot;intent&quot;: &quot;filler-order&quot;,\n  &quot;category&quot;: [\n    {\n      &quot;coding&quot;: [\n        {\n          &quot;system&quot;: &quot;http://snomed.info/sct&quot;,\n          &quot;code&quot;: &quot;108252007&quot;,\n          &quot;display&quot;: &quot;Laboratory procedure&quot;\n        }\n      ]\n    }\n  ],\n  &quot;code&quot;: {\n    &quot;coding&quot;: [\n      {\n        &quot;system&quot;: &quot;https://namingsystem.org/lab-test-codes/&quot;,\n        &quot;code&quot;: &quot;emerge-seq-ngs-pnl&quot;,\n        &quot;display&quot;: &quot;eMERGE-Seq NGS Panel&quot;\n      }\n    ],\n    &quot;text&quot;: &quot;eMERGE-Seq Panel Sequencing Report&quot;\n  },\n  &quot;subject&quot;: {\n    &quot;reference&quot;: &quot;urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4&quot;\n  },\n  &quot;authoredOn&quot;: &quot;2020-04-17T00:00:00-05:00&quot;,\n  &quot;performerType&quot;: {\n    &quot;coding&quot;: [\n      {\n        &quot;system&quot;: &quot;http://snomed.info/sct&quot;,\n        &quot;code&quot;: &quot;310049001&quot;,\n        &quot;display&quot;: &quot;Clinical genetics service&quot;\n      }\n    ]\n  },\n  &quot;performer&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa&quot;\n    }\n  ],\n  &quot;reasonCode&quot;: [\n    {\n      &quot;coding&quot;: [\n        {\n          &quot;system&quot;: &quot;http://namingsystem.org&quot;,\n          &quot;code&quot;: &quot;10093-7&quot;,\n          &quot;display&quot;: &quot;Not selected for trait&quot;\n        }\n      ]\n    }\n  ],\n  &quot;specimen&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:84ff6b23-15cf-49da-b191-0ee502e638cc&quot;\n    }\n  ]\n}</div>"
+        },
+        "identifier": [
+          {
+            "system": "http://namingsystem.org/",
+            "value": "6b6de6bd-1290-4ba1-8c08-b0e9ba45b2be--serviceRequest"
+          }
+        ],
+        "instantiatesCanonical": [
+          "urn:uuid:3c8fad5c-c25f-4c0f-a19a-dd40a63afd6e"
+        ],
+        "status": "completed",
+        "intent": "filler-order",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "108252007",
+                "display": "Laboratory procedure"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "https://namingsystem.org/lab-test-codes/",
+              "code": "emerge-seq-ngs-pnl",
+              "display": "eMERGE-Seq NGS Panel"
+            }
+          ],
+          "text": "eMERGE-Seq Panel Sequencing Report"
+        },
+        "subject": {
+          "reference": "urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4"
+        },
+        "authoredOn": "2020-04-17T00:00:00-05:00",
+        "performerType": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "310049001",
+              "display": "Clinical genetics service"
+            }
+          ]
+        },
+        "performer": [
+          {
+            "reference": "urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa"
+          }
+        ],
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://namingsystem.org",
+                "code": "10093-7",
+                "display": "Not selected for trait"
+              }
+            ]
+          }
+        ],
+        "specimen": [
+          {
+            "reference": "urn:uuid:84ff6b23-15cf-49da-b191-0ee502e638cc"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "ServiceRequest"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5d52cb95-d6d5-4eeb-8061-b71970812a75",
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/overall-interpretation"
+          ]
+        },
+        "language": "en-US",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">{\n  &quot;resourceType&quot;: &quot;Observation&quot;,\n  &quot;meta&quot;: {\n    &quot;profile&quot;: [\n      &quot;http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/overall-interpretation&quot;\n    ]\n  },\n  &quot;language&quot;: &quot;en-US&quot;,\n  &quot;identifier&quot;: [\n    {\n      &quot;system&quot;: &quot;http://namingsystem.org/&quot;,\n      &quot;value&quot;: &quot;1500001777.18--overallInterpretation&quot;\n    }\n  ],\n  &quot;basedOn&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:898c079c-b11d-4606-90aa-61865e49d5c3&quot;\n    }\n  ],\n  &quot;status&quot;: &quot;final&quot;,\n  &quot;category&quot;: [\n    {\n      &quot;coding&quot;: [\n        {\n          &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/observation-category&quot;,\n          &quot;code&quot;: &quot;laboratory&quot;,\n          &quot;display&quot;: &quot;Laboratory&quot;\n        }\n      ]\n    }\n  ],\n  &quot;code&quot;: {\n    &quot;coding&quot;: [\n      {\n        &quot;system&quot;: &quot;http://loinc.org&quot;,\n        &quot;code&quot;: &quot;51968-6&quot;,\n        &quot;display&quot;: &quot;Genetic disease analysis overall interpretation&quot;\n      }\n    ]\n  },\n  &quot;subject&quot;: {\n    &quot;reference&quot;: &quot;urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4&quot;\n  },\n  &quot;performer&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa&quot;\n    }\n  ],\n  &quot;valueCodeableConcept&quot;: {\n    &quot;coding&quot;: [\n      {\n        &quot;system&quot;: &quot;http://loinc.org&quot;,\n        &quot;code&quot;: &quot;LA6577-6&quot;,\n        &quot;display&quot;: &quot;Negative&quot;\n      }\n    ]\n  },\n  &quot;specimen&quot;: {\n    &quot;reference&quot;: &quot;urn:uuid:84ff6b23-15cf-49da-b191-0ee502e638cc&quot;\n  }\n}</div>"
+        },
+        "identifier": [
+          {
+            "system": "http://namingsystem.org/",
+            "value": "1500001777.18--overallInterpretation"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "urn:uuid:898c079c-b11d-4606-90aa-61865e49d5c3"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "51968-6",
+              "display": "Genetic disease analysis overall interpretation"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4"
+        },
+        "performer": [
+          {
+            "reference": "urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa"
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA6577-6",
+              "display": "Negative"
+            }
+          ]
+        },
+        "specimen": {
+          "reference": "urn:uuid:84ff6b23-15cf-49da-b191-0ee502e638cc"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d9b12bcd-42fe-4381-88eb-edf8b37325f7",
+      "resource": {
+        "resourceType": "Observation",
+        "language": "en-US",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">{\n  &quot;resourceType&quot;: &quot;Observation&quot;,\n  &quot;language&quot;: &quot;en-US&quot;,\n  &quot;status&quot;: &quot;final&quot;,\n  &quot;code&quot;: {\n    &quot;coding&quot;: [\n      {\n        &quot;system&quot;: &quot;http://loinc.org&quot;,\n        &quot;code&quot;: &quot;86467-8&quot;,\n        &quot;display&quot;: &quot;Report comment&quot;\n      }\n    ]\n  },\n  &quot;subject&quot;: {\n    &quot;reference&quot;: &quot;urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4&quot;\n  },\n  &quot;performer&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa&quot;\n    }\n  ]\n}</div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "86467-8",
+              "display": "Report comment"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4"
+        },
+        "performer": [
+          {
+            "reference": "urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:99029567-75d9-4ab1-ae42-417f2bb65701",
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/grouper"
+          ]
+        },
+        "language": "en-US",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">{\n  &quot;resourceType&quot;: &quot;Observation&quot;,\n  &quot;meta&quot;: {\n    &quot;profile&quot;: [\n      &quot;http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/grouper&quot;\n    ]\n  },\n  &quot;language&quot;: &quot;en-US&quot;,\n  &quot;basedOn&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:898c079c-b11d-4606-90aa-61865e49d5c3&quot;\n    }\n  ],\n  &quot;status&quot;: &quot;final&quot;,\n  &quot;category&quot;: [\n    {\n      &quot;coding&quot;: [\n        {\n          &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/observation-category&quot;,\n          &quot;code&quot;: &quot;laboratory&quot;,\n          &quot;display&quot;: &quot;Laboratory&quot;\n        }\n      ]\n    }\n  ],\n  &quot;code&quot;: {\n    &quot;coding&quot;: [\n      {\n        &quot;system&quot;: &quot;http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes&quot;,\n        &quot;code&quot;: &quot;grouper&quot;\n      }\n    ]\n  },\n  &quot;subject&quot;: {\n    &quot;reference&quot;: &quot;urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4&quot;\n  },\n  &quot;performer&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa&quot;\n    }\n  ],\n  &quot;specimen&quot;: {\n    &quot;reference&quot;: &quot;urn:uuid:84ff6b23-15cf-49da-b191-0ee502e638cc&quot;\n  },\n  &quot;hasMember&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:5d52cb95-d6d5-4eeb-8061-b71970812a75&quot;\n    }\n  ]\n}</div>"
+        },
+        "basedOn": [
+          {
+            "reference": "urn:uuid:898c079c-b11d-4606-90aa-61865e49d5c3"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes",
+              "code": "grouper"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4"
+        },
+        "performer": [
+          {
+            "reference": "urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa"
+          }
+        ],
+        "specimen": {
+          "reference": "urn:uuid:84ff6b23-15cf-49da-b191-0ee502e638cc"
+        },
+        "hasMember": [
+          {
+            "reference": "urn:uuid:5d52cb95-d6d5-4eeb-8061-b71970812a75"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e8881794-5c64-4874-b304-8eb7078ad991",
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/grouper"
+          ]
+        },
+        "language": "en-US",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">{\n  &quot;resourceType&quot;: &quot;Observation&quot;,\n  &quot;meta&quot;: {\n    &quot;profile&quot;: [\n      &quot;http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/grouper&quot;\n    ]\n  },\n  &quot;language&quot;: &quot;en-US&quot;,\n  &quot;basedOn&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:898c079c-b11d-4606-90aa-61865e49d5c3&quot;\n    }\n  ],\n  &quot;status&quot;: &quot;final&quot;,\n  &quot;category&quot;: [\n    {\n      &quot;coding&quot;: [\n        {\n          &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/observation-category&quot;,\n          &quot;code&quot;: &quot;laboratory&quot;,\n          &quot;display&quot;: &quot;Laboratory&quot;\n        }\n      ]\n    }\n  ],\n  &quot;code&quot;: {\n    &quot;coding&quot;: [\n      {\n        &quot;system&quot;: &quot;http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes&quot;,\n        &quot;code&quot;: &quot;grouper&quot;\n      }\n    ]\n  },\n  &quot;subject&quot;: {\n    &quot;reference&quot;: &quot;urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4&quot;\n  },\n  &quot;performer&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa&quot;\n    }\n  ],\n  &quot;specimen&quot;: {\n    &quot;reference&quot;: &quot;urn:uuid:84ff6b23-15cf-49da-b191-0ee502e638cc&quot;\n  },\n  &quot;hasMember&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:0030ea52-4ab1-4634-ae2f-78e53808b070&quot;\n    },\n    {\n      &quot;reference&quot;: &quot;urn:uuid:b57e0afb-5b2d-45de-94ae-369c9489343d&quot;\n    },\n    {\n      &quot;reference&quot;: &quot;urn:uuid:6a4e0e84-86cd-4e91-91a5-0d38849029d1&quot;\n    },\n    {\n      &quot;reference&quot;: &quot;urn:uuid:52099b6d-e573-47bc-9f42-e568fe6f76a3&quot;\n    },\n    {\n      &quot;reference&quot;: &quot;urn:uuid:061f8892-89f8-46d5-9d6a-b65e7ea2f4b5&quot;\n    },\n    {\n      &quot;reference&quot;: &quot;urn:uuid:4b05e108-ab8a-4bc9-826e-a5cf2f586c61&quot;\n    }\n  ]\n}</div>"
+        },
+        "basedOn": [
+          {
+            "reference": "urn:uuid:898c079c-b11d-4606-90aa-61865e49d5c3"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes",
+              "code": "grouper"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4"
+        },
+        "performer": [
+          {
+            "reference": "urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa"
+          }
+        ],
+        "specimen": {
+          "reference": "urn:uuid:84ff6b23-15cf-49da-b191-0ee502e638cc"
+        },
+        "hasMember": [
+          {
+            "reference": "urn:uuid:0030ea52-4ab1-4634-ae2f-78e53808b070"
+          },
+          {
+            "reference": "urn:uuid:b57e0afb-5b2d-45de-94ae-369c9489343d"
+          },
+          {
+            "reference": "urn:uuid:6a4e0e84-86cd-4e91-91a5-0d38849029d1"
+          },
+          {
+            "reference": "urn:uuid:52099b6d-e573-47bc-9f42-e568fe6f76a3"
+          },
+          {
+            "reference": "urn:uuid:061f8892-89f8-46d5-9d6a-b65e7ea2f4b5"
+          },
+          {
+            "reference": "urn:uuid:4b05e108-ab8a-4bc9-826e-a5cf2f586c61"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0030ea52-4ab1-4634-ae2f-78e53808b070",
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/medication-metabolism"
+          ]
+        },
+        "language": "en-US",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">{\n  &quot;resourceType&quot;: &quot;Observation&quot;,\n  &quot;meta&quot;: {\n    &quot;profile&quot;: [\n      &quot;http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/medication-metabolism&quot;\n    ]\n  },\n  &quot;language&quot;: &quot;en-US&quot;,\n  &quot;extension&quot;: [\n    {\n      &quot;url&quot;: &quot;http://namingsystem.org/fhir/StructureDefinition/interpretation-summary-text&quot;,\n      &quot;valueString&quot;: &quot;This individual is heterozygous for the non-functional allele of the CYP2C19 gene. Based on the genotype result, this patient is predicted to have a CYP2C19 intermediate metabolizer phenotype. This genotype information can be used by patients and clinicians as part of the shared decision-making process for several drugs metabolized by CYP2C19 including clopidogrel, voriconazole, amitriptyline, citalopram and escitalopram. For clopidogrel, individuals with this diplotype are expected to have reduced platelet inhibition, increased residual platelet aggregation and increased risk for adverse cardiovascular events in response to clopidogrel. Alternative antiplatelet therapy (if no contraindication) is recommended. Refer to current guidelines for dosage and recommendations at https://cpicpgx.org/guidelines/guideline-for-clopidogrel-and-cyp2c19/. For voriconazole, higher dose-adjusted trough concentrations of voriconazole compared to normal metabolizers is expected in individuals with this genotype. Initiate therapy with recommended standard of care dosing. Refer to current guidelines for dosage and recommendations at https://cpicpgx.org/guidelines/guideline-for-voriconazole-and-cyp2c19/. For citalopram and escitalopram, initiate therapy with recommended starting dose. Refer to current guidelines for dosage and recommendations at https://cpicpgx.org/guidelines/guideline-for-selective-serotonin-reuptake-inhibitors-and-cyp2d6-and-cyp2c19/. For amitriptyline, initiate therapy with recommended starting dose. Refer to current guidelines for dosage and recommendations at https://cpicpgx.org/guidelines/guideline-for-tricyclic-antidepressants-and-cyp2d6-and-cyp2c19/. For citalopram, escitalopram and amitriptyline, if CYP2D6 genotyping is available, refer to the current guidelines for dosing recommendations.&quot;\n    }\n  ],\n  &quot;status&quot;: &quot;final&quot;,\n  &quot;category&quot;: [\n    {\n      &quot;coding&quot;: [\n        {\n          &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/observation-category&quot;,\n          &quot;code&quot;: &quot;laboratory&quot;,\n          &quot;display&quot;: &quot;Laboratory&quot;\n        }\n      ]\n    }\n  ],\n  &quot;code&quot;: {\n    &quot;coding&quot;: [\n      {\n        &quot;system&quot;: &quot;http://loinc.org&quot;,\n        &quot;code&quot;: &quot;53040-2&quot;,\n        &quot;display&quot;: &quot;Genetic variation's effect on drug metabolism&quot;\n      }\n    ]\n  },\n  &quot;subject&quot;: {\n    &quot;reference&quot;: &quot;urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4&quot;\n  },\n  &quot;performer&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa&quot;\n    }\n  ],\n  &quot;valueCodeableConcept&quot;: {\n    &quot;coding&quot;: [\n      {\n        &quot;system&quot;: &quot;http://loinc.org&quot;,\n        &quot;code&quot;: &quot;LA10317-8&quot;,\n        &quot;display&quot;: &quot;Intermediate metabolizer&quot;\n      }\n    ]\n  },\n  &quot;derivedFrom&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:fe830050-f8e3-4710-95ea-1255ec6ac31f&quot;\n    }\n  ],\n  &quot;component&quot;: [\n    {\n      &quot;extension&quot;: [\n        {\n          &quot;url&quot;: &quot;http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/RelatedArtifact&quot;,\n          &quot;valueRelatedArtifact&quot;: {\n            &quot;type&quot;: &quot;justification&quot;,\n            &quot;url&quot;: &quot;https://cpicpgx.org/guidelines/guideline-for-clopidogrel-and-cyp2c19/&quot;\n          }\n        }\n      ],\n      &quot;code&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://loinc.org&quot;,\n            &quot;code&quot;: &quot;51963-7&quot;,\n            &quot;display&quot;: &quot;Medication assessed&quot;\n          }\n        ]\n      },\n      &quot;valueCodeableConcept&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://ncimeta.nci.nih.gov&quot;,\n            &quot;code&quot;: &quot;C0070166&quot;,\n            &quot;display&quot;: &quot;clopidogrel&quot;\n          }\n        ]\n      }\n    },\n    {\n      &quot;extension&quot;: [\n        {\n          &quot;url&quot;: &quot;http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/RelatedArtifact&quot;,\n          &quot;valueRelatedArtifact&quot;: {\n            &quot;type&quot;: &quot;justification&quot;,\n            &quot;url&quot;: &quot;https://cpicpgx.org/guidelines/guideline-for-voriconazole-and-cyp2c19/&quot;\n          }\n        }\n      ],\n      &quot;code&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://loinc.org&quot;,\n            &quot;code&quot;: &quot;51963-7&quot;,\n            &quot;display&quot;: &quot;Medication assessed&quot;\n          }\n        ]\n      },\n      &quot;valueCodeableConcept&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://ncimeta.nci.nih.gov&quot;,\n            &quot;code&quot;: &quot;C0393080&quot;,\n            &quot;display&quot;: &quot;voriconazole&quot;\n          }\n        ]\n      }\n    },\n    {\n      &quot;extension&quot;: [\n        {\n          &quot;url&quot;: &quot;http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/RelatedArtifact&quot;,\n          &quot;valueRelatedArtifact&quot;: {\n            &quot;type&quot;: &quot;justification&quot;,\n            &quot;url&quot;: &quot;https://cpicpgx.org/guidelines/guideline-for-selective-serotonin-reuptake-inhibitors-and-cyp2d6-and-cyp2c19/&quot;\n          }\n        }\n      ],\n      &quot;code&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://loinc.org&quot;,\n            &quot;code&quot;: &quot;51963-7&quot;,\n            &quot;display&quot;: &quot;Medication assessed&quot;\n          }\n        ]\n      },\n      &quot;valueCodeableConcept&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://ncimeta.nci.nih.gov&quot;,\n            &quot;code&quot;: &quot;C0008845&quot;,\n            &quot;display&quot;: &quot;citalopram&quot;\n          }\n        ]\n      }\n    },\n    {\n      &quot;extension&quot;: [\n        {\n          &quot;url&quot;: &quot;http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/RelatedArtifact&quot;,\n          &quot;valueRelatedArtifact&quot;: {\n            &quot;type&quot;: &quot;justification&quot;,\n            &quot;url&quot;: &quot;https://cpicpgx.org/guidelines/guideline-for-selective-serotonin-reuptake-inhibitors-and-cyp2d6-and-cyp2c19/&quot;\n          }\n        }\n      ],\n      &quot;code&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://loinc.org&quot;,\n            &quot;code&quot;: &quot;51963-7&quot;,\n            &quot;display&quot;: &quot;Medication assessed&quot;\n          }\n        ]\n      },\n      &quot;valueCodeableConcept&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://ncimeta.nci.nih.gov&quot;,\n            &quot;code&quot;: &quot;C1099456&quot;,\n            &quot;display&quot;: &quot;escitalopram&quot;\n          }\n        ]\n      }\n    },\n    {\n      &quot;extension&quot;: [\n        {\n          &quot;url&quot;: &quot;http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/RelatedArtifact&quot;,\n          &quot;valueRelatedArtifact&quot;: {\n            &quot;type&quot;: &quot;justification&quot;,\n            &quot;url&quot;: &quot;https://cpicpgx.org/guidelines/guideline-for-tricyclic-antidepressants-and-cyp2d6-and-cyp2c19/&quot;\n          }\n        }\n      ],\n      &quot;code&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://loinc.org&quot;,\n            &quot;code&quot;: &quot;51963-7&quot;,\n            &quot;display&quot;: &quot;Medication assessed&quot;\n          }\n        ]\n      },\n      &quot;valueCodeableConcept&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://ncimeta.nci.nih.gov&quot;,\n            &quot;code&quot;: &quot;C0002600&quot;,\n            &quot;display&quot;: &quot;amitriptyline&quot;\n          }\n        ]\n      }\n    }\n  ]\n}</div>"
+        },
+        "extension": [
+          {
+            "url": "http://namingsystem.org/fhir/StructureDefinition/interpretation-summary-text",
+            "valueString": "This individual is heterozygous for the non-functional allele of the CYP2C19 gene. Based on the genotype result, this patient is predicted to have a CYP2C19 intermediate metabolizer phenotype. This genotype information can be used by patients and clinicians as part of the shared decision-making process for several drugs metabolized by CYP2C19 including clopidogrel, voriconazole, amitriptyline, citalopram and escitalopram. For clopidogrel, individuals with this diplotype are expected to have reduced platelet inhibition, increased residual platelet aggregation and increased risk for adverse cardiovascular events in response to clopidogrel. Alternative antiplatelet therapy (if no contraindication) is recommended. Refer to current guidelines for dosage and recommendations at https://cpicpgx.org/guidelines/guideline-for-clopidogrel-and-cyp2c19/. For voriconazole, higher dose-adjusted trough concentrations of voriconazole compared to normal metabolizers is expected in individuals with this genotype. Initiate therapy with recommended standard of care dosing. Refer to current guidelines for dosage and recommendations at https://cpicpgx.org/guidelines/guideline-for-voriconazole-and-cyp2c19/. For citalopram and escitalopram, initiate therapy with recommended starting dose. Refer to current guidelines for dosage and recommendations at https://cpicpgx.org/guidelines/guideline-for-selective-serotonin-reuptake-inhibitors-and-cyp2d6-and-cyp2c19/. For amitriptyline, initiate therapy with recommended starting dose. Refer to current guidelines for dosage and recommendations at https://cpicpgx.org/guidelines/guideline-for-tricyclic-antidepressants-and-cyp2d6-and-cyp2c19/. For citalopram, escitalopram and amitriptyline, if CYP2D6 genotyping is available, refer to the current guidelines for dosing recommendations."
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "53040-2",
+              "display": "Genetic variation's effect on drug metabolism"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4"
+        },
+        "performer": [
+          {
+            "reference": "urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa"
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA10317-8",
+              "display": "Intermediate metabolizer"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "urn:uuid:fe830050-f8e3-4710-95ea-1255ec6ac31f"
+          }
+        ],
+        "component": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/RelatedArtifact",
+                "valueRelatedArtifact": {
+                  "type": "justification",
+                  "url": "https://cpicpgx.org/guidelines/guideline-for-clopidogrel-and-cyp2c19/"
+                }
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "51963-7",
+                  "display": "Medication assessed"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://ncimeta.nci.nih.gov",
+                  "code": "C0070166",
+                  "display": "clopidogrel"
+                }
+              ]
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/RelatedArtifact",
+                "valueRelatedArtifact": {
+                  "type": "justification",
+                  "url": "https://cpicpgx.org/guidelines/guideline-for-voriconazole-and-cyp2c19/"
+                }
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "51963-7",
+                  "display": "Medication assessed"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://ncimeta.nci.nih.gov",
+                  "code": "C0393080",
+                  "display": "voriconazole"
+                }
+              ]
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/RelatedArtifact",
+                "valueRelatedArtifact": {
+                  "type": "justification",
+                  "url": "https://cpicpgx.org/guidelines/guideline-for-selective-serotonin-reuptake-inhibitors-and-cyp2d6-and-cyp2c19/"
+                }
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "51963-7",
+                  "display": "Medication assessed"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://ncimeta.nci.nih.gov",
+                  "code": "C0008845",
+                  "display": "citalopram"
+                }
+              ]
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/RelatedArtifact",
+                "valueRelatedArtifact": {
+                  "type": "justification",
+                  "url": "https://cpicpgx.org/guidelines/guideline-for-selective-serotonin-reuptake-inhibitors-and-cyp2d6-and-cyp2c19/"
+                }
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "51963-7",
+                  "display": "Medication assessed"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://ncimeta.nci.nih.gov",
+                  "code": "C1099456",
+                  "display": "escitalopram"
+                }
+              ]
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/RelatedArtifact",
+                "valueRelatedArtifact": {
+                  "type": "justification",
+                  "url": "https://cpicpgx.org/guidelines/guideline-for-tricyclic-antidepressants-and-cyp2d6-and-cyp2c19/"
+                }
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "51963-7",
+                  "display": "Medication assessed"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://ncimeta.nci.nih.gov",
+                  "code": "C0002600",
+                  "display": "amitriptyline"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b57e0afb-5b2d-45de-94ae-369c9489343d",
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/medication-metabolism"
+          ]
+        },
+        "language": "en-US",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">{\n  &quot;resourceType&quot;: &quot;Observation&quot;,\n  &quot;meta&quot;: {\n    &quot;profile&quot;: [\n      &quot;http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/medication-metabolism&quot;\n    ]\n  },\n  &quot;language&quot;: &quot;en-US&quot;,\n  &quot;extension&quot;: [\n    {\n      &quot;url&quot;: &quot;http://namingsystem.org/fhir/StructureDefinition/interpretation-summary-text&quot;,\n      &quot;valueString&quot;: &quot;This individual is homozygous for the functional allele of the DPYD gene.  This genotype information can be used by patients and clinicians as part of the shared decision-making process for fluoropyrimidines (capecitabine, fluorouracil, tegafur).  Based on the genotype result, this patient is predicted to have a normal DPD activity phenotype.  Individuals with this diplotype are expected to have \\&quot;normal\\&quot; risk for fluoropyrimidine toxicity. Recommendations include the use of label recommended dosage and administration. Refer to current guidelines for dosage and recommendations at https://cpicpgx.org/guidelines/guideline-for-fluoropyrimidines-and-dpyd/.&quot;\n    }\n  ],\n  &quot;status&quot;: &quot;final&quot;,\n  &quot;category&quot;: [\n    {\n      &quot;coding&quot;: [\n        {\n          &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/observation-category&quot;,\n          &quot;code&quot;: &quot;laboratory&quot;,\n          &quot;display&quot;: &quot;Laboratory&quot;\n        }\n      ]\n    }\n  ],\n  &quot;code&quot;: {\n    &quot;coding&quot;: [\n      {\n        &quot;system&quot;: &quot;http://loinc.org&quot;,\n        &quot;code&quot;: &quot;53040-2&quot;,\n        &quot;display&quot;: &quot;Genetic variation's effect on drug metabolism&quot;\n      }\n    ]\n  },\n  &quot;subject&quot;: {\n    &quot;reference&quot;: &quot;urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4&quot;\n  },\n  &quot;performer&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa&quot;\n    }\n  ],\n  &quot;valueCodeableConcept&quot;: {\n    &quot;coding&quot;: [\n      {\n        &quot;system&quot;: &quot;http://loinc.org&quot;,\n        &quot;code&quot;: &quot;LA25391-6&quot;,\n        &quot;display&quot;: &quot;Normal metabolizer&quot;\n      }\n    ]\n  },\n  &quot;derivedFrom&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:b4f732be-343c-4ce7-839e-5dc8fcad0649&quot;\n    }\n  ],\n  &quot;component&quot;: [\n    {\n      &quot;extension&quot;: [\n        {\n          &quot;url&quot;: &quot;http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/RelatedArtifact&quot;,\n          &quot;valueRelatedArtifact&quot;: {\n            &quot;type&quot;: &quot;justification&quot;,\n            &quot;url&quot;: &quot;https://cpicpgx.org/guidelines/guideline-for-fluoropyrimidines-and-dpyd/&quot;\n          }\n        }\n      ],\n      &quot;code&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://loinc.org&quot;,\n            &quot;code&quot;: &quot;51963-7&quot;,\n            &quot;display&quot;: &quot;Medication assessed&quot;\n          }\n        ]\n      },\n      &quot;valueCodeableConcept&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://ncimeta.nci.nih.gov&quot;,\n            &quot;code&quot;: &quot;C0671970&quot;,\n            &quot;display&quot;: &quot;capecitabine&quot;\n          }\n        ]\n      }\n    },\n    {\n      &quot;extension&quot;: [\n        {\n          &quot;url&quot;: &quot;http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/RelatedArtifact&quot;,\n          &quot;valueRelatedArtifact&quot;: {\n            &quot;type&quot;: &quot;justification&quot;,\n            &quot;url&quot;: &quot;https://cpicpgx.org/guidelines/guideline-for-fluoropyrimidines-and-dpyd/&quot;\n          }\n        }\n      ],\n      &quot;code&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://loinc.org&quot;,\n            &quot;code&quot;: &quot;51963-7&quot;,\n            &quot;display&quot;: &quot;Medication assessed&quot;\n          }\n        ]\n      },\n      &quot;valueCodeableConcept&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://ncimeta.nci.nih.gov&quot;,\n            &quot;code&quot;: &quot;C0016360&quot;,\n            &quot;display&quot;: &quot;fluorouracil&quot;\n          }\n        ]\n      }\n    },\n    {\n      &quot;extension&quot;: [\n        {\n          &quot;url&quot;: &quot;http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/RelatedArtifact&quot;,\n          &quot;valueRelatedArtifact&quot;: {\n            &quot;type&quot;: &quot;justification&quot;,\n            &quot;url&quot;: &quot;https://cpicpgx.org/guidelines/guideline-for-fluoropyrimidines-and-dpyd/&quot;\n          }\n        }\n      ],\n      &quot;code&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://loinc.org&quot;,\n            &quot;code&quot;: &quot;51963-7&quot;,\n            &quot;display&quot;: &quot;Medication assessed&quot;\n          }\n        ]\n      },\n      &quot;valueCodeableConcept&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://ncimeta.nci.nih.gov&quot;,\n            &quot;code&quot;: &quot;C0016778&quot;,\n            &quot;display&quot;: &quot;tegafur&quot;\n          }\n        ]\n      }\n    }\n  ]\n}</div>"
+        },
+        "extension": [
+          {
+            "url": "http://namingsystem.org/fhir/StructureDefinition/interpretation-summary-text",
+            "valueString": "This individual is homozygous for the functional allele of the DPYD gene.  This genotype information can be used by patients and clinicians as part of the shared decision-making process for fluoropyrimidines (capecitabine, fluorouracil, tegafur).  Based on the genotype result, this patient is predicted to have a normal DPD activity phenotype.  Individuals with this diplotype are expected to have \"normal\" risk for fluoropyrimidine toxicity. Recommendations include the use of label recommended dosage and administration. Refer to current guidelines for dosage and recommendations at https://cpicpgx.org/guidelines/guideline-for-fluoropyrimidines-and-dpyd/."
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "53040-2",
+              "display": "Genetic variation's effect on drug metabolism"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4"
+        },
+        "performer": [
+          {
+            "reference": "urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa"
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA25391-6",
+              "display": "Normal metabolizer"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "urn:uuid:b4f732be-343c-4ce7-839e-5dc8fcad0649"
+          }
+        ],
+        "component": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/RelatedArtifact",
+                "valueRelatedArtifact": {
+                  "type": "justification",
+                  "url": "https://cpicpgx.org/guidelines/guideline-for-fluoropyrimidines-and-dpyd/"
+                }
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "51963-7",
+                  "display": "Medication assessed"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://ncimeta.nci.nih.gov",
+                  "code": "C0671970",
+                  "display": "capecitabine"
+                }
+              ]
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/RelatedArtifact",
+                "valueRelatedArtifact": {
+                  "type": "justification",
+                  "url": "https://cpicpgx.org/guidelines/guideline-for-fluoropyrimidines-and-dpyd/"
+                }
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "51963-7",
+                  "display": "Medication assessed"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://ncimeta.nci.nih.gov",
+                  "code": "C0016360",
+                  "display": "fluorouracil"
+                }
+              ]
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/RelatedArtifact",
+                "valueRelatedArtifact": {
+                  "type": "justification",
+                  "url": "https://cpicpgx.org/guidelines/guideline-for-fluoropyrimidines-and-dpyd/"
+                }
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "51963-7",
+                  "display": "Medication assessed"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://ncimeta.nci.nih.gov",
+                  "code": "C0016778",
+                  "display": "tegafur"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6a4e0e84-86cd-4e91-91a5-0d38849029d1",
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/medication-efficacy"
+          ]
+        },
+        "language": "en-US",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">{\n  &quot;resourceType&quot;: &quot;Observation&quot;,\n  &quot;meta&quot;: {\n    &quot;profile&quot;: [\n      &quot;http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/medication-efficacy&quot;\n    ]\n  },\n  &quot;language&quot;: &quot;en-US&quot;,\n  &quot;extension&quot;: [\n    {\n      &quot;url&quot;: &quot;http://namingsystem.org/fhir/StructureDefinition/interpretation-summary-text&quot;,\n      &quot;valueString&quot;: &quot;This individual is homozygous for the rs12979860 C/C allele in the IFNL3 gene. This variant is the strongest baseline predictor of response to peginterferon alfa and ribavirin therapy in previously untreated patients and can be used by patients and clinicians as part of the shared decision-making process for initiating treatment for hepatitis C virus infection. Based on the genotype result, this patient is predicted to have an increased likelihood of response (higher sustained virologic response rate) to peginterferon alfa and ribavirin therapy as compared with patients with unfavorable response genotype. Refer to current guidelines for dosage and recommendations at https://cpicpgx.org/guidelines/guideline-for-peg-interferon-alpha-based-regimens-and-ifnl3/.&quot;\n    }\n  ],\n  &quot;status&quot;: &quot;final&quot;,\n  &quot;category&quot;: [\n    {\n      &quot;coding&quot;: [\n        {\n          &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/observation-category&quot;,\n          &quot;code&quot;: &quot;laboratory&quot;,\n          &quot;display&quot;: &quot;Laboratory&quot;\n        }\n      ]\n    }\n  ],\n  &quot;code&quot;: {\n    &quot;coding&quot;: [\n      {\n        &quot;system&quot;: &quot;http://loinc.org&quot;,\n        &quot;code&quot;: &quot;51961-1&quot;,\n        &quot;display&quot;: &quot;Genetic variation's effect on drug efficacy&quot;\n      }\n    ]\n  },\n  &quot;subject&quot;: {\n    &quot;reference&quot;: &quot;urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4&quot;\n  },\n  &quot;performer&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa&quot;\n    }\n  ],\n  &quot;valueCodeableConcept&quot;: {\n    &quot;text&quot;: &quot;Favorable response genotype&quot;\n  },\n  &quot;derivedFrom&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:2d6dd5ac-7c15-479d-b2d3-f4fae1ba04d4&quot;\n    }\n  ],\n  &quot;component&quot;: [\n    {\n      &quot;extension&quot;: [\n        {\n          &quot;url&quot;: &quot;http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/RelatedArtifact&quot;,\n          &quot;valueRelatedArtifact&quot;: {\n            &quot;type&quot;: &quot;justification&quot;,\n            &quot;url&quot;: &quot;https://cpicpgx.org/guidelines/guideline-for-peg-interferon-alpha-based-regimens-and-ifnl3/&quot;\n          }\n        }\n      ],\n      &quot;code&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://loinc.org&quot;,\n            &quot;code&quot;: &quot;51963-7&quot;,\n            &quot;display&quot;: &quot;Medication assessed&quot;\n          }\n        ]\n      },\n      &quot;valueCodeableConcept&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://ncimeta.nci.nih.gov&quot;,\n            &quot;code&quot;: &quot;C0391001&quot;,\n            &quot;display&quot;: &quot;peginterferon alfa-2a&quot;\n          }\n        ]\n      }\n    },\n    {\n      &quot;extension&quot;: [\n        {\n          &quot;url&quot;: &quot;http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/RelatedArtifact&quot;,\n          &quot;valueRelatedArtifact&quot;: {\n            &quot;type&quot;: &quot;justification&quot;,\n            &quot;url&quot;: &quot;https://cpicpgx.org/guidelines/guideline-for-peg-interferon-alpha-based-regimens-and-ifnl3/&quot;\n          }\n        }\n      ],\n      &quot;code&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://loinc.org&quot;,\n            &quot;code&quot;: &quot;51963-7&quot;,\n            &quot;display&quot;: &quot;Medication assessed&quot;\n          }\n        ]\n      },\n      &quot;valueCodeableConcept&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://ncimeta.nci.nih.gov&quot;,\n            &quot;code&quot;: &quot;C0796545&quot;,\n            &quot;display&quot;: &quot;peginterferon alfa-2b&quot;\n          }\n        ]\n      }\n    },\n    {\n      &quot;extension&quot;: [\n        {\n          &quot;url&quot;: &quot;http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/RelatedArtifact&quot;,\n          &quot;valueRelatedArtifact&quot;: {\n            &quot;type&quot;: &quot;justification&quot;,\n            &quot;url&quot;: &quot;https://cpicpgx.org/guidelines/guideline-for-peg-interferon-alpha-based-regimens-and-ifnl3/&quot;\n          }\n        }\n      ],\n      &quot;code&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://loinc.org&quot;,\n            &quot;code&quot;: &quot;51963-7&quot;,\n            &quot;display&quot;: &quot;Medication assessed&quot;\n          }\n        ]\n      },\n      &quot;valueCodeableConcept&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://ncimeta.nci.nih.gov&quot;,\n            &quot;code&quot;: &quot;C0035525&quot;,\n            &quot;display&quot;: &quot;ribavirin&quot;\n          }\n        ]\n      }\n    }\n  ]\n}</div>"
+        },
+        "extension": [
+          {
+            "url": "http://namingsystem.org/fhir/StructureDefinition/interpretation-summary-text",
+            "valueString": "This individual is homozygous for the rs12979860 C/C allele in the IFNL3 gene. This variant is the strongest baseline predictor of response to peginterferon alfa and ribavirin therapy in previously untreated patients and can be used by patients and clinicians as part of the shared decision-making process for initiating treatment for hepatitis C virus infection. Based on the genotype result, this patient is predicted to have an increased likelihood of response (higher sustained virologic response rate) to peginterferon alfa and ribavirin therapy as compared with patients with unfavorable response genotype. Refer to current guidelines for dosage and recommendations at https://cpicpgx.org/guidelines/guideline-for-peg-interferon-alpha-based-regimens-and-ifnl3/."
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "51961-1",
+              "display": "Genetic variation's effect on drug efficacy"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4"
+        },
+        "performer": [
+          {
+            "reference": "urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa"
+          }
+        ],
+        "valueCodeableConcept": {
+          "text": "Favorable response genotype"
+        },
+        "derivedFrom": [
+          {
+            "reference": "urn:uuid:2d6dd5ac-7c15-479d-b2d3-f4fae1ba04d4"
+          }
+        ],
+        "component": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/RelatedArtifact",
+                "valueRelatedArtifact": {
+                  "type": "justification",
+                  "url": "https://cpicpgx.org/guidelines/guideline-for-peg-interferon-alpha-based-regimens-and-ifnl3/"
+                }
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "51963-7",
+                  "display": "Medication assessed"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://ncimeta.nci.nih.gov",
+                  "code": "C0391001",
+                  "display": "peginterferon alfa-2a"
+                }
+              ]
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/RelatedArtifact",
+                "valueRelatedArtifact": {
+                  "type": "justification",
+                  "url": "https://cpicpgx.org/guidelines/guideline-for-peg-interferon-alpha-based-regimens-and-ifnl3/"
+                }
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "51963-7",
+                  "display": "Medication assessed"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://ncimeta.nci.nih.gov",
+                  "code": "C0796545",
+                  "display": "peginterferon alfa-2b"
+                }
+              ]
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/RelatedArtifact",
+                "valueRelatedArtifact": {
+                  "type": "justification",
+                  "url": "https://cpicpgx.org/guidelines/guideline-for-peg-interferon-alpha-based-regimens-and-ifnl3/"
+                }
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "51963-7",
+                  "display": "Medication assessed"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://ncimeta.nci.nih.gov",
+                  "code": "C0035525",
+                  "display": "ribavirin"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:52099b6d-e573-47bc-9f42-e568fe6f76a3",
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/medication-transporter"
+          ]
+        },
+        "language": "en-US",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">{\n  &quot;resourceType&quot;: &quot;Observation&quot;,\n  &quot;meta&quot;: {\n    &quot;profile&quot;: [\n      &quot;http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/medication-transporter&quot;\n    ]\n  },\n  &quot;language&quot;: &quot;en-US&quot;,\n  &quot;extension&quot;: [\n    {\n      &quot;url&quot;: &quot;http://namingsystem.org/fhir/StructureDefinition/interpretation-summary-text&quot;,\n      &quot;valueString&quot;: &quot;This individual is homozygous for the rs4149056 T/T allele in the SLCO1B1 gene. This genotype information can be used by patients and clinicians as part of the shared decision-making process for simvastatin and other drugs affected by SLCO1B1. Based on the genotype result, this patient is predicted to have normal SLCO1B1 function. This means that there is no reason to adjust the dose of most medications that are affected by SLCO1B1 (including simvastatin) on the basis of SLCO1B1 genetic status. Refer to current guidelines for dosage and recommendations at https://cpicpgx.org/guidelines/guideline-for-simvastatin-and-slco1b1/.&quot;\n    }\n  ],\n  &quot;status&quot;: &quot;final&quot;,\n  &quot;category&quot;: [\n    {\n      &quot;coding&quot;: [\n        {\n          &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/observation-category&quot;,\n          &quot;code&quot;: &quot;laboratory&quot;,\n          &quot;display&quot;: &quot;Laboratory&quot;\n        }\n      ]\n    }\n  ],\n  &quot;code&quot;: {\n    &quot;coding&quot;: [\n      {\n        &quot;system&quot;: &quot;http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes&quot;,\n        &quot;code&quot;: &quot;effect-transporter-function&quot;,\n        &quot;display&quot;: &quot;effect-transporter-function&quot;\n      }\n    ]\n  },\n  &quot;subject&quot;: {\n    &quot;reference&quot;: &quot;urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4&quot;\n  },\n  &quot;performer&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa&quot;\n    }\n  ],\n  &quot;valueCodeableConcept&quot;: {\n    &quot;text&quot;: &quot;Normal function&quot;\n  },\n  &quot;derivedFrom&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:9f979b1c-3a7c-458b-8138-b6464b9b3261&quot;\n    }\n  ],\n  &quot;component&quot;: [\n    {\n      &quot;extension&quot;: [\n        {\n          &quot;url&quot;: &quot;http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/RelatedArtifact&quot;,\n          &quot;valueRelatedArtifact&quot;: {\n            &quot;type&quot;: &quot;justification&quot;,\n            &quot;url&quot;: &quot;https://cpicpgx.org/guidelines/guideline-for-simvastatin-and-slco1b1/&quot;\n          }\n        }\n      ],\n      &quot;code&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://loinc.org&quot;,\n            &quot;code&quot;: &quot;51963-7&quot;,\n            &quot;display&quot;: &quot;Medication assessed&quot;\n          }\n        ]\n      },\n      &quot;valueCodeableConcept&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://ncimeta.nci.nih.gov&quot;,\n            &quot;code&quot;: &quot;C0074554&quot;,\n            &quot;display&quot;: &quot;simvastatin&quot;\n          }\n        ]\n      }\n    }\n  ]\n}</div>"
+        },
+        "extension": [
+          {
+            "url": "http://namingsystem.org/fhir/StructureDefinition/interpretation-summary-text",
+            "valueString": "This individual is homozygous for the rs4149056 T/T allele in the SLCO1B1 gene. This genotype information can be used by patients and clinicians as part of the shared decision-making process for simvastatin and other drugs affected by SLCO1B1. Based on the genotype result, this patient is predicted to have normal SLCO1B1 function. This means that there is no reason to adjust the dose of most medications that are affected by SLCO1B1 (including simvastatin) on the basis of SLCO1B1 genetic status. Refer to current guidelines for dosage and recommendations at https://cpicpgx.org/guidelines/guideline-for-simvastatin-and-slco1b1/."
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes",
+              "code": "effect-transporter-function",
+              "display": "effect-transporter-function"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4"
+        },
+        "performer": [
+          {
+            "reference": "urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa"
+          }
+        ],
+        "valueCodeableConcept": {
+          "text": "Normal function"
+        },
+        "derivedFrom": [
+          {
+            "reference": "urn:uuid:9f979b1c-3a7c-458b-8138-b6464b9b3261"
+          }
+        ],
+        "component": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/RelatedArtifact",
+                "valueRelatedArtifact": {
+                  "type": "justification",
+                  "url": "https://cpicpgx.org/guidelines/guideline-for-simvastatin-and-slco1b1/"
+                }
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "51963-7",
+                  "display": "Medication assessed"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://ncimeta.nci.nih.gov",
+                  "code": "C0074554",
+                  "display": "simvastatin"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:061f8892-89f8-46d5-9d6a-b65e7ea2f4b5",
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/medication-metabolism"
+          ]
+        },
+        "language": "en-US",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">{\n  &quot;resourceType&quot;: &quot;Observation&quot;,\n  &quot;meta&quot;: {\n    &quot;profile&quot;: [\n      &quot;http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/medication-metabolism&quot;\n    ]\n  },\n  &quot;language&quot;: &quot;en-US&quot;,\n  &quot;extension&quot;: [\n    {\n      &quot;url&quot;: &quot;http://namingsystem.org/fhir/StructureDefinition/interpretation-summary-text&quot;,\n      &quot;valueString&quot;: &quot;This individual is homozygous for the normal high activity allele of the TPMT gene.  Decreased TPMT gene activity is associated with toxicity and myelosuppression in response to thiopurines, and this genotype information can be used by patients and clinicians as part of the shared decision-making process for initiating treatment.  Based on the genotype result, this patient is predicted to have normal TPMT function. Individuals with this diplotype are expected to have a normal response to mercaptopurine, azathioprine and thioguanine. A normal dose of thiopurine and adjustment following the disease-specific guidelines is recommended. Refer to current guidelines for dosage and recommendations for each specific thiopurine drug at https://cpicpgx.org/guidelines/guideline-for-thiopurines-and-tpmt/.&quot;\n    }\n  ],\n  &quot;status&quot;: &quot;final&quot;,\n  &quot;category&quot;: [\n    {\n      &quot;coding&quot;: [\n        {\n          &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/observation-category&quot;,\n          &quot;code&quot;: &quot;laboratory&quot;,\n          &quot;display&quot;: &quot;Laboratory&quot;\n        }\n      ]\n    }\n  ],\n  &quot;code&quot;: {\n    &quot;coding&quot;: [\n      {\n        &quot;system&quot;: &quot;http://loinc.org&quot;,\n        &quot;code&quot;: &quot;53040-2&quot;,\n        &quot;display&quot;: &quot;Genetic variation's effect on drug metabolism&quot;\n      }\n    ]\n  },\n  &quot;subject&quot;: {\n    &quot;reference&quot;: &quot;urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4&quot;\n  },\n  &quot;performer&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa&quot;\n    }\n  ],\n  &quot;valueCodeableConcept&quot;: {\n    &quot;text&quot;: &quot;High activity&quot;\n  },\n  &quot;derivedFrom&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:450f0733-181c-425d-b760-710940bd17a6&quot;\n    }\n  ],\n  &quot;component&quot;: [\n    {\n      &quot;extension&quot;: [\n        {\n          &quot;url&quot;: &quot;http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/RelatedArtifact&quot;,\n          &quot;valueRelatedArtifact&quot;: {\n            &quot;type&quot;: &quot;justification&quot;,\n            &quot;url&quot;: &quot;https://cpicpgx.org/guidelines/guideline-for-thiopurines-and-tpmt/&quot;\n          }\n        }\n      ],\n      &quot;code&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://loinc.org&quot;,\n            &quot;code&quot;: &quot;51963-7&quot;,\n            &quot;display&quot;: &quot;Medication assessed&quot;\n          }\n        ]\n      },\n      &quot;valueCodeableConcept&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://ncimeta.nci.nih.gov&quot;,\n            &quot;code&quot;: &quot;C0004482&quot;,\n            &quot;display&quot;: &quot;azathioprine&quot;\n          }\n        ]\n      }\n    },\n    {\n      &quot;extension&quot;: [\n        {\n          &quot;url&quot;: &quot;http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/RelatedArtifact&quot;,\n          &quot;valueRelatedArtifact&quot;: {\n            &quot;type&quot;: &quot;justification&quot;,\n            &quot;url&quot;: &quot;https://cpicpgx.org/guidelines/guideline-for-thiopurines-and-tpmt/&quot;\n          }\n        }\n      ],\n      &quot;code&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://loinc.org&quot;,\n            &quot;code&quot;: &quot;51963-7&quot;,\n            &quot;display&quot;: &quot;Medication assessed&quot;\n          }\n        ]\n      },\n      &quot;valueCodeableConcept&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://ncimeta.nci.nih.gov&quot;,\n            &quot;code&quot;: &quot;C0000618&quot;,\n            &quot;display&quot;: &quot;mercaptopurine&quot;\n          }\n        ]\n      }\n    },\n    {\n      &quot;extension&quot;: [\n        {\n          &quot;url&quot;: &quot;http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/RelatedArtifact&quot;,\n          &quot;valueRelatedArtifact&quot;: {\n            &quot;type&quot;: &quot;justification&quot;,\n            &quot;url&quot;: &quot;https://cpicpgx.org/guidelines/guideline-for-thiopurines-and-tpmt/&quot;\n          }\n        }\n      ],\n      &quot;code&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://loinc.org&quot;,\n            &quot;code&quot;: &quot;51963-7&quot;,\n            &quot;display&quot;: &quot;Medication assessed&quot;\n          }\n        ]\n      },\n      &quot;valueCodeableConcept&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://ncimeta.nci.nih.gov&quot;,\n            &quot;code&quot;: &quot;C0039902&quot;,\n            &quot;display&quot;: &quot;thioguanine&quot;\n          }\n        ]\n      }\n    }\n  ]\n}</div>"
+        },
+        "extension": [
+          {
+            "url": "http://namingsystem.org/fhir/StructureDefinition/interpretation-summary-text",
+            "valueString": "This individual is homozygous for the normal high activity allele of the TPMT gene.  Decreased TPMT gene activity is associated with toxicity and myelosuppression in response to thiopurines, and this genotype information can be used by patients and clinicians as part of the shared decision-making process for initiating treatment.  Based on the genotype result, this patient is predicted to have normal TPMT function. Individuals with this diplotype are expected to have a normal response to mercaptopurine, azathioprine and thioguanine. A normal dose of thiopurine and adjustment following the disease-specific guidelines is recommended. Refer to current guidelines for dosage and recommendations for each specific thiopurine drug at https://cpicpgx.org/guidelines/guideline-for-thiopurines-and-tpmt/."
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "53040-2",
+              "display": "Genetic variation's effect on drug metabolism"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4"
+        },
+        "performer": [
+          {
+            "reference": "urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa"
+          }
+        ],
+        "valueCodeableConcept": {
+          "text": "High activity"
+        },
+        "derivedFrom": [
+          {
+            "reference": "urn:uuid:450f0733-181c-425d-b760-710940bd17a6"
+          }
+        ],
+        "component": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/RelatedArtifact",
+                "valueRelatedArtifact": {
+                  "type": "justification",
+                  "url": "https://cpicpgx.org/guidelines/guideline-for-thiopurines-and-tpmt/"
+                }
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "51963-7",
+                  "display": "Medication assessed"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://ncimeta.nci.nih.gov",
+                  "code": "C0004482",
+                  "display": "azathioprine"
+                }
+              ]
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/RelatedArtifact",
+                "valueRelatedArtifact": {
+                  "type": "justification",
+                  "url": "https://cpicpgx.org/guidelines/guideline-for-thiopurines-and-tpmt/"
+                }
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "51963-7",
+                  "display": "Medication assessed"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://ncimeta.nci.nih.gov",
+                  "code": "C0000618",
+                  "display": "mercaptopurine"
+                }
+              ]
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/RelatedArtifact",
+                "valueRelatedArtifact": {
+                  "type": "justification",
+                  "url": "https://cpicpgx.org/guidelines/guideline-for-thiopurines-and-tpmt/"
+                }
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "51963-7",
+                  "display": "Medication assessed"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://ncimeta.nci.nih.gov",
+                  "code": "C0039902",
+                  "display": "thioguanine"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4b05e108-ab8a-4bc9-826e-a5cf2f586c61",
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/medication-metabolism"
+          ]
+        },
+        "language": "en-US",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">{\n  &quot;resourceType&quot;: &quot;Observation&quot;,\n  &quot;meta&quot;: {\n    &quot;profile&quot;: [\n      &quot;http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/medication-metabolism&quot;\n    ]\n  },\n  &quot;language&quot;: &quot;en-US&quot;,\n  &quot;extension&quot;: [\n    {\n      &quot;url&quot;: &quot;http://namingsystem.org/fhir/StructureDefinition/interpretation-summary-text&quot;,\n      &quot;valueString&quot;: &quot;This individual is heterozygous for the low function allele in the CYP2C9 gene. Based on the genotype result, this patient is predicted to have intermediate CYP2C9 function.This individual is also heterozygous for the variant allele for the VKORC1 gene. Expression level of the VKORC1 gene is associated with warfarin sensitivity. Based on the genotype result, this patient is predicted to have medium sensitivity to warfarin.&quot;\n    }\n  ],\n  &quot;status&quot;: &quot;final&quot;,\n  &quot;category&quot;: [\n    {\n      &quot;coding&quot;: [\n        {\n          &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/observation-category&quot;,\n          &quot;code&quot;: &quot;laboratory&quot;,\n          &quot;display&quot;: &quot;Laboratory&quot;\n        }\n      ]\n    }\n  ],\n  &quot;code&quot;: {\n    &quot;coding&quot;: [\n      {\n        &quot;system&quot;: &quot;http://loinc.org&quot;,\n        &quot;code&quot;: &quot;53040-2&quot;,\n        &quot;display&quot;: &quot;Genetic variation's effect on drug metabolism&quot;\n      }\n    ]\n  },\n  &quot;subject&quot;: {\n    &quot;reference&quot;: &quot;urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4&quot;\n  },\n  &quot;performer&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa&quot;\n    }\n  ],\n  &quot;valueCodeableConcept&quot;: {\n    &quot;coding&quot;: [\n      {\n        &quot;system&quot;: &quot;http://loinc.org&quot;,\n        &quot;code&quot;: &quot;LA10317-8&quot;,\n        &quot;display&quot;: &quot;Intermediate metabolizer&quot;\n      }\n    ]\n  },\n  &quot;derivedFrom&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:8ebeea19-ab3f-4598-bfe6-a0ece0a11e75&quot;\n    },\n    {\n      &quot;reference&quot;: &quot;urn:uuid:2e71d7ac-495d-491c-b2a6-4306f8f9751f&quot;\n    }\n  ],\n  &quot;component&quot;: [\n    {\n      &quot;extension&quot;: [\n        {\n          &quot;url&quot;: &quot;http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/RelatedArtifact&quot;,\n          &quot;valueRelatedArtifact&quot;: {\n            &quot;type&quot;: &quot;justification&quot;,\n            &quot;url&quot;: &quot;https://cpicpgx.org/guidelines/guideline-for-warfarin-and-cyp2c9-and-vkorc1/&quot;\n          }\n        }\n      ],\n      &quot;code&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://loinc.org&quot;,\n            &quot;code&quot;: &quot;51963-7&quot;,\n            &quot;display&quot;: &quot;Medication assessed&quot;\n          }\n        ]\n      },\n      &quot;valueCodeableConcept&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://ncimeta.nci.nih.gov&quot;,\n            &quot;code&quot;: &quot;C0043031&quot;,\n            &quot;display&quot;: &quot;warfarin&quot;\n          }\n        ]\n      }\n    }\n  ]\n}</div>"
+        },
+        "extension": [
+          {
+            "url": "http://namingsystem.org/fhir/StructureDefinition/interpretation-summary-text",
+            "valueString": "This individual is heterozygous for the low function allele in the CYP2C9 gene. Based on the genotype result, this patient is predicted to have intermediate CYP2C9 function.This individual is also heterozygous for the variant allele for the VKORC1 gene. Expression level of the VKORC1 gene is associated with warfarin sensitivity. Based on the genotype result, this patient is predicted to have medium sensitivity to warfarin."
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "53040-2",
+              "display": "Genetic variation's effect on drug metabolism"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4"
+        },
+        "performer": [
+          {
+            "reference": "urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa"
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA10317-8",
+              "display": "Intermediate metabolizer"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "urn:uuid:8ebeea19-ab3f-4598-bfe6-a0ece0a11e75"
+          },
+          {
+            "reference": "urn:uuid:2e71d7ac-495d-491c-b2a6-4306f8f9751f"
+          }
+        ],
+        "component": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/RelatedArtifact",
+                "valueRelatedArtifact": {
+                  "type": "justification",
+                  "url": "https://cpicpgx.org/guidelines/guideline-for-warfarin-and-cyp2c9-and-vkorc1/"
+                }
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "51963-7",
+                  "display": "Medication assessed"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://ncimeta.nci.nih.gov",
+                  "code": "C0043031",
+                  "display": "warfarin"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:fe830050-f8e3-4710-95ea-1255ec6ac31f",
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genotype"
+          ]
+        },
+        "language": "en-US",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">{\n  &quot;resourceType&quot;: &quot;Observation&quot;,\n  &quot;meta&quot;: {\n    &quot;profile&quot;: [\n      &quot;http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genotype&quot;\n    ]\n  },\n  &quot;language&quot;: &quot;en-US&quot;,\n  &quot;basedOn&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:898c079c-b11d-4606-90aa-61865e49d5c3&quot;\n    }\n  ],\n  &quot;status&quot;: &quot;final&quot;,\n  &quot;category&quot;: [\n    {\n      &quot;coding&quot;: [\n        {\n          &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/observation-category&quot;,\n          &quot;code&quot;: &quot;laboratory&quot;,\n          &quot;display&quot;: &quot;Laboratory&quot;\n        }\n      ]\n    }\n  ],\n  &quot;code&quot;: {\n    &quot;coding&quot;: [\n      {\n        &quot;system&quot;: &quot;http://loinc.org&quot;,\n        &quot;code&quot;: &quot;84413-4&quot;,\n        &quot;display&quot;: &quot;genotype display name&quot;\n      }\n    ]\n  },\n  &quot;subject&quot;: {\n    &quot;reference&quot;: &quot;urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4&quot;\n  },\n  &quot;performer&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa&quot;\n    }\n  ],\n  &quot;valueCodeableConcept&quot;: {\n    &quot;text&quot;: &quot;*1/*2&quot;\n  },\n  &quot;specimen&quot;: {\n    &quot;reference&quot;: &quot;urn:uuid:84ff6b23-15cf-49da-b191-0ee502e638cc&quot;\n  },\n  &quot;component&quot;: [\n    {\n      &quot;code&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://loinc.org&quot;,\n            &quot;code&quot;: &quot;48018-6&quot;,\n            &quot;display&quot;: &quot;Gene studied [ID]&quot;\n          }\n        ]\n      },\n      &quot;valueCodeableConcept&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://www.genenames.org/geneId&quot;,\n            &quot;code&quot;: &quot;HGNC:2621&quot;,\n            &quot;display&quot;: &quot;CYP2C19&quot;\n          }\n        ]\n      }\n    }\n  ]\n}</div>"
+        },
+        "basedOn": [
+          {
+            "reference": "urn:uuid:898c079c-b11d-4606-90aa-61865e49d5c3"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "84413-4",
+              "display": "genotype display name"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4"
+        },
+        "performer": [
+          {
+            "reference": "urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa"
+          }
+        ],
+        "valueCodeableConcept": {
+          "text": "*1/*2"
+        },
+        "specimen": {
+          "reference": "urn:uuid:84ff6b23-15cf-49da-b191-0ee502e638cc"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48018-6",
+                  "display": "Gene studied [ID]"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://www.genenames.org/geneId",
+                  "code": "HGNC:2621",
+                  "display": "CYP2C19"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b4f732be-343c-4ce7-839e-5dc8fcad0649",
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genotype"
+          ]
+        },
+        "language": "en-US",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">{\n  &quot;resourceType&quot;: &quot;Observation&quot;,\n  &quot;meta&quot;: {\n    &quot;profile&quot;: [\n      &quot;http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genotype&quot;\n    ]\n  },\n  &quot;language&quot;: &quot;en-US&quot;,\n  &quot;basedOn&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:898c079c-b11d-4606-90aa-61865e49d5c3&quot;\n    }\n  ],\n  &quot;status&quot;: &quot;final&quot;,\n  &quot;category&quot;: [\n    {\n      &quot;coding&quot;: [\n        {\n          &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/observation-category&quot;,\n          &quot;code&quot;: &quot;laboratory&quot;,\n          &quot;display&quot;: &quot;Laboratory&quot;\n        }\n      ]\n    }\n  ],\n  &quot;code&quot;: {\n    &quot;coding&quot;: [\n      {\n        &quot;system&quot;: &quot;http://loinc.org&quot;,\n        &quot;code&quot;: &quot;84413-4&quot;,\n        &quot;display&quot;: &quot;genotype display name&quot;\n      }\n    ]\n  },\n  &quot;subject&quot;: {\n    &quot;reference&quot;: &quot;urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4&quot;\n  },\n  &quot;performer&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa&quot;\n    }\n  ],\n  &quot;valueCodeableConcept&quot;: {\n    &quot;text&quot;: &quot;*1/*1&quot;\n  },\n  &quot;specimen&quot;: {\n    &quot;reference&quot;: &quot;urn:uuid:84ff6b23-15cf-49da-b191-0ee502e638cc&quot;\n  },\n  &quot;component&quot;: [\n    {\n      &quot;code&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://loinc.org&quot;,\n            &quot;code&quot;: &quot;48018-6&quot;,\n            &quot;display&quot;: &quot;Gene studied [ID]&quot;\n          }\n        ]\n      },\n      &quot;valueCodeableConcept&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://www.genenames.org/geneId&quot;,\n            &quot;code&quot;: &quot;HGNC:3012&quot;,\n            &quot;display&quot;: &quot;DPYD&quot;\n          }\n        ]\n      }\n    }\n  ]\n}</div>"
+        },
+        "basedOn": [
+          {
+            "reference": "urn:uuid:898c079c-b11d-4606-90aa-61865e49d5c3"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "84413-4",
+              "display": "genotype display name"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4"
+        },
+        "performer": [
+          {
+            "reference": "urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa"
+          }
+        ],
+        "valueCodeableConcept": {
+          "text": "*1/*1"
+        },
+        "specimen": {
+          "reference": "urn:uuid:84ff6b23-15cf-49da-b191-0ee502e638cc"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48018-6",
+                  "display": "Gene studied [ID]"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://www.genenames.org/geneId",
+                  "code": "HGNC:3012",
+                  "display": "DPYD"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:2d6dd5ac-7c15-479d-b2d3-f4fae1ba04d4",
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genotype"
+          ]
+        },
+        "language": "en-US",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">{\n  &quot;resourceType&quot;: &quot;Observation&quot;,\n  &quot;meta&quot;: {\n    &quot;profile&quot;: [\n      &quot;http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genotype&quot;\n    ]\n  },\n  &quot;language&quot;: &quot;en-US&quot;,\n  &quot;basedOn&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:898c079c-b11d-4606-90aa-61865e49d5c3&quot;\n    }\n  ],\n  &quot;status&quot;: &quot;final&quot;,\n  &quot;category&quot;: [\n    {\n      &quot;coding&quot;: [\n        {\n          &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/observation-category&quot;,\n          &quot;code&quot;: &quot;laboratory&quot;,\n          &quot;display&quot;: &quot;Laboratory&quot;\n        }\n      ]\n    }\n  ],\n  &quot;code&quot;: {\n    &quot;coding&quot;: [\n      {\n        &quot;system&quot;: &quot;http://loinc.org&quot;,\n        &quot;code&quot;: &quot;84413-4&quot;,\n        &quot;display&quot;: &quot;genotype display name&quot;\n      }\n    ]\n  },\n  &quot;subject&quot;: {\n    &quot;reference&quot;: &quot;urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4&quot;\n  },\n  &quot;performer&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa&quot;\n    }\n  ],\n  &quot;valueCodeableConcept&quot;: {\n    &quot;text&quot;: &quot;C/C&quot;\n  },\n  &quot;specimen&quot;: {\n    &quot;reference&quot;: &quot;urn:uuid:84ff6b23-15cf-49da-b191-0ee502e638cc&quot;\n  },\n  &quot;component&quot;: [\n    {\n      &quot;code&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://loinc.org&quot;,\n            &quot;code&quot;: &quot;48018-6&quot;,\n            &quot;display&quot;: &quot;Gene studied [ID]&quot;\n          }\n        ]\n      },\n      &quot;valueCodeableConcept&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://www.genenames.org/geneId&quot;,\n            &quot;code&quot;: &quot;HGNC:18365&quot;,\n            &quot;display&quot;: &quot;IFNL3&quot;\n          }\n        ]\n      }\n    }\n  ]\n}</div>"
+        },
+        "basedOn": [
+          {
+            "reference": "urn:uuid:898c079c-b11d-4606-90aa-61865e49d5c3"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "84413-4",
+              "display": "genotype display name"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4"
+        },
+        "performer": [
+          {
+            "reference": "urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa"
+          }
+        ],
+        "valueCodeableConcept": {
+          "text": "C/C"
+        },
+        "specimen": {
+          "reference": "urn:uuid:84ff6b23-15cf-49da-b191-0ee502e638cc"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48018-6",
+                  "display": "Gene studied [ID]"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://www.genenames.org/geneId",
+                  "code": "HGNC:18365",
+                  "display": "IFNL3"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9f979b1c-3a7c-458b-8138-b6464b9b3261",
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genotype"
+          ]
+        },
+        "language": "en-US",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">{\n  &quot;resourceType&quot;: &quot;Observation&quot;,\n  &quot;meta&quot;: {\n    &quot;profile&quot;: [\n      &quot;http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genotype&quot;\n    ]\n  },\n  &quot;language&quot;: &quot;en-US&quot;,\n  &quot;basedOn&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:898c079c-b11d-4606-90aa-61865e49d5c3&quot;\n    }\n  ],\n  &quot;status&quot;: &quot;final&quot;,\n  &quot;category&quot;: [\n    {\n      &quot;coding&quot;: [\n        {\n          &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/observation-category&quot;,\n          &quot;code&quot;: &quot;laboratory&quot;,\n          &quot;display&quot;: &quot;Laboratory&quot;\n        }\n      ]\n    }\n  ],\n  &quot;code&quot;: {\n    &quot;coding&quot;: [\n      {\n        &quot;system&quot;: &quot;http://loinc.org&quot;,\n        &quot;code&quot;: &quot;84413-4&quot;,\n        &quot;display&quot;: &quot;genotype display name&quot;\n      }\n    ]\n  },\n  &quot;subject&quot;: {\n    &quot;reference&quot;: &quot;urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4&quot;\n  },\n  &quot;performer&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa&quot;\n    }\n  ],\n  &quot;valueCodeableConcept&quot;: {\n    &quot;text&quot;: &quot;T/T&quot;\n  },\n  &quot;specimen&quot;: {\n    &quot;reference&quot;: &quot;urn:uuid:84ff6b23-15cf-49da-b191-0ee502e638cc&quot;\n  },\n  &quot;component&quot;: [\n    {\n      &quot;code&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://loinc.org&quot;,\n            &quot;code&quot;: &quot;48018-6&quot;,\n            &quot;display&quot;: &quot;Gene studied [ID]&quot;\n          }\n        ]\n      },\n      &quot;valueCodeableConcept&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://www.genenames.org/geneId&quot;,\n            &quot;code&quot;: &quot;HGNC:10959&quot;,\n            &quot;display&quot;: &quot;SLCO1B1&quot;\n          }\n        ]\n      }\n    }\n  ]\n}</div>"
+        },
+        "basedOn": [
+          {
+            "reference": "urn:uuid:898c079c-b11d-4606-90aa-61865e49d5c3"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "84413-4",
+              "display": "genotype display name"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4"
+        },
+        "performer": [
+          {
+            "reference": "urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa"
+          }
+        ],
+        "valueCodeableConcept": {
+          "text": "T/T"
+        },
+        "specimen": {
+          "reference": "urn:uuid:84ff6b23-15cf-49da-b191-0ee502e638cc"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48018-6",
+                  "display": "Gene studied [ID]"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://www.genenames.org/geneId",
+                  "code": "HGNC:10959",
+                  "display": "SLCO1B1"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:450f0733-181c-425d-b760-710940bd17a6",
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genotype"
+          ]
+        },
+        "language": "en-US",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">{\n  &quot;resourceType&quot;: &quot;Observation&quot;,\n  &quot;meta&quot;: {\n    &quot;profile&quot;: [\n      &quot;http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genotype&quot;\n    ]\n  },\n  &quot;language&quot;: &quot;en-US&quot;,\n  &quot;basedOn&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:898c079c-b11d-4606-90aa-61865e49d5c3&quot;\n    }\n  ],\n  &quot;status&quot;: &quot;final&quot;,\n  &quot;category&quot;: [\n    {\n      &quot;coding&quot;: [\n        {\n          &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/observation-category&quot;,\n          &quot;code&quot;: &quot;laboratory&quot;,\n          &quot;display&quot;: &quot;Laboratory&quot;\n        }\n      ]\n    }\n  ],\n  &quot;code&quot;: {\n    &quot;coding&quot;: [\n      {\n        &quot;system&quot;: &quot;http://loinc.org&quot;,\n        &quot;code&quot;: &quot;84413-4&quot;,\n        &quot;display&quot;: &quot;genotype display name&quot;\n      }\n    ]\n  },\n  &quot;subject&quot;: {\n    &quot;reference&quot;: &quot;urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4&quot;\n  },\n  &quot;performer&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa&quot;\n    }\n  ],\n  &quot;valueCodeableConcept&quot;: {\n    &quot;text&quot;: &quot;*1/*1&quot;\n  },\n  &quot;specimen&quot;: {\n    &quot;reference&quot;: &quot;urn:uuid:84ff6b23-15cf-49da-b191-0ee502e638cc&quot;\n  },\n  &quot;component&quot;: [\n    {\n      &quot;code&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://loinc.org&quot;,\n            &quot;code&quot;: &quot;48018-6&quot;,\n            &quot;display&quot;: &quot;Gene studied [ID]&quot;\n          }\n        ]\n      },\n      &quot;valueCodeableConcept&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://www.genenames.org/geneId&quot;,\n            &quot;code&quot;: &quot;HGNC:12014&quot;,\n            &quot;display&quot;: &quot;TPMT&quot;\n          }\n        ]\n      }\n    }\n  ]\n}</div>"
+        },
+        "basedOn": [
+          {
+            "reference": "urn:uuid:898c079c-b11d-4606-90aa-61865e49d5c3"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "84413-4",
+              "display": "genotype display name"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4"
+        },
+        "performer": [
+          {
+            "reference": "urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa"
+          }
+        ],
+        "valueCodeableConcept": {
+          "text": "*1/*1"
+        },
+        "specimen": {
+          "reference": "urn:uuid:84ff6b23-15cf-49da-b191-0ee502e638cc"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48018-6",
+                  "display": "Gene studied [ID]"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://www.genenames.org/geneId",
+                  "code": "HGNC:12014",
+                  "display": "TPMT"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8ebeea19-ab3f-4598-bfe6-a0ece0a11e75",
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genotype"
+          ]
+        },
+        "language": "en-US",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">{\n  &quot;resourceType&quot;: &quot;Observation&quot;,\n  &quot;meta&quot;: {\n    &quot;profile&quot;: [\n      &quot;http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genotype&quot;\n    ]\n  },\n  &quot;language&quot;: &quot;en-US&quot;,\n  &quot;basedOn&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:898c079c-b11d-4606-90aa-61865e49d5c3&quot;\n    }\n  ],\n  &quot;status&quot;: &quot;final&quot;,\n  &quot;category&quot;: [\n    {\n      &quot;coding&quot;: [\n        {\n          &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/observation-category&quot;,\n          &quot;code&quot;: &quot;laboratory&quot;,\n          &quot;display&quot;: &quot;Laboratory&quot;\n        }\n      ]\n    }\n  ],\n  &quot;code&quot;: {\n    &quot;coding&quot;: [\n      {\n        &quot;system&quot;: &quot;http://loinc.org&quot;,\n        &quot;code&quot;: &quot;84413-4&quot;,\n        &quot;display&quot;: &quot;genotype display name&quot;\n      }\n    ]\n  },\n  &quot;subject&quot;: {\n    &quot;reference&quot;: &quot;urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4&quot;\n  },\n  &quot;performer&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa&quot;\n    }\n  ],\n  &quot;valueCodeableConcept&quot;: {\n    &quot;text&quot;: &quot;*1/*2&quot;\n  },\n  &quot;specimen&quot;: {\n    &quot;reference&quot;: &quot;urn:uuid:84ff6b23-15cf-49da-b191-0ee502e638cc&quot;\n  },\n  &quot;component&quot;: [\n    {\n      &quot;code&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://loinc.org&quot;,\n            &quot;code&quot;: &quot;48018-6&quot;,\n            &quot;display&quot;: &quot;Gene studied [ID]&quot;\n          }\n        ]\n      },\n      &quot;valueCodeableConcept&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://www.genenames.org/geneId&quot;,\n            &quot;code&quot;: &quot;HGNC:2623&quot;,\n            &quot;display&quot;: &quot;CYP2C9&quot;\n          }\n        ]\n      }\n    }\n  ]\n}</div>"
+        },
+        "basedOn": [
+          {
+            "reference": "urn:uuid:898c079c-b11d-4606-90aa-61865e49d5c3"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "84413-4",
+              "display": "genotype display name"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4"
+        },
+        "performer": [
+          {
+            "reference": "urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa"
+          }
+        ],
+        "valueCodeableConcept": {
+          "text": "*1/*2"
+        },
+        "specimen": {
+          "reference": "urn:uuid:84ff6b23-15cf-49da-b191-0ee502e638cc"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48018-6",
+                  "display": "Gene studied [ID]"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://www.genenames.org/geneId",
+                  "code": "HGNC:2623",
+                  "display": "CYP2C9"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:2e71d7ac-495d-491c-b2a6-4306f8f9751f",
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genotype"
+          ]
+        },
+        "language": "en-US",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">{\n  &quot;resourceType&quot;: &quot;Observation&quot;,\n  &quot;meta&quot;: {\n    &quot;profile&quot;: [\n      &quot;http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genotype&quot;\n    ]\n  },\n  &quot;language&quot;: &quot;en-US&quot;,\n  &quot;basedOn&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:898c079c-b11d-4606-90aa-61865e49d5c3&quot;\n    }\n  ],\n  &quot;status&quot;: &quot;final&quot;,\n  &quot;category&quot;: [\n    {\n      &quot;coding&quot;: [\n        {\n          &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/observation-category&quot;,\n          &quot;code&quot;: &quot;laboratory&quot;,\n          &quot;display&quot;: &quot;Laboratory&quot;\n        }\n      ]\n    }\n  ],\n  &quot;code&quot;: {\n    &quot;coding&quot;: [\n      {\n        &quot;system&quot;: &quot;http://loinc.org&quot;,\n        &quot;code&quot;: &quot;84413-4&quot;,\n        &quot;display&quot;: &quot;genotype display name&quot;\n      }\n    ]\n  },\n  &quot;subject&quot;: {\n    &quot;reference&quot;: &quot;urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4&quot;\n  },\n  &quot;performer&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa&quot;\n    }\n  ],\n  &quot;valueCodeableConcept&quot;: {\n    &quot;text&quot;: &quot;C/T&quot;\n  },\n  &quot;specimen&quot;: {\n    &quot;reference&quot;: &quot;urn:uuid:84ff6b23-15cf-49da-b191-0ee502e638cc&quot;\n  },\n  &quot;component&quot;: [\n    {\n      &quot;code&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://loinc.org&quot;,\n            &quot;code&quot;: &quot;48018-6&quot;,\n            &quot;display&quot;: &quot;Gene studied [ID]&quot;\n          }\n        ]\n      },\n      &quot;valueCodeableConcept&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://www.genenames.org/geneId&quot;,\n            &quot;code&quot;: &quot;HGNC:23663&quot;,\n            &quot;display&quot;: &quot;VKORC1&quot;\n          }\n        ]\n      }\n    }\n  ]\n}</div>"
+        },
+        "basedOn": [
+          {
+            "reference": "urn:uuid:898c079c-b11d-4606-90aa-61865e49d5c3"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "84413-4",
+              "display": "genotype display name"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4"
+        },
+        "performer": [
+          {
+            "reference": "urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa"
+          }
+        ],
+        "valueCodeableConcept": {
+          "text": "C/T"
+        },
+        "specimen": {
+          "reference": "urn:uuid:84ff6b23-15cf-49da-b191-0ee502e638cc"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48018-6",
+                  "display": "Gene studied [ID]"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://www.genenames.org/geneId",
+                  "code": "HGNC:23663",
+                  "display": "VKORC1"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4edb0bee-1bd4-419a-8ddf-2215fff8cff1",
+      "resource": {
+        "resourceType": "Practitioner",
+        "language": "en-US",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">{\n  &quot;resourceType&quot;: &quot;Practitioner&quot;,\n  &quot;language&quot;: &quot;en-US&quot;,\n  &quot;identifier&quot;: [\n    {\n      &quot;type&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v2-0203&quot;,\n            &quot;code&quot;: &quot;NPI&quot;,\n            &quot;display&quot;: &quot;National provider identifier&quot;\n          }\n        ]\n      },\n      &quot;system&quot;: &quot;http://hl7.org/fhir/sid/us-npi&quot;,\n      &quot;value&quot;: &quot;1045097250479&quot;\n    }\n  ],\n  &quot;name&quot;: [\n    {\n      &quot;use&quot;: &quot;usual&quot;,\n      &quot;family&quot;: &quot;Doe&quot;,\n      &quot;given&quot;: [\n        &quot;John R&quot;\n      ],\n      &quot;suffix&quot;: [\n        &quot;M.D., FACMG&quot;\n      ]\n    }\n  ],\n  &quot;address&quot;: [\n    {\n      &quot;line&quot;: [\n        &quot;1111 TestAddress St&quot;\n      ],\n      &quot;city&quot;: &quot;Houston&quot;,\n      &quot;state&quot;: &quot;TX&quot;,\n      &quot;postalCode&quot;: &quot;77030&quot;,\n      &quot;country&quot;: &quot;USA&quot;\n    }\n  ],\n  &quot;qualification&quot;: [\n    {\n      &quot;identifier&quot;: [\n        {\n          &quot;type&quot;: {\n            &quot;coding&quot;: [\n              {\n                &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v2-0203&quot;,\n                &quot;code&quot;: &quot;NPI&quot;,\n                &quot;display&quot;: &quot;National provider identifier&quot;\n              }\n            ]\n          },\n          &quot;system&quot;: &quot;http://hl7.org/fhir/sid/us-npi&quot;,\n          &quot;value&quot;: &quot;1045097250479&quot;\n        }\n      ],\n      &quot;code&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v2-2.7-0360&quot;,\n            &quot;code&quot;: &quot;M.D.&quot;,\n            &quot;display&quot;: &quot;Doctor of Medicine&quot;\n          }\n        ]\n      }\n    },\n    {\n      &quot;code&quot;: {\n        &quot;text&quot;: &quot;ABMGG Certified Molecular Geneticist&quot;\n      }\n    }\n  ]\n}</div>"
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "NPI",
+                  "display": "National provider identifier"
+                }
+              ]
+            },
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "1045097250479"
+          }
+        ],
+        "name": [
+          {
+            "use": "usual",
+            "family": "Doe",
+            "given": [
+              "John R"
+            ],
+            "suffix": [
+              "M.D., FACMG"
+            ]
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "1111 TestAddress St"
+            ],
+            "city": "Houston",
+            "state": "TX",
+            "postalCode": "77030",
+            "country": "USA"
+          }
+        ],
+        "qualification": [
+          {
+            "identifier": [
+              {
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                      "code": "NPI",
+                      "display": "National provider identifier"
+                    }
+                  ]
+                },
+                "system": "http://hl7.org/fhir/sid/us-npi",
+                "value": "1045097250479"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-2.7-0360",
+                  "code": "M.D.",
+                  "display": "Doctor of Medicine"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "text": "ABMGG Certified Molecular Geneticist"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d51d9abc-4959-470a-9128-45af3c747ed6",
+      "resource": {
+        "resourceType": "Practitioner",
+        "language": "en-US",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">{\n  &quot;resourceType&quot;: &quot;Practitioner&quot;,\n  &quot;language&quot;: &quot;en-US&quot;,\n  &quot;identifier&quot;: [\n    {\n      &quot;type&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v2-0203&quot;,\n            &quot;code&quot;: &quot;NPI&quot;,\n            &quot;display&quot;: &quot;National provider identifier&quot;\n          }\n        ]\n      },\n      &quot;system&quot;: &quot;http://hl7.org/fhir/sid/us-npi&quot;,\n      &quot;value&quot;: &quot;1045097250478&quot;\n    }\n  ],\n  &quot;name&quot;: [\n    {\n      &quot;use&quot;: &quot;usual&quot;,\n      &quot;family&quot;: &quot;Doe&quot;,\n      &quot;given&quot;: [\n        &quot;Jane M&quot;\n      ],\n      &quot;suffix&quot;: [\n        &quot;M.D., FACMG&quot;\n      ]\n    }\n  ],\n  &quot;address&quot;: [\n    {\n      &quot;line&quot;: [\n        &quot;1111 TestAddress St&quot;\n      ],\n      &quot;city&quot;: &quot;Houston&quot;,\n      &quot;state&quot;: &quot;TX&quot;,\n      &quot;postalCode&quot;: &quot;77030&quot;,\n      &quot;country&quot;: &quot;USA&quot;\n    }\n  ],\n  &quot;qualification&quot;: [\n    {\n      &quot;identifier&quot;: [\n        {\n          &quot;type&quot;: {\n            &quot;coding&quot;: [\n              {\n                &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v2-0203&quot;,\n                &quot;code&quot;: &quot;NPI&quot;,\n                &quot;display&quot;: &quot;National provider identifier&quot;\n              }\n            ]\n          },\n          &quot;system&quot;: &quot;http://hl7.org/fhir/sid/us-npi&quot;,\n          &quot;value&quot;: &quot;1045097250478&quot;\n        }\n      ],\n      &quot;code&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v2-2.7-0360&quot;,\n            &quot;code&quot;: &quot;M.D.&quot;,\n            &quot;display&quot;: &quot;Doctor of Medicine&quot;\n          }\n        ]\n      }\n    },\n    {\n      &quot;code&quot;: {\n        &quot;text&quot;: &quot;ABMGG Certified Molecular Geneticist&quot;\n      }\n    }\n  ]\n}</div>"
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "NPI",
+                  "display": "National provider identifier"
+                }
+              ]
+            },
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "1045097250478"
+          }
+        ],
+        "name": [
+          {
+            "use": "usual",
+            "family": "Doe",
+            "given": [
+              "Jane M"
+            ],
+            "suffix": [
+              "M.D., FACMG"
+            ]
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "1111 TestAddress St"
+            ],
+            "city": "Houston",
+            "state": "TX",
+            "postalCode": "77030",
+            "country": "USA"
+          }
+        ],
+        "qualification": [
+          {
+            "identifier": [
+              {
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                      "code": "NPI",
+                      "display": "National provider identifier"
+                    }
+                  ]
+                },
+                "system": "http://hl7.org/fhir/sid/us-npi",
+                "value": "1045097250478"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-2.7-0360",
+                  "code": "M.D.",
+                  "display": "Doctor of Medicine"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "text": "ABMGG Certified Molecular Geneticist"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa",
+      "resource": {
+        "resourceType": "Organization",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
+          ]
+        },
+        "language": "en-US",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Human Genome Sequencing Center Clinical Laboratory</p><p>1111 TestAddress St • Houston • TX 77030</p><p>Phone: 111.111.1111 • Fax: 111.111.1111 • www.namingsystem.org • email: questions@namingsystem.org</p><p>CAP# 8000000 / CLIA# 45000AAR250</p></div>"
+        },
+        "identifier": [
+          {
+            "system": "urn:oid:XXXXXXXX",
+            "value": "XXXXX"
+          },
+          {
+            "system": "http://www.namingsystem.org",
+            "value": "XXXXX"
+          }
+        ],
+        "active": true,
+        "name": "Human Genome Sequencing Center Clinical Laboratory",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "(+1) 111-111-1111"
+          },
+          {
+            "system": "fax",
+            "value": "(+1) 111-111-1111"
+          },
+          {
+            "system": "url",
+            "value": "https://www.test.edu/"
+          },
+          {
+            "system": "email",
+            "value": "questions@test.edu"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "1111 TestAddress St"
+            ],
+            "city": "Houston",
+            "state": "TX",
+            "postalCode": "77030",
+            "country": "USA"
+          }
+        ],
+        "partOf": {
+          "reference": "urn:uuid:6da45a0f-1713-4d2c-aa1b-58d7ae1ce03a"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6da45a0f-1713-4d2c-aa1b-58d7ae1ce03a",
+      "resource": {
+        "resourceType": "Organization",
+        "language": "en-US",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Baylor College of Medicine</p><p>1111 TestAddress St • Houston • TX 77030</p><p>Phone: (111) 111-1111 • https://www.test.edu/ </p></div>"
+        },
+        "active": true,
+        "name": "Baylor College of Medicine",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "(+1) 111-111-1111"
+          },
+          {
+            "system": "url",
+            "value": "https://www.test.edu/"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "1111 TestAddress St"
+            ],
+            "city": "Houston",
+            "state": "TX",
+            "postalCode": "77030",
+            "country": "USA"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a06f50a0-5fbf-40f4-a6ea-e5058096a6df",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "language": "en-US",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">{\n  &quot;resourceType&quot;: &quot;PractitionerRole&quot;,\n  &quot;language&quot;: &quot;en-US&quot;,\n  &quot;practitioner&quot;: {\n    &quot;reference&quot;: &quot;urn:uuid:4edb0bee-1bd4-419a-8ddf-2215fff8cff1&quot;\n  },\n  &quot;organization&quot;: {\n    &quot;reference&quot;: &quot;urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa&quot;\n  },\n  &quot;code&quot;: [\n    {\n      &quot;coding&quot;: [\n        {\n          &quot;system&quot;: &quot;http://snomed.info/sct&quot;,\n          &quot;code&quot;: &quot;159141008&quot;,\n          &quot;display&quot;: &quot;Geneticist&quot;\n        }\n      ],\n      &quot;text&quot;: &quot;ABMGG Certified Molecular Geneticist, Assistant Laboratory Director&quot;\n    }\n  ]\n}</div>"
+        },
+        "practitioner": {
+          "reference": "urn:uuid:4edb0bee-1bd4-419a-8ddf-2215fff8cff1"
+        },
+        "organization": {
+          "reference": "urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa"
+        },
+        "code": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "159141008",
+                "display": "Geneticist"
+              }
+            ],
+            "text": "ABMGG Certified Molecular Geneticist, Assistant Laboratory Director"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "PractitionerRole"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:69aaa45b-5c23-44cf-bfae-fd2d7b74a656",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "language": "en-US",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">{\n  &quot;resourceType&quot;: &quot;PractitionerRole&quot;,\n  &quot;language&quot;: &quot;en-US&quot;,\n  &quot;practitioner&quot;: {\n    &quot;reference&quot;: &quot;urn:uuid:d51d9abc-4959-470a-9128-45af3c747ed6&quot;\n  },\n  &quot;organization&quot;: {\n    &quot;reference&quot;: &quot;urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa&quot;\n  },\n  &quot;code&quot;: [\n    {\n      &quot;coding&quot;: [\n        {\n          &quot;system&quot;: &quot;http://snomed.info/sct&quot;,\n          &quot;code&quot;: &quot;159141008&quot;,\n          &quot;display&quot;: &quot;Geneticist&quot;\n        }\n      ],\n      &quot;text&quot;: &quot;ABMGG Certified Molecular Geneticist, Medical Director&quot;\n    }\n  ]\n}</div>"
+        },
+        "practitioner": {
+          "reference": "urn:uuid:d51d9abc-4959-470a-9128-45af3c747ed6"
+        },
+        "organization": {
+          "reference": "urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa"
+        },
+        "code": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "159141008",
+                "display": "Geneticist"
+              }
+            ],
+            "text": "ABMGG Certified Molecular Geneticist, Medical Director"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "PractitionerRole"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3c8fad5c-c25f-4c0f-a19a-dd40a63afd6e",
+      "resource": {
+        "resourceType": "PlanDefinition",
+        "language": "en-US",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">{\n  &quot;resourceType&quot;: &quot;PlanDefinition&quot;,\n  &quot;language&quot;: &quot;en-US&quot;,\n  &quot;identifier&quot;: [\n    {\n      &quot;type&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v2-0203&quot;,\n            &quot;code&quot;: &quot;FILL&quot;,\n            &quot;display&quot;: &quot;Filler Identifier&quot;\n          }\n        ]\n      },\n      &quot;system&quot;: &quot;https://namingsystem.org/lab-test-codes/&quot;,\n      &quot;value&quot;: &quot;eMERGE-Seq Panel Sequencing Report&quot;\n    }\n  ],\n  &quot;version&quot;: &quot;52_eMERGE-Seq&quot;,\n  &quot;title&quot;: &quot;eMERGE-Seq Panel Sequencing Report&quot;,\n  &quot;type&quot;: {\n    &quot;coding&quot;: [\n      {\n        &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/plan-definition-type&quot;,\n        &quot;code&quot;: &quot;protocol&quot;,\n        &quot;display&quot;: &quot;Protocol&quot;\n      }\n    ]\n  },\n  &quot;status&quot;: &quot;active&quot;,\n  &quot;description&quot;: &quot;This test interrogates the protein-coding and exon-splicing regions of 109 genes as well as 1551 single-nucleotide polymorphisms that may impact human health and disease. Clinical interpretation and reporting are provided for pathogenic and likely pathogenic variants for genes and single nucleotide polymorphisms as described in the methodology section.&quot;\n}</div>"
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "FILL",
+                  "display": "Filler Identifier"
+                }
+              ]
+            },
+            "system": "https://namingsystem.org/lab-test-codes/",
+            "value": "eMERGE-Seq Panel Sequencing Report"
+          }
+        ],
+        "version": "52_eMERGE-Seq",
+        "title": "eMERGE-Seq Panel Sequencing Report",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+              "code": "protocol",
+              "display": "Protocol"
+            }
+          ]
+        },
+        "status": "active",
+        "description": "This test interrogates the protein-coding and exon-splicing regions of 109 genes as well as 1551 single-nucleotide polymorphisms that may impact human health and disease. Clinical interpretation and reporting are provided for pathogenic and likely pathogenic variants for genes and single nucleotide polymorphisms as described in the methodology section.",
+        "relatedArtifact": [
+          {
+            "type": "citation",
+            "citation": "Illumina, Inc. (2011) Multiplexing Sample Preparation Guide (Part # 1005361 Rev. D). 2011."
+          },
+          {
+            "type": "citation",
+            "citation": "Roche NimbleGen, Inc. (2010) NimbleGen SeqCap EZ Exome Library SR User's Guide (Version 2.2)."
+          },
+          {
+            "type": "citation",
+            "citation": "Liang-Chu MM, Yu M, Haverty PM, Koeman J, Ziegle J, Lee M, Bourgon R, Neve RM. Human biosample authentication using the high-throughput, cost-effective SNPtrace(TM) system. PLoS One. 2015 Feb 25;10(2):e0116218."
+          },
+          {
+            "type": "citation",
+            "citation": "Reid JG, Carroll A, Veeraraghavan N, Dahdouli M, Sundquist A, English A, Bainbridge M, White S, Salerno W, Buhay C, Yu F, Muzny D, Daly R, Duyk G, Gibbs RA, Boerwinkle E. 2014. Launching genomics into the cloud: deployment of Mercury, a next generation sequence analysis pipeline. BMC bioinformatics, 15(1), p.1. PMID: 24475911."
+          },
+          {
+            "type": "citation",
+            "citation": "Li H. and Durbin R. (2009) Fast and accurate short read alignment with Burrows-Wheeler Transform. Bioinformatics, 25:1754-60. PMID:19451168."
+          },
+          {
+            "type": "citation",
+            "citation": "Richards S, Aziz N, Bale S, Bick D, Das S, Gastier-Foster J, Grody WW, Hegde M, Lyon E, Spector E, Voelkerding K, Rehm HL; ACMG Laboratory Quality Assurance Committee. Standards and guidelines for the interpretation of sequence variants: a joint consensus recommendation of the American College of Medical Genetics and Genomics and the Association for Molecular Pathology. Genetics in Medicine (2015) 17, 405-423. PMID: 25741868."
+          }
+        ],
+        "action": [
+          {
+            "prefix": "1",
+            "description": "1. eMERGE-Seq Version 2 NGS Panel: for the paired-end pre-capture library procedure, genome DNA is fragmented by sonicating genome DNA and ligating to the Illumina multiplexing PE adapters (reference 1).  The adapter-ligated DNA is then PCR amplified using primers with sequencing barcodes (indexes). For target enrichment capture procedure, the pre-capture library is enriched by hybridizing to biotin labeled in-solution probes&nbsp;(reference 2) at&nbsp; 56&deg;C for 16 - 19 hours.&nbsp; For massively parallel sequencing, the post-capture library DNA is subjected to sequence analysis on Illumina HiSeq platform for 100 bp paired-end reads. The following quality control metrics of the sequencing data are generally achieved: &gt;70% of reads aligned to target, &gt;99% target base covered at &gt;20X, &gt;98% target base covered at &gt;40X, average coverage of target bases &gt;200X. SNP concordance to SNPTrace genotype array: &gt;99%. This test may not provide detection of certain genes or portions of certain genes due to local sequence characteristics or the presence of closely related pseudogenes. Gross deletions or duplications, changes from repetitive sequences may not be accurately identified by this methodology. Genomic rearrangements cannot be detected by this assay."
+          },
+          {
+            "prefix": "2",
+            "description": "2. As a quality control measure, the individual's DNA is also analyzed by a SNP-array (Fluidigm SNPTrace panel (reference 3) ). The SNP data are compared with the NGS panel data to ensure correct sample identification and to assess sequencing quality."
+          },
+          {
+            "prefix": "3",
+            "description": "3. Data are analyzed by the Mercury 3.4 (reference 4) pipeline. The output data from Illumina HiSeq are converted from bcl file to FastQ file by Illumina bcl2fastq 1.8.3 software, and mapped to the hg19 human genome reference by the BWA program (reference 5). The variant calls are performed using Atlas-SNP and Atlas-indel developed in-house by BCM HGSC. Copy number variants were detected using Atlas-pcnv v0, developed in-house by the BCM HGSC. Variant annotations are performed using the Cassandra tool, developed in-house.  Neptune version $VERSION was used to match variants against curated variants in the VIP database version [2020-04-17-14-15-09.vip] and generate this report.**"
+          },
+          {
+            "prefix": "4",
+            "description": "4. The variants were interpreted according to ACMG guidelines (reference 6) and patient phenotypes.  Synonymous variants, intronic variants not affecting splicing site, and common benign variants are excluded from interpretation unless they were previously reported as pathogenic variants. Reviewed variants are added to the VIP database for inclusion on future reports.  It should be noted that the interpretation of the data is based on our current understanding of genes and variants at the time of reporting."
+          },
+          {
+            "prefix": "5",
+            "description": "Clinical interpretation and reporting are provided for pathogenic and likely pathogenic variants as requested by XXXXX Organization for the following 68 medically actionable genes: ACTA2, ACTC1, APC, APOB, BMPR1A, BRCA1, BRCA2, CACNA1A, CACNA1S, COL3A1, COL5A1, DSC2, DSG2, DSP, FBN1, GLA, HNF1A, HNF1B, KCNE1, KCNH2, KCNJ2, KCNQ1, LDLR, LMNA, MEN1, MLH1, MSH2, MSH6, MUTYH, MYBPC3, MYH11, MYH7, MYL2, MYL3, MYLK, NF2, OTC, PALB2, PCSK9, PKP2, PMS2, POLD1, POLE, PRKAG2, PTEN, RB1, RET, RYR1, RYR2, SCN5A, SDHAF2, SDHB, SDHC, SDHD, SMAD3, SMAD4, STK11, TGFBR1, TGFBR2, TMEM43, TNNI3, TNNT2, TP53, TPM1, TSC1, TSC2, VHL, WT1, the following non medically actionable genes: ANK2, ATM, ATP1A2, BMPR2, CACNA1C, CFH, CFTR, CHEK2, FLG, MC4R, MTHFR, NTRK1, SCN1A, SCN9A, SERPINA1, SLC2A10, TCF4, TCIRG1, TTR, TYK2, UMOD, VDR, the following medically actionable SNPs: rs77931234, rs387906225, rs79761867, rs386834233, rs113993962, rs397509431, rs6467, rs6025, rs80338898, rs1801175, rs1800562, rs28940579, rs61752717, rs193922376; and non medically actionable SNPs: rs151344623, rs76151636, rs111033258, rs786205104, rs786205103, rs147394623, rs121964990, rs121965064, rs121965063, rs104886456, rs201227603, rs74315447, rs61755320, rs724159981. For autosomal recessive disorders, only homozygous or biallelic variants will be returned. Variants in exon 3 of the FLG gene are not reported."
+          },
+          {
+            "prefix": "6",
+            "description": "5. Variants related to patient phenotypes are confirmed by Sanger sequencing if the variant has been observed and confirmed fewer than 5 times by our laboratory or the Baylor Genetics Laboratory. Sanger confirmation is noted in the 'Notes' section of the tables if performed."
+          },
+          {
+            "prefix": "7",
+            "description": "** The VIP variant database was developed in conjunction with Baylor Genetics and the Partners Healthcare Laboratory for Molecular Medicine."
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "PlanDefinition"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/diagnosticreport"
+          ]
+        },
+        "language": "en-US",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">{\n  &quot;resourceType&quot;: &quot;DiagnosticReport&quot;,\n  &quot;meta&quot;: {\n    &quot;profile&quot;: [\n      &quot;http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/diagnosticreport&quot;\n    ]\n  },\n  &quot;language&quot;: &quot;en-US&quot;,\n  &quot;extension&quot;: [\n    {\n      &quot;url&quot;: &quot;http://namingsystem.org/fhir/StructureDefinition/test-disclaimer&quot;,\n      &quot;valueString&quot;: &quot;This test was developed and its performance determined by this laboratory. It has not been cleared or approved by U.S. Food and Drug Administration. Since FDA is not required for clinical use of this test, this laboratory has established and validated the test's accuracy and precision, pursuant to the requirement of CLIA '88. This laboratory is licensed and/or accredited under CLIA and CAP (CAP# 8000000 / CLIA# 4500000250).&quot;\n    }\n  ],\n  &quot;identifier&quot;: [\n    {\n      &quot;type&quot;: {\n        &quot;coding&quot;: [\n          {\n            &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v2-0203&quot;,\n            &quot;code&quot;: &quot;FILL&quot;,\n            &quot;display&quot;: &quot;Filler Identifier&quot;\n          }\n        ]\n      },\n      &quot;system&quot;: &quot;http://namingsystem.org/&quot;,\n      &quot;value&quot;: &quot;1500001777.18&quot;\n    }\n  ],\n  &quot;basedOn&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:898c079c-b11d-4606-90aa-61865e49d5c3&quot;\n    }\n  ],\n  &quot;status&quot;: &quot;final&quot;,\n  &quot;category&quot;: [\n    {\n      &quot;coding&quot;: [\n        {\n          &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v2-0074&quot;,\n          &quot;code&quot;: &quot;GE&quot;,\n          &quot;display&quot;: &quot;Genetics&quot;\n        },\n        {\n          &quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v2-0074&quot;,\n          &quot;code&quot;: &quot;LAB&quot;,\n          &quot;display&quot;: &quot;Laboratory&quot;\n        }\n      ]\n    }\n  ],\n  &quot;code&quot;: {\n    &quot;coding&quot;: [\n      {\n        &quot;system&quot;: &quot;http://loinc.org&quot;,\n        &quot;code&quot;: &quot;81247-9&quot;,\n        &quot;display&quot;: &quot;Master HL7 genetic variant reporting panel&quot;\n      }\n    ]\n  },\n  &quot;subject&quot;: {\n    &quot;reference&quot;: &quot;urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4&quot;\n  },\n  &quot;performer&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa&quot;\n    }\n  ],\n  &quot;resultsInterpreter&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:a06f50a0-5fbf-40f4-a6ea-e5058096a6df&quot;\n    },\n    {\n      &quot;reference&quot;: &quot;urn:uuid:69aaa45b-5c23-44cf-bfae-fd2d7b74a656&quot;\n    }\n  ],\n  &quot;specimen&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:84ff6b23-15cf-49da-b191-0ee502e638cc&quot;\n    }\n  ],\n  &quot;result&quot;: [\n    {\n      &quot;reference&quot;: &quot;urn:uuid:5d52cb95-d6d5-4eeb-8061-b71970812a75&quot;\n    },\n    {\n      &quot;reference&quot;: &quot;urn:uuid:99029567-75d9-4ab1-ae42-417f2bb65701&quot;\n    },\n    {\n      &quot;reference&quot;: &quot;urn:uuid:e8881794-5c64-4874-b304-8eb7078ad991&quot;\n    },\n    {\n      &quot;reference&quot;: &quot;urn:uuid:d9b12bcd-42fe-4381-88eb-edf8b37325f7&quot;\n    }\n  ]\n}</div>"
+        },
+        "extension": [
+          {
+            "url": "http://namingsystem.org/fhir/StructureDefinition/test-disclaimer",
+            "valueString": "This test was developed and its performance determined by this laboratory. It has not been cleared or approved by U.S. Food and Drug Administration. Since FDA is not required for clinical use of this test, this laboratory has established and validated the test's accuracy and precision, pursuant to the requirement of CLIA '88. This laboratory is licensed and/or accredited under CLIA and CAP (CAP# 8000000 / CLIA# 4500000250)."
+          }
+        ],
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "FILL",
+                  "display": "Filler Identifier"
+                }
+              ]
+            },
+            "system": "http://namingsystem.org/",
+            "value": "1500001777.18"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "urn:uuid:898c079c-b11d-4606-90aa-61865e49d5c3"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "GE",
+                "display": "Genetics"
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "LAB",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "81247-9",
+              "display": "Master HL7 genetic variant reporting panel"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:d7aa8e21-63d4-4ca6-bfc3-3e8e11f1f0d4"
+        },
+        "performer": [
+          {
+            "reference": "urn:uuid:0dc5aac4-8e7c-43e1-ac95-df14389e37aa"
+          }
+        ],
+        "resultsInterpreter": [
+          {
+            "reference": "urn:uuid:a06f50a0-5fbf-40f4-a6ea-e5058096a6df"
+          },
+          {
+            "reference": "urn:uuid:69aaa45b-5c23-44cf-bfae-fd2d7b74a656"
+          }
+        ],
+        "specimen": [
+          {
+            "reference": "urn:uuid:84ff6b23-15cf-49da-b191-0ee502e638cc"
+          }
+        ],
+        "result": [
+          {
+            "reference": "urn:uuid:5d52cb95-d6d5-4eeb-8061-b71970812a75"
+          },
+          {
+            "reference": "urn:uuid:99029567-75d9-4ab1-ae42-417f2bb65701"
+          },
+          {
+            "reference": "urn:uuid:e8881794-5c64-4874-b304-8eb7078ad991"
+          },
+          {
+            "reference": "urn:uuid:d9b12bcd-42fe-4381-88eb-edf8b37325f7"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "DiagnosticReport"
+      }
+    }
+  ]
+}
