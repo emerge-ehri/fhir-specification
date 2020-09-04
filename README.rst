@@ -7,7 +7,7 @@ Purpose
 -------
 This is a ReadTheDocs project that is the source of the eMERGE FHIR specification. The eMERGE FHIR pilot project included the creation of the eMERGE FHIR specification and associated implementation use cases, listed below:
 
-* `Generation of FHIR reports using the eMERGE FHIR Specification <https://github.com/emerge-ehri/fhir-implementation>`_
+* `Generation of FHIR reports using the eMERGE FHIR Specification <https://github.com/emerge-ehri/fhir-pilotimplementation>`_
 
 * `EHR Integration and Pharmacogenomics decision support <https://github.com/emerge-ehri/FHIRGenomicsImporter>`_
 
