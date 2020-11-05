@@ -75,6 +75,17 @@ Clinical genetic testing methodologies can vary greatly. As such, one important 
 
 Clinical genetic tests are often designed to target specific regions of the genome. Even when whole genome or exome sequencing is performed there may be a predisposition for the assay to only analyze certain regions or genes related to the indication for testing. There's also the chance that the outcome of running an assay on an individual sample may produce different actual coverage results than is expected or designed by the test. All of these factors play a role in raising the importance of being able to computationally represent the coverage regions with the results of a given assay. With both the clinically significant findings and the coverage region, receiving systems would be equipped to accurately determine whether a patient may need retesting or not, even though it may appear that they have been tested in the past for a given region of interest. Additionally, this information will be essential for clinical research and discovery at understanding patterns that are comparable across cohorts and studies.
 
+.. _interpretation-summary text:
+
+Interpretation Summary Text
+---------------------------
+While structured and coded results are of great importance to the computational utility of results, text will always play a significant role in conveying information between humans. There are a number of text attributes available throughout the GR IG profiled observation resources and their associated substructures. The genetics community and eMERGE require the ability to associate an interpretation summary with each reported clinically significant variant assessment. Additionally, there is a need to be able to provide interpretation text that summarizes the grouped observations. Using the grouper profile to organize subsections of results creates the need for an interpretation summary text attribute for these grouped results. 
+It is our recommendation that the CG workgroup consider all of the important kinds of text fields needed to support clinical genetic test results and assure that there is a mechanism to do so, starting with an interpretation summary text field.
+
+.. _pgx-results representation:
+
+PGx Results Representation
+--------------------------
 
 ..Commenting out for now, can decide if we want to include later
 ..Potential Future Use Cases
