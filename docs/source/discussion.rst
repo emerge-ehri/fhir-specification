@@ -67,11 +67,20 @@ HL7 CG WG scope of responsibilities
 HL7 FHIR is an exchange standard for enabling the sharing of healthcare data. Currently, the burden of defining variant exchange standards has fallen on the shoulders of the HL7 Clinical Genomics (CG) workgroup. While this may seem logical it is not realistic as the HL7 CG WG is not a standards making group but instead a group that works to enlist the best practices of the CG domain to allow them to begin sharing structured genetic test results. The HL7 CG WG is not equipped with the resources and expertise to delve into the depths of the vast and rapidly changing world of variant representation.
 
 
-Potential Future Use Cases
---------------------------
-* PRS results (discussed but not supported) - TODO
+.. _gene-region coverage:
 
-* Research only reports (discussed but not supported) - TODO
+Gene / Region Coverage
+----------------------
+Clinical genetic testing methodologies can vary greatly. As such, one important aspect that should be computationally shared with the results of the test is the gene and region coverage or simply region coverage. This Provides a quantitative representation of the precise molecular sequenced regions covered and the quality of coverage for each region. Perhaps more importantly, this  clearly identifies what was not covered. 
+
+Clinical genetic tests are often designed to target specific regions of the genome. Even when whole genome or exome sequencing is performed there may be a predisposition for the assay to only analyze certain regions or genes related to the indication for testing. There's also the chance that the outcome of running an assay on an individual sample may produce different actual coverage results than is expected or designed by the test. All of these factors play a role in raising the importance of being able to computationally represent the coverage regions with the results of a given assay. With both the clinically significant findings and the coverage region, receiving systems would be equipped to accurately determine whether a patient may need retesting or not, even though it may appear that they have been tested in the past for a given region of interest. Additionally, this information will be essential for clinical research and discovery at understanding patterns that are comparable across cohorts and studies.
+
+
+..Commenting out for now, can decide if we want to include later
+..Potential Future Use Cases
+..* PRS results (discussed but not supported) - TODO
+..
+..* Research only reports (discussed but not supported) - TODO
 
 
 
