@@ -20,10 +20,14 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 
 **Description:** Group multiple sections and associated results in one composite report.
 
-The eMERGE clinical genetic report includes both gene panel and PGx results in one report. Though still bundled together, we planned to separate the gene panel and PGx results; the result will be a composite report that includes separate interpretations and results for the gene panel and PGx respectively.  This approach of organizing multiple results in the same report, in addition to allowing diagnostic labs to bundle multiple result panels together will also enable consuming EHR systems to efficiently retrieve the results required for computation, storage or CDS.
+Diagnostic labs frequently include several types of results in genetic test reports which then appear in separate sections within an overarching report. eMERGE genetic reports are examples of this model and include both gene panel interpretation as well as PGx results. This style of reporting is analogous to the notion of composite reporting whereby while individual sections of the report can be treated independently they are still combined together as they rely on shared findings from an upstream wet lab assay such as Whole Exome Sequencing or Gene Panels. We evaluated two options to represent composite reporting:  1. Nested Diagnostic Report Resources or 2. The Observation Grouper Profile. Based on analysis and collaborative discussions with the Clinical Genomics Workfgroup, we decided on the Grouper Profile. 
+
 
 **Resolution:**
-Use the |grouper-prof| Profile to group all related gene panel & PGx result resources, respectively. This will enable consuming EHR systems to utilize the panel & PGx results as disparate components.
+Use the |grouper-prof| Profile to group all related gene panel & PGx result resources, respectively. 
+
+The resolution to use the Observation Grouper Profile allows consuming EHR systems to utilize the Gene Panel & PGx results as disparate components. Furthermore, while the usage of Grouper Profile was well-defined by the GR IG, the concept of nested Diagnostic Reports was still under investigation and not ready for adoption. The benefit of this approach also lends itself to including additional sections such as Polygenic Risk Scores to genetic reports.
+
 
 **Reference(s):** `Jira #19828  <https://jira.hl7.org/browse/FHIR-19828?filter=-2>`_ | `Zulip CG: FHIR representation of a genetics test with multiple test... <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/FHIR.20representation.20of.20a.20genetics.20test.20with.20multiple.20test.2E.2E.2E>`_
 
