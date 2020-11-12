@@ -75,11 +75,10 @@ It is our recommendation that the CG workgroup consider all of the important kin
 PGx Results Representation
 --------------------------
 
-..Commenting out for now, can decide if we want to include later
-..Potential Future Use Cases
-..* PRS results (discussed but not supported) - TODO
-..
-..* Research only reports (discussed but not supported) - TODO
+The eMERGE PGx results make calls on the diplotypes, called star alleles,  found in each relevant PGx gene that is covered by the PGx gene panel. These diplotypes are then used as a basis for relating PGx gene-drug knowledge implications.  For eMERGE these PGx implications or PGx phenotype interpretations fell into three classes; metabolism, transporter, and efficacy. The eMERGE assay tested 7 PGx genes that contributed to 6 gene-drug phenotype implications. 
+
+The two key challenges to sharing PGx results are to provide a complete and accurate representation of the identified variants used to make the PGx gene diplotype calls. Efforts like PharmCat[http://pharmcat.org/ or https://www.nature.com/articles/s41525-020-0135-2] are defining named allele matching[https://github.com/PharmGKB/PharmCAT/wiki/NamedAlleleMatcher-101] approaches that may help standardize this area. Regardless, the GR IG or FHIR should provide a straightforward mechanism for defining the precise variants used to call the haplotypes and diplotypes and then provide the use of one or more of these diplotype assertions as subjects of the gene-drug phenotype result that is the intended output of the PGx gene panel service. This separation of concerns and design approach is further evidence supporting the need for variant data types as discussed in Variant Representation.
+
 
 
 
