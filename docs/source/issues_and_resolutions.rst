@@ -344,3 +344,6 @@ Test disclaimers are a standard inclusion in every eMERGE report.  The disclaime
 Pending
 
 **Reference(s):** `Zulip CG: Report Comments <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Report.20Comments>`_
+
+#24 Include Variant Data Types Here
+-----------------------------------
