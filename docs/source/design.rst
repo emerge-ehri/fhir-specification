@@ -12,20 +12,16 @@ Design
     * :ref:`rept-struct`
     * :ref:`fhir-rept-resources`
 
-The eMERGE III electronic return of structured results project is motivated by several key design principles:
+The creation of a HL7 FHIR based specification for eMERGE III electronic return of structured results is motivated by several key design principles:
 
-1. **All content in narrative report is structurally represented.**
-   All lab produced content from the narrative reports should be captured in structured forms so that it is possible to reconstruct the it.
-2. **Codify concepts when reasonable.**
-   Drugs, diseases, genes, etc... should be codified based on FHIR and IG guidance. eMERGE concepts that extend beyond the FHIR and IG guidance should be codified if possible and within reason.
-3. **Computationally Reliable representation of results**
-   TODO <add a general statement about aiming to achieve computationally useful representations, when possible>
-4. **Reflect the composite nature of results**
-   Structure & codify both diagnostic primary/secondary disease pathogenicity interpretations and pharmacogenomic genotype finding medication implications.
-5. **Representation of assay and case level gene coverage.**
-   Use text based assay definition, gene coverage and methodology description per lab. Include computational gene coverage report artifact if available.
-6. **Attempt to enable Clinical Decision Support**
-   Support for computationally reliable sharing of short sequence variation, genotypes, diplotypes, large deletion/insertion/duplication (deferred CNVs).
+1. **Structured content - **
+   All content from the narrative PDF eMERGE reports and all eMERGE standard reporting use cases should be captured in structured format and as meaningful data elements without losing content and context.
+2. **Alignment with HL7 FHIR Core and GR IG - **
+   All eMERGE concepts and associated elements shall be aligned with GR IG and FHIR Core Standards and extended as required.
+3. **Computationally reliable representation of results - **
+   An optimal computational form for each data element shall be determined, prioritizing eMERGE pilot objectives for EHR integration and CDS. All specimen types and genetic data elements related to the resulting observations must be based on reference sequences, coordinates and structures that consistently and accurately reflect the lab methods used to align the raw data, determine coverage and call the variants.
+4. **Codify concepts when reasonable - **
+   Concepts should be codified using FHIR Core and GR IG guidance. eMERGE concepts that extend beyond the FHIR and CG guidance should be codified if possible and within reason.
 
 
 .. _rept-examples:
@@ -108,6 +104,16 @@ The LMM general report layout and detailed mapping to their example report...
 
 **Figure 3:** LMM general report layout and detailed mapping (click to enlarge)
 
+FHIR Mapping
+----------------
+
+The principle outcomes of the eMERGE FHIR Specification development were to 
+
+1. Identify the complete set of report concepts and elements used throughout all eMERGE reporting use case;
+2. Create a FHIR based schema using the GR IG that was implementable by eMERGE;
+3. Provide a public document of the eMERGE FHIR specification; 
+4. Collaborate with the HL7 CG Workgroup to harmonize useful feedback into the GR IG and FHIR Specification in general.
+
 .. _fhir-rept-resources:
 
 FHIR Report Schema & Resources
@@ -122,6 +128,13 @@ FHIR Report Schema & Resources
 FHIR Mapping
 ----------------
 
+The principle outcomes of the eMERGE FHIR Specification development were to 
+
+1. identify the complete set of report concepts and elements used throughout all eMERGE reporting use case;
+2. Create a FHIR based schema using the GR IG that was implementable by eMERGE;
+3. Provide a public document of the eMERGE FHIR specification; 
+4. Collaborate with the HL7 CG Workgroup to harmonize useful feedback into the GR IG and FHIR Specification in general.
+
 The development of the eMERGE FHIR Specification consisted of the following steps - 
 
 - Identify data elements using existing results from a comprehensive set of eMERGE reporting use cases. Here, the scope of this effort was confined to the Standard Reporting use cases and result delivery, while including provisions for future expansion. 
@@ -131,7 +144,7 @@ The development of the eMERGE FHIR Specification consisted of the following step
 	- Documenting resolutions requiring custom profiles & extensions
 	- Feedback from BCM-HGSC lab pilot development.
 
-
+With the emergence of FHIR as an interoperable healthcare standard and the work of the HL7 Clinical Genomics (CG) Workgroup towards the creation of a FHIR Genomics Reporting Implementation Guide (GR IG){Updating}, the Network decided to develop and evaluate the GR IG in an effort to contribute to and validate the nascent GR IG.
 
 
 TODO <discuss the process for mapping CG IG profiles and FHIR resources to elements.>
