@@ -122,6 +122,18 @@ FHIR Report Schema & Resources
 FHIR Mapping
 ----------------
 
+The development of the eMERGE FHIR Specification consisted of the following steps - 
+
+- Identify data elements using existing results from a comprehensive set of eMERGE reporting use cases. Here, the scope of this effort was confined to the Standard Reporting use cases and result delivery, while including provisions for future expansion. 
+- Map eMERGE report elements and structures both semantically and structurally to GR IG resources and profiles; perform an analysis, identify issues that required further resolution, and propose resolutions.
+- Harmonize and document finalized decisions informed by 
+	- Harmonizing changes with GR IG
+	- Documenting resolutions requiring custom profiles & extensions
+	- Feedback from BCM-HGSC lab pilot development.
+
+
+
+
 TODO <discuss the process for mapping CG IG profiles and FHIR resources to elements.>
           <and mention the decision to follow the Genomics Reporting IG vs starting from scratch>
 
