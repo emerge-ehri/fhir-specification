@@ -14,14 +14,14 @@ Design & Development
 
 The design of a HL7 FHIR Genomics Reporting IG based specification for eMERGE Phase III electronic return of structured results was motivated by the following guiding principles:
 
-1. **Structured content - **
-   All content from the narrative PDF eMERGE reports and all eMERGE standard reporting use cases should be captured in structured format and as meaningful data elements without losing content and context.
-2. **Alignment with HL7 FHIR Core and GR IG - **
-   All eMERGE concepts and associated elements shall be aligned with GR IG and FHIR Core Standards and extended as required.
-3. **Computationally reliable representation of results - **
-   An optimal computational form for each data element shall be determined, prioritizing eMERGE pilot objectives for EHR integration and CDS. All specimen types and genetic data elements related to the resulting observations must be based on reference sequences, coordinates and structures that consistently and accurately reflect the lab methods used to align the raw data, determine coverage and call the variants.
-4. **Codify concepts when reasonable - **
-   Concepts should be codified using FHIR Core and GR IG guidance. eMERGE concepts that extend beyond the FHIR and CG guidance should be codified if possible and within reason.
+1. **Structured content**
+   - All content from the narrative PDF eMERGE reports and all eMERGE standard reporting use cases should be captured in structured format and as meaningful data elements without losing content and context.
+2. **Alignment with HL7 FHIR Core and GR IG**
+   - All eMERGE concepts and associated elements shall be aligned with GR IG and FHIR Core Standards and extended as required.
+3. **Computationally reliable representation of results**
+   - An optimal computational form for each data element shall be determined, prioritizing eMERGE pilot objectives for EHR integration and CDS. All specimen types and genetic data elements related to the resulting observations must be based on reference sequences, coordinates and structures that consistently and accurately reflect the lab methods used to align the raw data, determine coverage and call the variants.
+4. **Codify concepts when reasonable**
+   - Concepts should be codified using FHIR Core and GR IG guidance. eMERGE concepts that extend beyond the FHIR and CG guidance should be codified if possible and within reason.
 
 The principle outcomes of the eMERGE FHIR Specification development were to 
 
