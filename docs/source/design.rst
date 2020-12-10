@@ -1,7 +1,7 @@
 .. _design:
 
-Design & Development
-=====================
+Design
+=======
 
 .. Warning::
     This document is a work in progress and is not ready for production use.
@@ -10,9 +10,9 @@ Design & Development
 
     * :ref:`rept-examples`
     * :ref:`rept-struct`
-    * :ref:`fhir-rept-resources`    
+    * :ref:`fhir-rept-resources`  
 
-The design of a HL7 FHIR Genomics Reporting IG based specification for eMERGE Phase III electronic return of structured results was motivated by the following guiding principles:
+The design of a HL7 FHIR Genomics Reporting Implementation Guide (GR IG) based specification for eMERGE Phase III electronic return of structured results was motivated by the following guiding principles:
 
 1. **Structured content**
    - All content from the narrative PDF eMERGE reports and all eMERGE standard reporting use cases should be captured in structured format and as meaningful data elements without losing content and context.
@@ -23,18 +23,11 @@ The design of a HL7 FHIR Genomics Reporting IG based specification for eMERGE Ph
 4. **Codify concepts when reasonable**
    - Concepts should be codified using FHIR Core and GR IG guidance. eMERGE concepts that extend beyond the FHIR and CG guidance should be codified if possible and within reason.
 
-The principle outcomes of the eMERGE FHIR Specification development were to 
-
-1. Identify the complete set of report concepts and elements used throughout all eMERGE reporting use case;
-2. Create a FHIR based schema using the GR IG that was implementable by eMERGE;
-3. Provide a public document of the eMERGE FHIR specification; 
-4. Collaborate with the HL7 CG Workgroup to harmonize useful feedback into the GR IG and FHIR Specification in general.
-
 
 The design and development of the eMERGE FHIR Specification consisted of the following steps - 
 
-Identification of eMERGE Report Concepts and Elements
-------------------------------------------------------
+1. Identification of eMERGE Report Concepts and Elements
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The first step towards the creation of the eMERGE FHIR Specification was an “As Is” analysis of the existing genetic reports to inventory all eMERGE reporting concepts and elements. To this end, we compiled a set of all-inclusive representative reports from both the CSGs (see Figure 1 for a de-identified example report from each CSG) to ensure use cases requiring unique report concepts and elements were included.
 
@@ -83,10 +76,10 @@ Using selected reports for these use cases, the structure and composition of the
 **Figure 3:** LMM general report layout and detailed mapping (click to enlarge)
 
 
-eMERGE Report to FHIR Genomics Reporting Implementation Guide - Mapping and Analysis
----------------------------------------------------------------------------------------
+2. eMERGE Report to FHIR GR IG - Mapping and Analysis
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The next step in the development of the eMERGE FHIR Specification was the mapping of eMERGE report concepts and elements to the Genomics Reporting Implementation Guide (GR IG). Adopting the GR IG's guidance, all major eMERGE report concepts were aligned to the GR IG resources and profiles, followed by a granular mapping of every eMERGE report element to a corresponding FHIR resource element.
+The next step in the development of the eMERGE FHIR Specification was the mapping of eMERGE report concepts and elements to the GR IG. Adopting the GR IG's guidance, all major eMERGE report concepts were aligned to the GR IG resources and profiles, followed by a granular mapping of every eMERGE report element to a corresponding FHIR resource element.
 
 The GR IG provided the guidance for driving the mapping of the eMERGE report concepts to its resources, profiles and extensions. Our first attempt at mapping resulted in several key structural and organizational questions, documented at :ref:`Issues & Resolutions<issues-and-resolutions>`.
 
