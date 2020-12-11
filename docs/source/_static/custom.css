@@ -73,3 +73,25 @@
   display: table;
 }
 
+table.docutils.vertical-list {
+  border: 0px none;
+}
+
+table.docutils.vertical-list td {
+  border: 0px none;
+  background-color: transparent;
+  font-size: 100%;
+  padding: 4px 8px;
+}
+table.docutils.vertical-list td:first-child {
+  font-weight: bold;
+  /* background-color: lightgrey; */
+}
+
+table.docutils.vertical-list:not(.field-list) tr:nth-child(2n-1) td {
+    background-color: transparent;
+}
+
+/* table.docutils.vertical-list:not(.field-list) tr:nth-child(2n-1) td:first-child {
+    background-color: lightgrey;
+} */

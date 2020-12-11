@@ -35,6 +35,9 @@
 .. |efficacy-impl-prof| replace:: `Medication Efficacy <http://hl7.org/fhir/uv/genomics-reporting/medication-efficacy.html>`__
 .. |related-artifact-ext| replace:: `Related Artifact Extension <http://hl7.org/fhir/uv/genomics-reporting/extension-RelatedArtifact.html>`__
 .. |recommended-action-ext| replace:: `Recommended Action Extension <http://hl7.org/fhir/uv/genomics-reporting/extension-RecommendedAction.html>`__
+.. |birthsex-ext| replace:: `us-core-birthsex <https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-birthsex.html>`__
+.. |ethnicity-ext| replace:: `us-core-ethnicity <https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-ethnicity.html>`__
+.. |race-ext| replace:: `us-core-race <https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-race.html>`__
 
 .. |emerge-spec| replace:: `eMERGE Results FHIR Specification <https://github.com/emerge-ehri/fhir-spec/>`__
 .. |emerge-network| replace:: `eMERGE network <https://emerge-network.org/>`__
@@ -44,3 +47,4 @@
 .. |fhir-gr-ig-short| replace:: `Genomics Reporting IG (STU1) <http://hl7.org/fhir/uv/genomics-reporting/index.html>`__
 .. |fhir-spec| replace:: `FHIR Specification v4.0.1 <http://hl7.org/fhir/R4/>`__
 .. |hl7-cg-wg| replace:: `HL7 Clinical Genomics WG <http://www.hl7.org/Special/committees/clingenomics/>`__
+.. |uscore-spec| replace:: `US Core IG (STU3) <https://www.hl7.org/fhir/us/core/>`__
