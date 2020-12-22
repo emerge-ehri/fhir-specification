@@ -33,10 +33,9 @@ Development Setup
 Authors
 ---------
 
-* **Larry Babb** - *Initial work* - `Broad Institute <https://www.broadinstitute.org/>`_
-* **Mullai Murugan** - *Initial work* - `BCM-HGSC <https://www.hgsc.bcm.edu/>`_
+* **Larry Babb** -  `Broad Institute <https://www.broadinstitute.org/>`_
+* **Mullai Murugan**  - `BCM-HGSC <https://www.hgsc.bcm.edu/>`_
 
-**TBD** See also the list of `contributors <https://github.com/emerge-ehri/fhir-specification/contributors>`_ who participated in this project.
 
 License
 ---------
@@ -47,7 +46,8 @@ Acknowledgments
 -----------------
 
 * HL7 CG Working Group - FHIR CG IG
-* etc
+* eMERGE Phase III Network - EHRI Working Group
+* Dr. Ken Wiley, Program Manager, eMERGE Phase III Network
 
 
 .. |docs| image:: https://readthedocs.org/projects/emerge-fhir-spec/badge/?version=latest
