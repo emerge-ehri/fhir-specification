@@ -8,7 +8,7 @@ TODO description
 
 .. sidebar:: Discussions
 
-   | :ref:`issue-variant-types`
+   | :ref:`issue-variant-data-types`
 
 Scope
 ^^^^^
@@ -16,7 +16,6 @@ TODO scope
 
 Content
 ^^^^^^^
-
 eMERGE uses the |genotype-prof| profile which is derived from other CG profiles and ultimately the |observation-res| resource.
 
 .. excel-table::

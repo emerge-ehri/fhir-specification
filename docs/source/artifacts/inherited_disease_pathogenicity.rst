@@ -9,9 +9,12 @@ TODO description
 
 .. sidebar:: Discussions
 
-   | :ref:`issue-interp-summary-text`
+   | :ref:`issue-confirmation-testing`
+   | :ref:`issue-interp-summary`
    | :ref:`issue-secondary-findings`
-   | :ref:`issue-interp-with-multiple-phenotypes`
+   | :ref:`issue-variant-data-types`
+   | :ref:`issue-path-phenotypes`
+   | :ref:`issue-path-values`
 
 Scope
 ^^^^^

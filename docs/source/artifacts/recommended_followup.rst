@@ -7,9 +7,8 @@ TODO description
 .. sidebar:: Discussions
 
    | :ref:`issue-recommendations`
-   | :ref:`issue-recommendation-with-multi-reasons`
-   | :ref:`issue-recommendation-codes`
-
+   | :ref:`issue-recommendation-reasons`
+   | :ref:`issue-recommended-followup-codes`
 
 Scope
 ^^^^^

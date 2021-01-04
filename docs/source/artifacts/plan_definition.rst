@@ -16,7 +16,6 @@ TODO scope
 
 Content
 ^^^^^^^
-
 eMERGE uses the |plandefinition-res| resource with the following constraints.
 
 .. excel-table::

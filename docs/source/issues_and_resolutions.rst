@@ -3,9 +3,6 @@
 Issues & Resolutions
 ====================
 
-.. Warning::
-    This document is a work in progress and is not ready for production use.
-
 This section includes a review of the issues that required resolution. These issues and topics range in effort and complexity which are qualified as major or minor.
 
 The section below pertains to the work performed by the BCM and Broad Institute teams to create the eMERGE FHIR Specification based on the |fhir-gr-ig-short| during 2019. It should be noted that with the Clinical Genomics WG continuing to work on upgraded versions of the IG (i.e. STU2, ...), there will be changes and variations between the STU1 version discussed here compared to any subsequent versions released or currently in development by the Clinical Genomics WG.
@@ -14,20 +11,18 @@ During the course of implementing the eMERGE Results using the |fhir-gr-ig-short
 
 .. _issue-composite-reporting:
 
-#1 Composite reporting
+#1 Composite Reporting
 ----------------------
 **HL7 WG:** Clinical Genomics | **Category:** Major
 
 **Description:** Group multiple sections and associated results in one composite report.
 
-Diagnostic labs frequently include several types of results in genetic test reports which then appear in separate sections within an overarching report. eMERGE genetic reports are examples of this model and include both gene panel interpretation as well as PGx results. This style of reporting is analogous to the notion of composite reporting whereby while individual sections of the report can be treated independently they are still combined together as they rely on shared findings from an upstream wet lab assay such as Whole Exome Sequencing or Gene Panels. We evaluated two options to represent composite reporting:  1. Nested Diagnostic Report Resources or 2. The Observation Grouper Profile. Based on analysis and collaborative discussions with the Clinical Genomics Workfgroup, we decided on the Grouper Profile. 
-
+Diagnostic labs frequently include several types of results in genetic test reports which then appear in separate sections within an overarching report. eMERGE genetic reports are examples of this model and include both gene panel interpretation as well as PGx results. This style of reporting is analogous to the notion of composite reporting whereby while individual sections of the report can be treated independently they are still combined together as they rely on shared findings from an upstream wet lab assay such as Whole Exome Sequencing or Gene Panels. We evaluated two options to represent composite reporting:  1. Nested Diagnostic Report Resources or 2. The Observation Grouper Profile. Based on analysis and collaborative discussions with the Clinical Genomics Workfgroup, we decided on the Grouper Profile.
 
 **Resolution:**
-Use the |grouper-prof| Profile to group all related gene panel & PGx result resources, respectively. 
+Use the |grouper-prof| Profile to group all related gene panel & PGx result resources, respectively.
 
 The resolution to use the Observation Grouper Profile allows consuming EHR systems to utilize the Gene Panel & PGx results as disparate components. Furthermore, while the usage of Grouper Profile was well-defined by the GR IG, the concept of nested Diagnostic Reports was still under investigation and not ready for adoption. The benefit of this approach also lends itself to including additional sections such as Polygenic Risk Scores to genetic reports.
-
 
 **Reference(s):** `Jira #19828  <https://jira.hl7.org/browse/FHIR-19828?filter=-2>`_ | `Zulip CG: FHIR representation of a genetics test with multiple test... <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/FHIR.20representation.20of.20a.20genetics.20test.20with.20multiple.20test.2E.2E.2E>`_
 
@@ -48,8 +43,8 @@ The recommendation to use the |plandefinition-res| resource to represent the eME
 
 .. _issue-report-comments:
 
-#3 Inclusion of Report Comments
--------------------------------
+#3 Report Comments
+------------------
 **HL7 WG:** Orders and Observations | **Category:** Major
 
 **Description:**
@@ -65,8 +60,8 @@ As these comments are about the report itself and not a particular Observation, 
 
 .. _issue-recommendations:
 
-#4 Inclusion of Recommendations
--------------------------------
+#4 Recommendations
+------------------
 **HL7 WG:** Orders and Observations | **Category:** Major
 
 **Description:**
@@ -81,8 +76,8 @@ Use the RecommendedTask extension in DiagnosticReport to reference a Task. The T
 
 .. _issue-nested-results:
 
-#5 Nested & Indirect Results
-----------------------------
+#5 Nested Results
+-----------------
 **HL7 WG:** Orders and Observations | **Category:** Major
 
 **Description:**
@@ -98,8 +93,8 @@ With the usage of the Grouper, hasMember and derivedFrom clearly documented, it 
 
 .. _issue-confirmation-testing:
 
-#6 Representation of Confirmation Testing
------------------------------------------
+#6 Confirmation Testing
+-----------------------
 **HL7 WG:** Orders and Observations | **Category:** Major
 
 **Description:**
@@ -110,10 +105,10 @@ Though this request was deliberated and discussed by the Clinical Genomics WG, a
 
 **Reference(s):** `Jira #19829 <https://jira.hl7.org/browse/FHIR-19829?filter=-2>`_ | `Zulip CG: Sanger confirmation testing <https://chat.fhir.org/#narrow/stream/179197-genomics/topic/Sanger.20confirmation.2Ftesting>`_
 
-.. _issue-interp-summary-text:
+.. _issue-interp-summary:
 
-#7  Interpretation Summary Text
--------------------------------
+#7  Interpretation Summary
+--------------------------
 **HL7 WG:** Clinical Genomics & Orders and Observations | **Category:** Major
 
 **Description:**
@@ -152,41 +147,24 @@ Use the CG IGs |2nd-finding-ext| extension on the |inh-dis-path-prof| profile. T
 
 **Reference(s):**  `Zulip CG: Representation of secondary findings <https://chat.fhir.org/#narrow/stream/179197-genomics/topic/Representation.20of.20secondary.20findings>`_
 
-.. _issue-variant-types:
+.. _issue-variant-data-types:
 
-#10 Creation of definitional Variant Data Types
------------------------------------------------
+#10 Variant Data Types
+----------------------
 **HL7 WG:** Clinical Genomics | **Category:** Major
 
 **Description:**
-The current flexibility in exchanging variant level information may be helpful in allowing adoption. However, implementers should be cautioned about the perils of using these forms of representation for clinical decision support (CDS). Clinical grade precision will require more rigor and guidance. Definitional data types and/or resources would help isolate the concern and advance progress towards that aim.
-
-
+The current flexibility in exchanging variant level information may be helpful in allowing adoption. However, implementers should be cautioned about the perils of using these forms of representation for clinical decision support (CDS). Clinical grade precision will require more rigor and guidance. Definitional variant data types and/or resources would help isolate the concern and advance progress towards that aim.
 
 **Resolution:**
 For more information on Variant Representation see :ref:`variant-representation` Discussion.
 
 **Reference(s):**  `Zulip CG: Variant Data Type Proposal <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Variant.20Data.20Type.20Proposal>`_
 
-.. _issue-computation-test-structure:
+.. _issue-patient-internal-id:
 
-#11 Need for computational test structure
------------------------------------------
-
-**HL7 WG:** Clinical Genomics | **Category:** Major
-
-**Description:**
-TODO Larry
-
-**Resolution:**
-Pending
-
-**Reference(s):**  Zulip discussion
-
-.. _issue-patient-identifier-type:
-
-#12 Patient Internal Identifier Type Code
------------------------------------------
+#11 Patient Internal ID
+-----------------------
 
 **HL7 WG:** Modeling & Methodology | **Category:** Minor
 
@@ -196,10 +174,10 @@ Pending
 
 **Reference(s):** `Jira #24637  <https://jira.hl7.org/browse/FHIR-24637?filter=-2>`_
 
-.. _issue-interp-with-multiple-phenotypes:
+.. _issue-path-phenotypes:
 
-#13 Pathogenicity phenotype cardinality change
-----------------------------------------------
+#12 Pathogenicity Phenotypes
+----------------------------
 
 **HL7 WG:** Clinical Genomics | **Category:** Minor
 
@@ -208,22 +186,24 @@ The cardinality of the associated-phenotype element in the |inh-dis-path-prof| p
 
 **Reference(s):** `Jira #20552  <https://jira.hl7.org/browse/FHIR-20552?filter=-2>`_
 
-.. _issue-14:
+.. _issue-path-values:
 
-#14 InhDisPath value (CC) made extensible
------------------------------------------
+#13 Pathogenicity Values
+------------------------
 
 **HL7 WG:** Clinical Genomics | **Category:** Minor
 
 **Description/Resolution:**
-Updated ValueSet bindings to extensible for the valueCodeableConcept element in the InheritedDiseasePathogenicity profile to accommodate additional entries from the Clinvar Clinical Significance list. Furthermore, the Clinical Genomics WG also updated `other ValueSet bindings <https://docs.google.com/document/d/1E-nal_OPhJ8SSaIN_f9XqiLI5lyuGyhTIbUae8MWLMU/edit>`_ to be extensible.
+Updated ValueSet bindings to extensible for the valueCodeableConcept element in the InheritedDiseasePathogenicity profile to accommodate additional entries from the Clinvar Clinical Significance list. Terms such as risk factor or risk allele are being considered by the ACMG
+
+Related information: the Clinical Genomics WG also updated `other ValueSet bindings <https://docs.google.com/document/d/1E-nal_OPhJ8SSaIN_f9XqiLI5lyuGyhTIbUae8MWLMU/edit>`_ to be extensible.
 
 **Reference(s):** `Jira #20549  <https://jira.hl7.org/browse/FHIR-20549?filter=-2>`_
 
-.. _issue-15:
+.. _issue-rept-category:
 
-#15 Genomics Report category cardinality changed to 0..*
---------------------------------------------------------
+#14 Report Category
+-------------------
 
 **HL7 WG:** Clinical Genomics | **Category:** Minor
 
@@ -232,10 +212,10 @@ The cardinality of the category element in the |genotype-prof| was updated from 
 
 **Reference(s):** `Jira #20538  <https://jira.hl7.org/browse/FHIR-20538?filter=-2>`_
 
-.. _issue-citing-assesed-meds:
+.. _issue-assesed-med-citations:
 
-#16 Citing specific assessed medication implications
-----------------------------------------------------
+#15 Assessed Med Citations
+--------------------------
 
 **HL7 WG:** Clinical Genomics | **Category:** Minor
 
@@ -244,10 +224,10 @@ DISCUSS, IT DOES NOT LOOK LIKE THIS IS COMPLETED
 
 **Reference(s):** `Zulip CG: relatedArtifact extension request  <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/relatedArtifact.20extension.20change.20request>`_
 
-.. _issue-report-sign-out-v-sent-dates:
+.. _issue-sign-out-v-sent-dates:
 
-#17 Report Sign-Out v Report Sent Date
----------------------------------------
+#16 Sign-Out v Sent Date
+------------------------
 
 **HL7 WG:** Orders and Observations | **Category:** Minor
 
@@ -256,22 +236,25 @@ eMERGE tracks both the report sign-out date and report issued date. However, as 
 
 **Reference(s):** `Zulip OO: date reported vs sign-off date  <https://chat.fhir.org/#narrow/stream/179256-Orders-and.20Observation.20WG/topic/date.20reported.20vs.20sign-off.20date>`_
 
-.. _issue-recommendation-with-multi-reasons:
+.. _issue-recommendation-reasons:
 
-#18 RecommendedAction Task with Multiple Reasons
-------------------------------------------------
+#17 Recommended Followup Reasons
+--------------------------------
 
 **HL7 WG:** FHIR Infrastructure | **Category:** Minor
 
 **Description/Resolution:**
-The cardinality for reasonCode and reasonReference elements in the |task-res| resource was updated 0..* per eMERGE request. This request is accommodate use cases where we might need to indicate that multiple Observations resulted in a particular Task Recommendation.
+The cardinality for reasonReference element in the |task-res| resource is 0..1 and should be modified to support multiple reasons if needed. This request will accommodate use cases where implementers might need to indicate that multiple Observations resulted in a particular Task Recommendation.
+
+**Resolution:**
+Only 1 code was needed for the eMERGE study. The Recommended follup profile has yet to be corrected to support multiple reason references post STU1.
 
 **Reference(s):** `Jira #25255 <https://jira.hl7.org/browse/FHIR-25255?filter=-2>`_ | `Zulip CG: task recommendations <https://chat.fhir.org/#narrow/stream/179197-genomics/topic/task.20recommendations>`_
 
 .. _issue-patient-age:
 
-#19  Add Age to US-Core Patient Profile
----------------------------------------
+#18 Patient Age
+---------------
 
 **HL7 WG:** FHIR Mgmt | **Category:** Unknown
 
@@ -285,8 +268,8 @@ Pending. The Patient Administration Workgroup does not believe that a standard e
 
 .. _issue-research-flag:
 
-#20  Clinical v Research Flag
------------------------------
+#19 Research Flag
+-----------------
 
 **HL7 WG:** Clinical Genomics | **Category:** Unknown
 
@@ -300,13 +283,13 @@ Pending.  This is an optional feature request and does not impact the current de
 
 .. _issue-fixed-report-code:
 
-#21 Why is the Report code fixed to LOINC:81247-9?
---------------------------------------------------
+#20 Report Code
+---------------
 
 **HL7 WG:** Clinical Genomics | **Category:** Unknown
 
 **Description:**
-What is the purpose of the LOINC code 81247-9 as a code value for the code field in the Genomics Report resource? How does this code distinguish between different genetics tests e.g. Whole Exome Sequencing, Whole Genome Sequencing, Exome Panels etc.? T
+What is the purpose of the LOINC code 81247-9 as a code value for the code field in the Genomics Report resource? How does this code distinguish between different genetics tests e.g. Whole Exome Sequencing, Whole Genome Sequencing, Exome Panels etc.? Further clarification is needed on the use of a singluar report code for all genetic test results.
 
 **Resolution:**
 Pending. This code is currently added to the eMERGE FHIR Specification to meet the requirement of the Genomics Reporting IG.
@@ -315,25 +298,25 @@ Pending. This code is currently added to the eMERGE FHIR Specification to meet t
 
 **Reference(s):** `Jira #19831 <https://jira.hl7.org/browse/FHIR-19831?filter=-2>`_
 
-.. _issue-recommendation-codes:
+.. _issue-recommended-followup-codes:
 
-#22 RecommendedAction "code" should be extensible
--------------------------------------------------
+#21 Recommended Followup Codes
+------------------------------
 
 **HL7 WG:** Clinical Genomics | **Category:** Unknown
 
 **Description:**
-The change request is to make the "code" binding extensible versus the current state of required. Currently, there are 3 codes available for recommendations and it seems highly unlikely these will be robust enough to serve the implementations yet to occur. This is an enhancement requirement for the future and does not impact the current eMERGE FHIR Specification implementation.
+The change request is to make the "code" binding extensible versus the current state of required. Currently, there are 3 codes available for recommended followup codes and it seems highly unlikely these will be robust enough to serve the implementations yet to occur. This is an enhancement requirement for the future and does not impact the current eMERGE FHIR Specification implementation.
 
 **Resolution:**
-Pending
+Only 1 code was needed for the eMERGE study. The Recommended follupw profile appears to be corrected to support multiple codes post STU1.
 
 **Reference(s):** `Jira #25187 <https://jira.hl7.org/browse/FHIR-25187?filter=-2&jql=reporter%20%3D%20lbabb%20%20order%20by%20created%20DESC>`_ | `Zulip CG: task recommendation follow up <https://chat.fhir.org/#narrow/stream/179197-genomics/topic/task.20recommendation.20follow.20up>`_
 
 .. _issue-disclaimers:
 
-#23 Inclusion of Disclaimers
-----------------------------
+#22 Disclaimers
+---------------
 
 **HL7 WG:** Orders and Observations | **Category:** Unknown
 
@@ -344,6 +327,3 @@ Test disclaimers are a standard inclusion in every eMERGE report.  The disclaime
 Pending
 
 **Reference(s):** `Zulip CG: Report Comments <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot/topic/Report.20Comments>`_
-
-#24 Include Variant Data Types Here
------------------------------------

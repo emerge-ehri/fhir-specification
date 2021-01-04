@@ -5,12 +5,9 @@ Variant
 
 (todo LB)
 
-.. sidebar:: Artifact
+.. sidebar:: Discussions
 
-    * Type: Profile
-    * Spec: |variant-prof|
-
-TODO description
+   | :ref:`issue-variant-data-types`
 
 Scope
 ^^^^^
@@ -18,7 +15,8 @@ TODO scope
 
 Content
 ^^^^^^^
-TODO content
+eMERGE uses the |variant-prof| profile which is derived from other CG profiles and ultimately the |observation-res| resource.
+
 
 .. excel-table::
    :file: ../_files/emerge-fhir-resources-definitions.xlsx

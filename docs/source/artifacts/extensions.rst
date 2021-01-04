@@ -3,11 +3,16 @@
 Extensions
 ==========
 
-(todo LB)
+The eMERGE Results FHIR Reports use several FHIR extensions to supplement the resources
+and profiles specified by the the |fhir-gr-ig-short|. When an extension was warranted
+the process was to find an available extension amongst those defined as part of the
+|fhir-gr-ig-short|, then to look at other registered extensions available in the FHIR
+specification and finally to define our own custom extensions. All custom extensions
+were discussed with the HL7 Clinical Genomics WG as proposed additions to the |fhir-gr-ig-short|.
 
-The eMERGE Results FHIR Reports use several FHIR extensions to supplement the resources and profiles specified by the the |fhir-gr-ig-short|. When an extension was warranted the process was to find an available extension amongst those defined as part of the |fhir-gr-ig-short|, then to look at other registered extensions available in the FHIR specification and finally to define our own custom extensions. All custom extensions were discussed with the HL7 Clinical Genomics WG as proposed additions to the |fhir-gr-ig-short|.
-
-The list of extensions below are used throughout this specification are marked with their source or "emerge" if they were custom defined for this specification only. Additionally, each extension references the artifact that it is used by to provide context.
+The list of extensions below are used throughout this specification are marked with
+their source or "eMERGE custom" if they were custom defined for this specification only.
+Additionally, each extension references the artifact that it is used by to provide context.
 
 .. _birth-sex:
 
@@ -18,8 +23,8 @@ X1. Birth Sex
    :class: vertical-list
 
    =========== = ==========================================================================
-   Name        : BirthSex
-   Source      : US-Core
+   Name        : |birthsex-ext|
+   Source      : |uscore-spec|
    Used In     : :ref:`patient`
    Description : | The birth sex extension is used to provide a specific biological sex for
                  | the patient being tested.
@@ -34,8 +39,8 @@ X2. Ethnicity
    :class: vertical-list
 
    =========== = ==========================================================================
-   Name        : Ethnicity
-   Source      : US-Core
+   Name        : |ethnicity-ext|
+   Source      : |uscore-spec|
    Used In     : :ref:`patient`
    Description : | The ethnicity extension is used to provide a specific set of ethnicities
                  | for the patient being tested.
@@ -50,8 +55,8 @@ X3. Race
    :class: vertical-list
 
    =========== = ==========================================================================
-   Name        : Race
-   Source      : US-Core
+   Name        : |race-ext|
+   Source      : |uscore-spec|
    Used In     : :ref:`patient`
    Description : | The race extension is used to provide a specific set of races for the
                  | patient being tested.

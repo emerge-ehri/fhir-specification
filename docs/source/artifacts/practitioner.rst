@@ -5,23 +5,14 @@ Practitioner
 
 A person who is directly or indirectly involved in the provisioning of healthcare.
 
-.. sidebar:: Artifact
-
-    * Type: Resource
-    * Spec: |practitioner-res|
-
-TODO reference practitionerRole and Organization and discussion on the three types of roles (performer, requester, interpreter).
-
 Scope
 ^^^^^
-
 Practitioner covers all individuals who are engaged in the healthcare process and healthcare-related services as part of their formal responsibilities and this Resource is used for attribution of activities and responsibilities to these individuals. The two Practitioners for eMERGE are the ordering provider in the role of requester ordering the test and geneticist in the role of resultsInterpreter responsible for the interpretations and conclusions of the test. See PractitionerRole and Organization artifacts for additional detail.
 
 The two Practitioner resources are referenced in the PractitionerRole resources.
 
 Content
 ^^^^^^^
-
 eMERGE uses the |practitioner-res| resource here.
 
 .. excel-table::

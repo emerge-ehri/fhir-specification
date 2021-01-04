@@ -9,8 +9,9 @@ Reference the three subtypes included here (metabolism, efficacy, transporter)
 
 .. sidebar:: Discussions
 
-   | :ref:`issue-interp-summary-text`
-   | :ref:`issue-citing-assesed-meds`
+   | :ref:`issue-interp-summary`
+   | :ref:`issue-variant-data-types`
+   | :ref:`issue-assesed-med-citations`
 
 
 Scope
@@ -19,7 +20,6 @@ TODO scope
 
 Content
 ^^^^^^^
-
 eMERGE uses the following three profiles that all derive from the medication implication profile:
 
         * |metab-impl-prof|

@@ -5,10 +5,9 @@ Service Request
 
 (todo LB)
 
-.. sidebar:: Artifact
+.. sidebar:: Discussions
 
-    * Type: Profile
-    * Spec: |service-request-prof|
+   | :ref:`issue-test-information`
 
 The service request contains the information about the requested and performed services.
 
@@ -40,8 +39,7 @@ cases that share the same testing methodology for a given SC.
 
 Content
 ^^^^^^^
-TODO content
-
+eMERGE uses the |service-request-prof| here which is derived from the |servicerequest-res| resource.
 
 .. excel-table::
    :file: ../_files/emerge-fhir-resources-definitions.xlsx

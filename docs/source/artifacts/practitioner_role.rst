@@ -5,12 +5,6 @@ PractitionerRole
 
 A specific set of Roles/Locations/specialties/services that a practitioner may perform at an organization for a period of time.
 
-.. sidebar:: Artifact
-
-    Type: Resource
-    Spec: |practitionerrole-res|
-
-
 Scope
 ^^^^^
 PractitionerRole covers the recording of the location and types of services that Practitioners are able to provide for an organization.
@@ -21,7 +15,6 @@ The resultsInterpreter and performer are referenced in the GenomicsReport profil
 
 Content
 ^^^^^^^
-
 eMERGE uses the |practitionerrole-res| resource here.
 
 .. excel-table::

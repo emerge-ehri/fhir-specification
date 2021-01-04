@@ -27,9 +27,9 @@
 .. |variant-prof| replace:: `Variant <http://hl7.org/fhir/uv/genomics-reporting/variant.html>`__
 .. |genotype-prof| replace:: `Genotype <http://hl7.org/fhir/uv/genomics-reporting/genotype.html>`__
 .. |inh-dis-path-prof| replace:: `Inherited Disease Pathogenicity <http://hl7.org/fhir/uv/genomics-reporting/inherited-disease-pathogenicity.html>`__
-.. |metab-impl-prof-abbr| replace:: `Med. Metabolism <http://hl7.org/fhir/uv/genomics-reporting/medication-metabolism.html>`__
-.. |transport-impl-prof-abbr| replace:: `Med. Transporter <http://hl7.org/fhir/uv/genomics-reporting/medication-transporter.html>`__
-.. |efficacy-impl-prof-abbr| replace:: `Med. Efficacy <http://hl7.org/fhir/uv/genomics-reporting/medication-efficacy.html>`__
+.. |metab-impl-prof-abbr| replace:: `Metabolism <http://hl7.org/fhir/uv/genomics-reporting/medication-metabolism.html>`__
+.. |transport-impl-prof-abbr| replace:: `Transporter <http://hl7.org/fhir/uv/genomics-reporting/medication-transporter.html>`__
+.. |efficacy-impl-prof-abbr| replace:: `Efficacy <http://hl7.org/fhir/uv/genomics-reporting/medication-efficacy.html>`__
 .. |metab-impl-prof| replace:: `Medication Metabolism <http://hl7.org/fhir/uv/genomics-reporting/medication-metabolism.html>`__
 .. |transport-impl-prof| replace:: `Medication Transporter <http://hl7.org/fhir/uv/genomics-reporting/medication-transporter.html>`__
 .. |efficacy-impl-prof| replace:: `Medication Efficacy <http://hl7.org/fhir/uv/genomics-reporting/medication-efficacy.html>`__

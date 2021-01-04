@@ -11,10 +11,11 @@ on blood specimens derived from patients.
    | :ref:`issue-composite-reporting`
    | :ref:`issue-report-comments`
    | :ref:`issue-recommendations`
-   | :ref:`issue-recommendation-codes`
-   | :ref:`issue-interp-summary-text`
+   | :ref:`issue-interp-summary`
    | :ref:`issue-region-coverage`
-   | :ref:`issue-report-sign-out-v-sent-dates`
+   | :ref:`issue-rept-category`
+   | :ref:`issue-sign-out-v-sent-dates`
+   | :ref:`issue-research-flag`
    | :ref:`issue-fixed-report-code`
    | :ref:`issue-disclaimers`
 

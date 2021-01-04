@@ -7,6 +7,7 @@ The patient resource contains demographic information for the individual receivi
 
 .. sidebar:: Discussions
 
+   | :ref:`issue-patient-internal-id`
    | :ref:`issue-patient-age`
 
 Scope
@@ -19,7 +20,6 @@ This resource is referenced in GenomicsReport, ServiceRequest, Specimen, and all
 
 Content
 ^^^^^^^
-
 eMERGE uses the |patient-res| resource with several US-Core Patient profile extensions.
 
 .. excel-table::

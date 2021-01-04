@@ -5,15 +5,15 @@ Organizes information within a genetic report.
 
 .. sidebar:: Discussions
 
+   | :ref:`issue-composite-reporting`
    | :ref:`issue-nested-results`
-   | :ref:`issue-interp-summary-text`
-   | :ref:`issue-secondary-findings`
+   | :ref:`issue-interp-summary`
 
 Scope
 ^^^^^
 Results for both the eMERGE gene panel and PGx sites are assembled together as a single report. Though bundled together, these results are discrete components requiring composite representation. Utilizing the Grouper profile, Observation results for both gene panel and PGx were added as members of the Diagnostic Gene Panel Grouper and PGx Grouper respectively, with these two Grouper resources referenced as results of the GenomicsReport Profile thereby resulting in the aggregation of a composite report.
 
-See below for addtional scope and content details on both the Diagnostic Gene Panel and PGx Grouper profile artifacts.
+See below for additional scope and content details on both the Diagnostic Gene Panel and PGx Grouper profile artifacts.
 
 .. _grouper_dx:
 

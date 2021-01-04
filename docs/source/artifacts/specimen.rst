@@ -5,11 +5,6 @@ Specimen
 
 A sample to be used for testing and analysis.
 
-.. sidebar:: Artifact Info
-
-   | *Type*: Profile
-   | *Source*: |specimen-prof|
-
 Scope
 ^^^^^
 A material sample taken from a biological entity, living or dead. The specimen covers substance used for diagnostic testing. The focus of the specimen resource is the process of gathering the specimen as well as where the specimen originated. An eMERGE specific business identifier assigned to this resource.
@@ -18,7 +13,6 @@ This resource is referenced in GenomicsReport, ServiceRequest, and all Observati
 
 Content
 ^^^^^^^
-
 eMERGE uses the |specimen-prof| here which is derived from the |specimen-res| resource.
 
 .. excel-table::
@@ -33,5 +27,4 @@ eMERGE uses the |specimen-prof| here which is derived from the |specimen-res| re
 
 Notes
 ^^^^^
-
 Though the Genomics Reporting IG's specimen profile was used for eMERGE considering that there is a 1:1 overlap between specimen profile and the specimen resource, preference should be given to the core specimen resource.
