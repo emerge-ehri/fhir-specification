@@ -16,7 +16,6 @@ on blood specimens derived from patients.
    | :ref:`issue-rept-category`
    | :ref:`issue-sign-out-v-sent-dates`
    | :ref:`issue-research-flag`
-   | :ref:`issue-fixed-report-code`
    | :ref:`issue-disclaimers`
 
 Scope
