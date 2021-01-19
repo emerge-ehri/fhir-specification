@@ -20,8 +20,7 @@ eMERGE Results FHIR Specification
 
 Introduction
 ============
-This is the eMERGE Phase III specification detailing the design for generating structured genetic test
-lab results using HL7 FHIR Genomics Reporting Implementation Guidelines.
+The Electronic Medical Records and Genomics (eMERGE) Network, funded by the National Human Genome Research Institute (NHGRI), is a consortium of of U.S. medical research institutions that “develops, disseminates, and applies approaches to research that combine biorepositories with electronic medical record systems for genomic discovery and genomic medicine implementation research”. Phase III of this program, as part of the Network’s overarching goal to integrate genomic test results to the EHR for clinical care, sought to create a proof of concept, standards-based representation of clinical genomic test results using the rapidly evolving Health Level Seven (HL7) Fast Healthcare Interoperability Resource (FHIR) standard. The effort to implement a FHIR based specification for the eMERGE genetic test results using the HL7 FHIR Genomics Reporting Implementation Guide was managed by the two Centralized Sequencing and Genotyping Facilities (CSGs): the Broad Institute (BI) and Partners Laboratory for Molecular Medicine (LMM) and Baylor College of Medicine Human Genome Sequencing Center (BCM-HGSC).
 
 Below you can find background information on :ref:`emerge3`, :ref:`emerge-pilot`, and :ref:`spec-aims`.
 
