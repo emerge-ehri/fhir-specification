@@ -4,9 +4,6 @@
 eMERGE Results FHIR Specification
 *********************************
 
-.. Warning::
-    This document is a work in progress and is not ready for production use.
-
 .. sidebar:: Contents
 
     * :ref:`intro`
