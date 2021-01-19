@@ -3,10 +3,9 @@
 Discussion
 ==========
 
-.. Warning::
-    This document is a work in progress and is not ready for production use.
-
-This section includes topics and questions raised and discussed during the development and implementation of this specification.
+The questions and issues raised and discussed during the development and implementation of this specification varied in scale in both importance as well as complexity.  We have highlighted a few in this section; all our discussion has been captured on the `
+eMERGE genomics stream <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot>`_
+ on Zulip.
 
 .. _adoption-and-direction:
 
