@@ -3,7 +3,7 @@
 Discussion
 ==========
 
-The questions and issues raised and discussed during the development and implementation of this specification varied in scale in both importance as well as complexity.  We have highlighted a few in this section; all our discussion has been captured on the ` Zulip eMERGE genomics stream <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot>`_.
+The questions and issues raised and discussed during the development and implementation of this specification varied in scale in both importance as well as complexity.  We have highlighted a few in this section; all our discussion has been captured on the `Zulip emerge/genomics pilot stream <https://chat.fhir.org/#narrow/stream/189875-genomics-.2F.20eMerge.20Pilot>`_.
 
 .. _adoption-and-direction:
 
