@@ -3,11 +3,7 @@
 Issues & Resolutions
 ====================
 
-This section includes a review of the issues that were identified and raised with the |hl7-cg-wg|.
-
-The section below pertains to the work performed by the eMERGE specification and pilot development teams to create this specification based on the |fhir-gr-ig-short| during 2019. When this project started the |hl7-cg-wg| was working on the STU1 release of the |fhir-gr-ig-short|. As such some issues were able to be addressed quickly (e.g. Composite reporting). At the time of finalizing the specification the |hl7-cg-wg| is continuing to address and improve changes, which this work has informed.
-
-While the eMERGE specification design and pilot development teams worked independently to apply the |fhir-gr-ig-short|, significant gaps or insufficiencies were documented as issues.
+This section summarizes several key structural and organizational questions and issues that were identified and discussed with the |hl7-cg-wg| during the creation of the eMERGE FHIR Specification in 2019. During that time, the |hl7-cg-wg| was working on the STU1 release of the |fhir-gr-ig-short|. While some issues such as Composite Reporting were addressed quickly as part of STU1, the |hl7-cg-wg| is continuing to address and improve changes, which this work has informed.
 
 **Difficulty**
 A rating of *Major* or *Minor* is assigned to each issue to represent the level of difficulty to design a solution and gain consensus for its adoption by the developers of the HL7 GR IG or FHIR specification if needed.
