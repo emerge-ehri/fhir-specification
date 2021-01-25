@@ -2,6 +2,8 @@
 .. _FHIR Id: http://build.fhir.org/datatypes.html#id
 .. _HGVS: http://www.hgvs.org/
 .. _ga4gh: http://genomicsandhealth.org/
+.. _PharmCat: http://pharmcat.org/ or https://www.nature.com/articles/s41525-020-0135-2
+.. |named-allele-matching| replace:: `named allele matching <https://github.com/PharmGKB/PharmCAT/wiki/NamedAlleleMatcher-101>`__
 
 .. |diagnosticreport-res| replace:: `DiagnosticReport <http://hl7.org/fhir/diagnosticreport.html>`__
 .. |observation-res| replace:: `Observation <http://hl7.org/fhir/observation.html>`__
@@ -14,7 +16,6 @@
 .. |practitioner-res| replace:: `Practitioner <http://hl7.org/fhir/practitioner.html>`__
 .. |bundle-res| replace:: `Bundle <http://hl7.org/fhir/bundle.html>`__
 .. |task-res| replace:: `Task <http://hl7.org/fhir/task.html>`__
-.. |observation_res| replace:: `Observation <http://hl7.org/fhir/observation.html>`__
 
 .. |genomics-base-prof| replace:: `GenomicsBase <http://hl7.org/fhir/uv/genomics-reporting/genomics-base.html>`__
 .. |2nd-finding-ext| replace:: `SecondaryFinding <http://hl7.org/fhir/uv/genomics-reporting/genomics-base-definitions.html#Observation.extension:SecondaryFinding>`__

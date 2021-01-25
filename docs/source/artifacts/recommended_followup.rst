@@ -2,7 +2,7 @@
 
 Recommended Followup
 ====================
-TODO description
+Task describing the followup that is recommended.
 
 .. sidebar:: Discussions
 
@@ -12,7 +12,7 @@ TODO description
 
 Scope
 ^^^^^
-TODO scope
+eMERGE reports only use proposed recommendations. Please reference discussions for reason and follow up code constraint arugments.
 
 Content
 ^^^^^^^

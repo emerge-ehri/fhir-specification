@@ -47,7 +47,8 @@
                         "Genotype" : {"href":"./genotype.html"},
                         "Variant" : {"href":"./variant.html"},
                         "Report Comment" : {"href":"./report_comment.html"},
-                        "Plan Definition" : {"href":"./plan_definition.html"}
+                        "Plan Definition" : {"href":"./plan_definition.html"},
+                        "Inherited Disease Pathogenicity" : {"href":"./inherited_disease_pathogenicity.html"}
                     }
                 }
             ]

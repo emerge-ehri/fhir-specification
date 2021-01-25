@@ -152,7 +152,7 @@ We then mapped every eMERGE report attribute to an equivalent field in the FHIR 
      -
    * - 9
      - Comments (Additional Notes)
-     - |observation_res|
+     - |observation-res|
      - none
      -
    * - 10

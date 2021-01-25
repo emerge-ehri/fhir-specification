@@ -3,13 +3,13 @@
 Specimen
 ========
 
-A sample to be used for testing and analysis.
+The characteristics defining the patient's extracted sample to be used for testing and analysis.
 
 Scope
 ^^^^^
 A material sample taken from a biological entity, living or dead. The specimen covers substance used for diagnostic testing. The focus of the specimen resource is the process of gathering the specimen as well as where the specimen originated. An eMERGE specific business identifier assigned to this resource.
 
-This resource is referenced in GenomicsReport, ServiceRequest, and all Observations in the GenomicsReport bundle.
+This resource is referenced in :ref:`genomics_report`, :ref:`service_request`, and all observations in the eMERGE report.
 
 Content
 ^^^^^^^

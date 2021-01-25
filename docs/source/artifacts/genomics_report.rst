@@ -24,7 +24,6 @@ The eMERGE project includes sequencing, interpretation, generation and delivery 
 
 Content
 ^^^^^^^
-
 eMERGE uses the |genomics-report-prof| profile which is derived from the |diagnosticreport-res| resource.
 
 .. excel-table::
@@ -36,6 +35,3 @@ eMERGE uses the |genomics-report-prof| profile which is derived from the |diagno
    :col_header: false
    :colwidths: [20, 20, 20, 100, 45, 125, 355]
    :selection: A1:G59
-
-Notes
-^^^^^

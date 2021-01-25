@@ -3,39 +3,23 @@
 Service Request
 ===============
 
-(todo LB)
-
 .. sidebar:: Discussions
 
    | :ref:`issue-test-information`
 
-The service request contains the information about the requested and performed services.
+The service request is the order information describing the specific assay requested and/or fulfilled, the patient and specimen and the ordering provider that authorized the request.
 
 Scope
 ^^^^^
-The service request contains the vital elements of the *order* in addition to updates made
-by the performing organization (or fulfiller). It is common for the original order or
-requisition to be modified or updated by the fulfiller in coordination with ordering provider.
+The eMERGE project had prescribed assays from the two sequencing centers that fulfilled the
+genetic testing services. As such, the service request was used to represent the fulfilled
+assay. In a generic clinical genetic testing system, order management would require
+additional uses of the service request not included here.
 
-The requester or order placer is typically a practitioner and his/her provider organization,
+The ordering provider or requester is typically a practitioner and their provider organization,
 but a provider organization alone may be used if appropriate.
 
-The ordered and performed test (or assay) is also provided in the service request.
-
-A common genetic testing panel and plan was coordinated across both emerge sequencing centers.
-However, as is often the case with genetic testing, the individual sequencing centers
-often use different procedures and technologies to achieve similar aims. These differences
-in methodologies for both sequencing and resulting are essential in reporting results.
-
-For cases where a global or shared test registry can be defined with sufficient and
-accurate test information, the computational reporting of test information could possibly
-be simplified to passing an identifier to such a resource. In the case of emerge
-the sequencing assays performed for various providers and across sequencing centers
-deviates to a large enough degree that it is critical to include these details about
-the testing methodology, description and references in the structured electronic results.
-Since this information is not case specific it is not considered to be an observable
-result but instead a definition of the test itself. It will be consistent across all
-cases that share the same testing methodology for a given SC.
+This resource is referenced in :ref:`genomics_report` and all observations in the eMERGE report.
 
 Content
 ^^^^^^^
@@ -53,3 +37,6 @@ eMERGE uses the |service-request-prof| here which is derived from the |servicere
 
 Notes
 ^^^^^
+The ordered and performed test (or assay) is also provided in the service request via the
+*instiantiatesCanonical* association to the |plandefinition-res| Please refer to the
+PlanDefinition page for the rationale and approach to scope and structure of the Assay.

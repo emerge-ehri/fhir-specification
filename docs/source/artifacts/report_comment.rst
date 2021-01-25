@@ -17,7 +17,7 @@ This resource is referenced in GenomicsReport as a result.
 
 Content
 ^^^^^^^
-eMERGE uses the |observation_res| resource here.
+eMERGE uses the |observation-res| resource here.
 
 .. excel-table::
    :file: ../_files/emerge-fhir-resources-definitions.xlsx
