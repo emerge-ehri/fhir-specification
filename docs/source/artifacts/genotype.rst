@@ -8,6 +8,7 @@ The genotype profile is used to represent a diplotypes tested and/or identified.
 
    | :ref:`issue-variant-data-types`
    | :ref:`variant-representation`
+   | :ref:`pgx-results`
 
 Scope
 ^^^^^

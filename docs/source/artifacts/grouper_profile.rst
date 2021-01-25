@@ -10,6 +10,7 @@ Organizes information within a genetic report.
    | :ref:`issue-composite-reporting`
    | :ref:`issue-nested-results`
    | :ref:`issue-interp-summary`
+   | :ref:`pgx-results`
 
 Scope
 ^^^^^

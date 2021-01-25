@@ -84,7 +84,7 @@ More investigation for broader application across the domain could be useful. Th
 Textual findings/interpretations are currently included in the eMERGE genetic report both at the report level and at the individual result (Observation) level.
 
 **Resolution:**
-Without a  option to include this kind of interpretative or summary text in the GenomicsReport or an Observation currently, a `InterpretationSummaryText custom extension <https://simplifier.net/emergefhirextensionresources/interpretationsummarytext>`_ was created to house this information.
+Without a  option to include this kind of interpretative or summary text in the GenomicsReport or an Observation currently, an `Interpretation Summary Text custom extension <https://simplifier.net/emergefhirextensionresources/interpretationsummarytext>`_ was created to house this information.
 
 **HL7 CG WG & FHIR Suggestions:**
 Jira ticket request submitted and for consideration by both Clinical Genomics and Orders and Observations WGs. This is of fairly significant importance to the genetic testing community.

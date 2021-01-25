@@ -11,6 +11,7 @@ The result interpreter's assessed implication of medication(s) associated with s
    | :ref:`issue-interp-summary`
    | :ref:`issue-variant-data-types`
    | :ref:`issue-assesed-med-citations`
+   | :ref:`pgx-results`
 
 Scope
 ^^^^^

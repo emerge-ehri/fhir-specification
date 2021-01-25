@@ -1,8 +1,16 @@
 .. _FHIR Business Identifiers: https://www.hl7.org/fhir/datatypes.html#identifier
 .. _FHIR Id: http://build.fhir.org/datatypes.html#id
 .. _HGVS: http://www.hgvs.org/
-.. _ga4gh: http://genomicsandhealth.org/
-.. _PharmCat: http://pharmcat.org/ or https://www.nature.com/articles/s41525-020-0135-2
+.. _GA4GH: http://genomicsandhealth.org/
+.. _GKS: https://www.ga4gh.org/work_stream/genomic-knowledge-standards/
+.. _VRS: https://vrs.ga4gh.org/en/stable/
+.. _ISCN: https://en.wikipedia.org/wiki/International_System_for_Human_Cytogenetic_Nomenclature
+.. _VCF: https://samtools.github.io/hts-specs/VCFv4.3.pdf
+.. _PharmCat: http://pharmcat.org/
+.. _ClinVar: https://www.ncbi.nlm.nih.gov/clinvar/
+.. _dbSNP: https://www.ncbi.nlm.nih.gov/snp/
+.. _COSMIC: https://cancer.sanger.ac.uk/cosmic
+.. |car| replace:: `ClinGen Allele Registry <http://reg.clinicalgenome.org/redmine/projects/registry/genboree_registry/landing>`__
 .. |named-allele-matching| replace:: `named allele matching <https://github.com/PharmGKB/PharmCAT/wiki/NamedAlleleMatcher-101>`__
 
 .. |diagnosticreport-res| replace:: `DiagnosticReport <http://hl7.org/fhir/diagnosticreport.html>`__
@@ -46,6 +54,7 @@
 .. |emerge-seq| replace:: `eMERGEseq Platform <https://emerge-network.org/the-emergeseq-platform/>`__
 .. |fhir-gr-ig| replace:: `FHIR Genomics Reporting Implementation Guide (STU1) <http://hl7.org/fhir/uv/genomics-reporting/index.html>`__
 .. |fhir-gr-ig-short| replace:: `Genomics Reporting IG (STU1) <http://hl7.org/fhir/uv/genomics-reporting/index.html>`__
+.. |fhir-gr-ig-abbr| replace:: `Genomics Reporting IG <http://hl7.org/fhir/uv/genomics-reporting/index.html>`__
 .. |fhir-spec| replace:: `FHIR Specification v4.0.1 <http://hl7.org/fhir/R4/>`__
 .. |hl7-cg-wg| replace:: `HL7 Clinical Genomics WG <http://www.hl7.org/Special/committees/clingenomics/>`__
 .. |uscore-spec| replace:: `US Core IG (STU3) <https://www.hl7.org/fhir/us/core/>`__

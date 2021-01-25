@@ -47,8 +47,8 @@ This Guide is divided into several pages which are listed at the top of each pag
 
 * :ref:`Discussion<discussion>`: This section contains discussions on strategic concerns with adoption, concerns related to representing variation and potential future use cases.
 
-* :ref:`Supplemental Material<supp-materials>`: ... (presentation, paper, github, definitions spreadsheet, examples, etc...)
-
+.. * :ref:`Supplemental Material<supp-materials>`: ... (presentation, paper, github, definitions spreadsheet, examples, etc...)
+..
 .. Examples (example data, json, nice to have)
 
 .. _cgig:
@@ -86,7 +86,7 @@ eMERGEseq Platform's panel results returned from the SCs.
 Specification Aim
 ==================
 The aim of the eMERGE test results return specification and implementation is to
-inform the efforts of the HL7 CG workgroup so as to accelerate the process towards
+inform the efforts of the |hl7-cg-wg| so as to accelerate the process towards
 a normative standard for general practice in clinical genetic test reporting.
 
 .. toctree::
@@ -96,4 +96,3 @@ a normative standard for general practice in clinical genetic test reporting.
    artifacts/index
    issues_and_resolutions
    discussion
-   supplemental_materials

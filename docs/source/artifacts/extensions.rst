@@ -71,7 +71,7 @@ X4. Age
    :class: vertical-list
 
    =========== = ==========================================================================
-   Name        : Age
+   Name        : `Patient Age <https://simplifier.net/emergefhirextensionresources/patientage>`_
    Source      : eMERGE custom
    Used In     : :ref:`patient`
    Description : | The age extension is used to provide a specific age in years of the
@@ -87,12 +87,13 @@ X5. Summary Interpretation Text
    :class: vertical-list
 
    =========== = ==========================================================================
-   Name        : SummaryInterpretationText
+   Name        : `SummaryInterpretationText <https://simplifier.net/emergefhirextensionresources/interpretationsummarytext>`_
    Source      : eMERGE custom
    Used In     : DiagnosticReport, Observation
    Description : | The summary interpretation text extension is used to provide short
                  | narrative summary interpretations at the report level and any
                  | observation level as needed.
+                 | See discussion :ref:`interp-summary` for related information.
    =========== = ==========================================================================
 
 .. _test-disclaimer:
@@ -104,7 +105,7 @@ X6. Test Disclaimer
    :class: vertical-list
 
    =========== = ==========================================================================
-   Name        : TestDisclaimer
+   Name        : `TestDisclaimer <https://simplifier.net/emergefhirextensionresources/testdisclaimer>`_
    Source      : eMERGE custom
    Used In     : :ref:`genomics_report`
    Description : | The test disclaimer extension is used to return the performing lab's
@@ -120,7 +121,7 @@ X7. Related Artifact
    :class: vertical-list
 
    =========== = ==========================================================================
-   Name        : RelatedArtifact
+   Name        : `RelatedArtifact <http://hl7.org/fhir/uv/genomics-reporting/extension-RelatedArtifact.html>`__
    Source      : |hl7-cg-wg|
    Used In     : :ref:`genomics_report`
    Description : | The related artifact extension is used to allow emerge to return the
@@ -136,7 +137,7 @@ X8. Recommended Action
    :class: vertical-list
 
    =========== = ==========================================================================
-   Name        : RecommendedAction
+   Name        : `RecommendedAction <http://hl7.org/fhir/uv/genomics-reporting/extension-RecommendedAction.html>`__
    Source      : |hl7-cg-wg|
    Used In     : :ref:`genomics_report`
    Description : | The recommended action extension is used to return a top-level proposed
