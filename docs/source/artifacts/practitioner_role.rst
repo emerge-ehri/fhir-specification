@@ -45,5 +45,3 @@ these components use the standard FHIR Resources of |organization-res| and |prac
 
 .. note:: Performer
    For details see multi-use artifact: :ref:`organization`
-
-Referenced By: :ref:`genomics_report`

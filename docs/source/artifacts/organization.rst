@@ -39,5 +39,3 @@ these components use the standard FHIR Resources of |organization-res| and |prac
 
 .. note:: Results Interpreter & Requester
    For details see multi-use artifact: :ref:`practitioner_role`
-
-Referenced By: :ref:`genomics_report`

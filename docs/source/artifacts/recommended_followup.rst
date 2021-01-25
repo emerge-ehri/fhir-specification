@@ -12,12 +12,13 @@ Task describing the followup that is recommended.
 
 Scope
 ^^^^^
-eMERGE reports only use proposed recommendations. Please reference discussions for reason and follow up code constraint arugments.
+eMERGE reports only use proposed recommendations. Please reference discussions for reason and follow up code constraint arguments.
+
+This resource is referenced in :ref:`genomics_report` RecommendedAction extension.
 
 Content
 ^^^^^^^
 eMERGE uses the |recommended-followup-prof| profile which is derived from the |task-res| resource.
-This profile is used in the |genomics-report-prof| RecommendedAction extension.
 
 .. excel-table::
    :file: ../_files/emerge-fhir-resources-definitions.xlsx
