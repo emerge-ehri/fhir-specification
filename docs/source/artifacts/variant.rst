@@ -2,7 +2,7 @@
 
 Variant
 =========
-The variant profile is used to represent a variants tested and/or identified. It specifies whether the variant is present, absent, indeterminate or a no call for the assay performed.
+The variant profile is used to represent variants tested and/or identified. It specifies whether the variant is present, absent, indeterminate or a no call for the assay performed.
 
 .. sidebar:: Discussions
 
