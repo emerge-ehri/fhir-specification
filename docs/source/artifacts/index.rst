@@ -2,7 +2,7 @@
 
 Artifacts
 =========
-Figure 5 above illustrates a complete map of the resource, profile and extension FHIR artifacts used to support the eMERGE report
+Figure 5 below illustrates a complete map of the resource, profile and extension FHIR artifacts used to support the eMERGE report
 defined by this specification. It starts at the center with #1 the GenomicsReport profile in purple from the FHIR CG Genomics Reporting IG.
 At the top are the red artifacts representing the patient and specimen concepts. The light green
 artifacts in the upper right hand side represent the order (Service-Request) and the ordered assay (PlanDefinition) along with the ordering and performing practitioners and their facility.
